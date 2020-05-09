@@ -10,13 +10,13 @@
     "education" : [
         {
             "date": "2019 - Present",
-            "school": "Double degree - Université du Québec à Chicoutimi (UQAC)",
-            "formation": "Master's degree in Computer Science",
+            "school": "Université du Québec à Chicoutimi (UQAC)",
+            "formation": "Master's degree in Computer Science (Double Degree)",
             "description": "Software engineering, security, mobile developpement, data mining"
         },
         {
             "date": "2017 - Present",
-            "school": "École polytechnique de l'université de Grenoble Alpes (Polytech Grenoble)",
+            "school": "École Polytechnique de l'Université de Grenoble Alpes (Polytech Grenoble)",
             "formation": "Engineer degree speciality: Computer science and software engineering",
             "description": "Algorithms, Data Structure, Hybrid Application"
         }
@@ -24,15 +24,15 @@
     "skills": [
         {
             "category": "Developement",
-            "details": ["Android SDK", "Flutter", "Java, Python, Dart, C#"]
+            "details": "Android SDK, Flutter, Java, Python, Dart, C#"
         },
         {
             "category": "Software enginneering",
-            "details": ["Agile", "CI/CD"]
+            "details": "Agile, CI/CD"
         },
         {
             "category": "Languages",
-            "details": ["French (native)", "English"]
+            "details": "French (native), English"
         }
     ],
     "projects" : [
@@ -41,32 +41,37 @@
             "title": "Stutherapy - Mobile application for stutterers",
             "image": "https://raw.githubusercontent.com/Romain-Guillot/Trare/master/res/img/logo.png",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque mollis nulla a euismod faucibus. Pellentesque tincidunt, arcu ut efficitur eleifend, risus sapien sagittis sem, id porttitor nulla felis ac metus.",
-            "stack": "Flutter/Dart, Firebase (Authentication, Cloud Firestore, Cloud Functions, Storage)"
+            "stack": "Flutter/Dart, Firebase (Authentication, Cloud Firestore, Cloud Functions, Storage)",
+            "url": "http://www.example.com"
         },
         {
             "type": "Personnal project",
             "title": "GeoQuiz - Mobile application and administration web interface for geographical quizzes",
             "image": "https://github.com/Romain-Guillot/GeoQuiz-Documents/raw/master/client_app_logo/logo_128.png?raw=true",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque mollis nulla a euismod faucibus. Pellentesque tincidunt, arcu ut efficitur eleifend, risus sapien sagittis sem, id porttitor nulla felis ac metus.",
-            "stack": "Flutter/Dart, Firebase (Crashlytics, Cloud Firestore, Storage), SQL, Travis CI and fastlane"
+            "stack": "Flutter/Dart, Firebase (Crashlytics, Cloud Firestore, Storage), SQL, Travis CI and fastlane",
+            "url": "http://www.example.com"
         },
         {
             "type": "Academic project",
             "title": "Trare - Mobile application for connecting travellers",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque mollis nulla a euismod faucibus. Pellentesque tincidunt, arcu ut efficitur eleifend, risus sapien sagittis sem, id porttitor nulla felis ac metus.",
-            "stack": "Flutter/Dart, Firebase (Auhtentication, Cloud Firestore), SonarQube"
+            "stack": "Flutter/Dart, Firebase (Auhtentication, Cloud Firestore), SonarQube",
+            "url": "http://www.example.com"
         },
         {
             "type": "Personnal project",
             "title": "Bookmark enhanced - REST API and web application to manage his bookmarks",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque mollis nulla a euismod faucibus. Pellentesque tincidunt, arcu ut efficitur eleifend, risus sapien sagittis sem, id porttitor nulla felis ac metus.",
-            "stack": "Node.js/Express, Docker, NGINX (load balancing), MongoDB, Vuejs, HTML/CSS"
+            "stack": "Node.js/Express, Docker, NGINX (load balancing), MongoDB, Vuejs, HTML/CSS",
+            "url": "http://www.example.com"
         },
         {
             "type": "Academic project",
             "title": "Meetchup - Mobile application to share photo albums",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque mollis nulla a euismod faucibus. Pellentesque tincidunt, arcu ut efficitur eleifend, risus sapien sagittis sem, id porttitor nulla felis ac metus.",
-            "stack": "Android SDK, Kotlin, Firebase (Authentication, Cloud Firestore)"
+            "stack": "Android SDK, Kotlin, Firebase (Authentication, Cloud Firestore)",
+            "url": "http://www.example.com"
         }
     ]
 }

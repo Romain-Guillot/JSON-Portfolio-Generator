@@ -1,10 +1,9 @@
-
+$spacing: 30px;
 .homepage {
     h1 {
         font-size: 3em;
         line-height: 0.9;
         margin: 0;
-        padding-bottom: 20px;
     }
     margin-top: 70px;
     display: grid;
@@ -16,34 +15,42 @@
     .profile-picture {
         grid-area: photo;
         width: 300px;
+        @media only screen and (max-width: $small-devices) {
+            display: none;
+        }
         img {
             width: 100%;
         }
     }
+    .description, .contact {
+        margin: $spacing 0;
+    }
     .description {
-        font-weight: 500;
+        font-weight: $weight-bold;
     }
     .contact {
         list-style-type: none;
-        padding: 20px 0;
+        padding: 0;
         a {
             display: inline-block;
-            color: $text;
-            font-weight: 500;
             padding: 5px 0;
             text-decoration: none;
-            span {
+            span { // simulate thick underlined link
                 display: inline-block;
                 border-bottom: 2px solid $text;
             }
         }
-        .email {
+        .email, .github {
             padding-left: 35px;
-            background: url("assets/email.svg") 0 50%/18px no-repeat;
+            background-size: $icon-size;
+            background-position:  0 50%;
+            background-repeat: no-repeat;
+        }
+        .email {
+            background-image: url("assets/email.svg") ;
         }
         .github {
-            padding-left: 35px;
-            background: url("assets/github.svg") 0 50%/18px no-repeat;
+            background-image: url("assets/github.svg");
         }
     }
 }

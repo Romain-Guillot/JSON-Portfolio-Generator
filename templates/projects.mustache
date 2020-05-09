@@ -1,24 +1,13 @@
 <div class="projects-container">
 
-<ul>
-    <li id="test" style="background-image: url(https://github.com/Romain-Guillot/GeoQuiz-Documents/raw/master/client_app_logo/logo_128.png?raw=true)">
-        <a href="#test">
-            <p class="type">Internship - UTP Malaysia (Summer 2019)</p>
-            <h2 class="title">Stutherapy - Mobile application for stutterers</h2>
-            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque mollis nulla a euismod faucibus. Pellentesque tincidunt, arcu ut efficitur eleifend, risus sapien sagittis sem, id porttitor nulla felis ac metus.</p>
-            <p class="stack">Flutter, Dart<p>
-        </a>
-
-    </li>
-    {{# projects}}
+<ul>{{# projects}}
     <li style="background-image: url({{image}})">
-        <p class="type">{{type}}</p>
-        <h2 class="title">{{title}}</h2>
-        <p class="description">{{description}}</p>
-        <p class="stack">{{stack}}<p>
+        <a href={{url}}>
+            <p class="type">{{type}}</p>
+            <h2 class="title">{{title}}</h2>
+            <p class="description">{{description}}</p>
+            <p class="stack">{{stack}}<p>
+        </a>
     </li>
-
 {{/ projects}}</ul>
-
-
 </div>

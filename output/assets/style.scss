@@ -1,11 +1,29 @@
+// Color scheme
 $primary: #F54040;
 $primary-light: rgba($primary, 0.1);
 $foreground: white;
 $text: black;
 $text-light: rgba($text, 0.6);
 
+// Font weight values
+$weight-light: 300;
+$weight-regular: 400;
+$weight-bold: 500;
+$weight-black: 900;
+
+// Dimensions
+$page-width: 1024px;
+$small-devices: 768px;
+$radius: 10px;
+$icon-size: 18px;
+
+// Others
+$font-family: "Ubuntu", arial, sans-serif;
+
+// Imports
 @import 'styles/base';
 @import 'styles/header';
 @import 'styles/homepage';
 @import 'styles/resume';
 @import 'styles/projects';
+@import 'styles/print';

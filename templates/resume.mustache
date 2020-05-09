@@ -13,12 +13,13 @@
     <div class="education">
         <ul>{{# education}}
             <li>
-                <div class="date">{{date}}</div>
                 <div class="details">
-                    <h3 class="school">{{school}}</h3>
-                    <p class="formation">{{formation}}</p>
+                    <h3 class="school">{{formation}}</h3>
+                    <p class="formation">{{school}}</p>
                     <p class="description">{{description}}</p>
                 </div>
+                <div class="date">{{date}}</div>
+
             </li>
         {{/ education}}</ul>
     </div>
@@ -28,18 +29,13 @@
     <div class="skills">
         <ul>{{# skills}}
             <li>
-                <h3 class="title">{{category}}</h3>
-                <ul class="details">
-                    {{# details}}
-                    <li>{{.}}</li>
-                    {{/ details}}
-                </ul>
+                <h3 class="title">{{category}}</h3> : <p class="details">{{details}}</p>
             </li>
         {{/ skills}}</ul>
     </div>
 
 
-    <h2>Experience</h2>
+    <h2>Experience and projects</h2>
     <div class="projects">
         <ul>{{# projects}}
             <li>

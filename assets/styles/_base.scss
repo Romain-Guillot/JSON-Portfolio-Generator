@@ -1,10 +1,20 @@
+// GENERAL STYLING
+// Customize basic html tag and basic classes that can be reused accross the app
+// Ex: link, button class, ...
+
 body {
-    font-family: 'Ubuntu';
+    font-family: $font-family;
     color: $text;
     background-color: $foreground;
-    margin: 0;
+    margin: 15px;
     padding: 0;
-    margin-top: 15px;
+    font-weight: $weight-regular;
+}
+
+a {
+    color: $text;
+    text-decoration: underline;
+    font-weight: $weight-bold;
 }
 
 ::selection {
@@ -16,20 +26,18 @@ body {
   color: white;
 }
 
-
 main {
-    max-width: 1024px;
+    max-width: $page-width;
     margin: auto;
 }
-
 
 .button {
     background-color: $primary-light;
     color: $primary;
     padding: 10px 15px;
     display: inline-block;
-    font-weight: 700;
-    border-radius: 9px;
+    font-weight: $weight-black;
+    border-radius: $radius;
     font-size: 0.9rem;
     border: none;
     box-shadow: none;
@@ -37,20 +45,13 @@ main {
     svg {
         display: inline-block;
         vertical-align: middle;
-        height: 18px;
-        width: 18px;
+        height: $icon-size;
+        width: $icon-size;
         fill: $primary;
         padding-right: 10px;
     }
     span {
         display: inline-block;
         vertical-align: middle;
-    }
-}
-
-@media print {
-    body {
-        font-size: 14px;
-        margin-top: 0;
     }
 }

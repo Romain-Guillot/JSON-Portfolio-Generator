@@ -4,17 +4,18 @@
     align-items: center;
     .title {
         flex: 1;
-        font-weight: 700;
         font-size: 1.9em;
+        @media only screen and (max-width: $small-devices) {
+            font-size: 1.5em;
+        }
         a {
-            color: $text;
+            font-weight: $weight-black;
             text-decoration: none;
         }
     }
     .menu {
         list-style-type: none;
         padding: 0;
-        font-weight: 500;
         li {
             display: inline-block;
         }
@@ -24,25 +25,20 @@
             margin: 0 10px;
             text-decoration: none;
             color: $text;
+            font-weight: $weight-bold;
         }
     }
     .selected {
         position: relative;
     }
-    .selected::after {
+    .selected::after { // small border bottom
         content: "";
         position: absolute;
         height: 3px;
-        background: red;
+        background: $primary;
         top: 100%;
         width: 35px;
         left: 50%;
         transform: translateX(-50%);
-    }
-}
-
-@media print {
-    .menu {
-        display: none;
     }
 }
