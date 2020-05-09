@@ -61,7 +61,7 @@ def makeProjects() :
         page = renderPage(config)
         output_file.write(page)
 
-
+# WIP: not yet stable
 def makePDF():
     subprocess.run("/usr/bin/google-chrome-unstable --headless --disable-gpu --print-to-pdf-no-header --print-to-pdf file:///home/ob/Documents/projects/Done/Portfolio/output/resume.html", shell=True, check=True)
 
@@ -86,8 +86,7 @@ with open(os.path.join(TEMPLATE_DIR, 'body.mustache'), 'r') as body_file  :
     resume_html = makeResume(data)
     syle_css = makeStyle()
     projects_html = makeProjects()
-    makePDF()
-
+    # TODO: makePDF()
 
 
 

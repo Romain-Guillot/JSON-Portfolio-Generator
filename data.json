@@ -60,7 +60,7 @@
             "type": "Personnal project",
             "title": "Bookmark enhanced - REST API and web application to manage his bookmarks",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque mollis nulla a euismod faucibus. Pellentesque tincidunt, arcu ut efficitur eleifend, risus sapien sagittis sem, id porttitor nulla felis ac metus.",
-            "stack": "Node.js/Express, Docker, NGINX (load balancing), MongoDB, Vuejs, HTML/CSS
+            "stack": "Node.js/Express, Docker, NGINX (load balancing), MongoDB, Vuejs, HTML/CSS"
         },
         {
             "type": "Academic project",
