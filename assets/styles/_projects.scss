@@ -1,0 +1,40 @@
+
+.projects-container {
+    ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    li {
+        padding-left: 110px;
+        background-repeat: no-repeat;
+        background-size: 75px;
+        background-position: 0 0;
+        margin: 50px 0;
+    }
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+    li:target {
+        // border: #4D19C6 solid 4px;
+    }
+    .type, .title, .description, .stack {
+        margin: 0;
+        padding: 0;
+        font-size: 1em;
+    }
+    .type, .title {
+        font-size: 1.2em;
+    }
+    .type {
+        color: $text-light;
+        font-weight: 700;
+    }
+    .title {
+        font-weight: 700;
+    }
+    .description, .stack {
+        margin-top: 7px;
+        color: $text-light;
+    }
+}

@@ -1,0 +1,72 @@
+{
+    "name": "Romain",
+    "subtitle": "Software engineering student",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque mollis nulla a euismod faucibus. Pellentesque tincidunt, arcu ut efficitur eleifend, risus sapien sagittis sem, id porttitor nulla felis ac metus. Aliquam ut ultrices leo.",
+    "country": "France",
+    "contact": {
+        "email": "rguillot42@gmail.com",
+        "github": "github.com/Romain-Guillot"
+    },
+    "education" : [
+        {
+            "date": "2019 - Present",
+            "school": "Double degree - Université du Québec à Chicoutimi (UQAC)",
+            "formation": "Master's degree in Computer Science",
+            "description": "Software engineering, security, mobile developpement, data mining"
+        },
+        {
+            "date": "2017 - Present",
+            "school": "École polytechnique de l'université de Grenoble Alpes (Polytech Grenoble)",
+            "formation": "Engineer degree speciality: Computer science and software engineering",
+            "description": "Algorithms, Data Structure, Hybrid Application"
+        }
+    ],
+    "skills": [
+        {
+            "category": "Developement",
+            "details": ["Android SDK", "Flutter", "Java, Python, Dart, C#"]
+        },
+        {
+            "category": "Software enginneering",
+            "details": ["Agile", "CI/CD"]
+        },
+        {
+            "category": "Languages",
+            "details": ["French (native)", "English"]
+        }
+    ],
+    "projects" : [
+        {
+            "type": "Internship - UTP Malaysia (Summer 2019)",
+            "title": "Stutherapy - Mobile application for stutterers",
+            "image": "https://raw.githubusercontent.com/Romain-Guillot/Trare/master/res/img/logo.png",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque mollis nulla a euismod faucibus. Pellentesque tincidunt, arcu ut efficitur eleifend, risus sapien sagittis sem, id porttitor nulla felis ac metus.",
+            "stack": "Flutter/Dart, Firebase (Authentication, Cloud Firestore, Cloud Functions, Storage)"
+        },
+        {
+            "type": "Personnal project",
+            "title": "GeoQuiz - Mobile application and administration web interface for geographical quizzes",
+            "image": "https://github.com/Romain-Guillot/GeoQuiz-Documents/raw/master/client_app_logo/logo_128.png?raw=true",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque mollis nulla a euismod faucibus. Pellentesque tincidunt, arcu ut efficitur eleifend, risus sapien sagittis sem, id porttitor nulla felis ac metus.",
+            "stack": "Flutter/Dart, Firebase (Crashlytics, Cloud Firestore, Storage), SQL, Travis CI and fastlane"
+        },
+        {
+            "type": "Academic project",
+            "title": "Trare - Mobile application for connecting travellers",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque mollis nulla a euismod faucibus. Pellentesque tincidunt, arcu ut efficitur eleifend, risus sapien sagittis sem, id porttitor nulla felis ac metus.",
+            "stack": "Flutter/Dart, Firebase (Auhtentication, Cloud Firestore), SonarQube"
+        },
+        {
+            "type": "Personnal project",
+            "title": "Bookmark enhanced - REST API and web application to manage his bookmarks",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque mollis nulla a euismod faucibus. Pellentesque tincidunt, arcu ut efficitur eleifend, risus sapien sagittis sem, id porttitor nulla felis ac metus.",
+            "stack": "Node.js/Express, Docker, NGINX (load balancing), MongoDB, Vuejs, HTML/CSS
+        },
+        {
+            "type": "Academic project",
+            "title": "Meetchup - Mobile application to share photo albums",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque mollis nulla a euismod faucibus. Pellentesque tincidunt, arcu ut efficitur eleifend, risus sapien sagittis sem, id porttitor nulla felis ac metus.",
+            "stack": "Android SDK, Kotlin, Firebase (Authentication, Cloud Firestore)"
+        }
+    ]
+}

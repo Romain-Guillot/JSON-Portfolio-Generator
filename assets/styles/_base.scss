@@ -1,0 +1,53 @@
+body {
+    font-family: 'Ubuntu';
+    color: $text;
+    background-color: $foreground;
+    margin: 0;
+    padding: 0;
+    margin-top: 15px;
+}
+
+::selection {
+  background: $primary;
+  color: white;
+}
+::-moz-selection {
+  background: $primary;
+  color: white;
+}
+
+
+.main {
+    max-width: 1024px;
+    margin: auto;
+}
+
+
+.button {
+    background-color: $primary-light;
+    color: $primary;
+    padding: 10px 15px;
+    display: inline-block;
+    font-weight: 700;
+    border-radius: 9px;
+    font-size: 0.9rem;
+    svg {
+        display: inline-block;
+        vertical-align: middle;
+        height: 18px;
+        width: 18px;
+        fill: $primary;
+        padding-right: 10px;
+    }
+    span {
+        display: inline-block;
+        vertical-align: middle;
+    }
+}
+
+@media print {
+    body {
+        font-size: 14px;
+        margin-top: 0;
+    }
+}

@@ -1,0 +1,49 @@
+
+.homepage {
+    h1 {
+        font-size: 3em;
+        line-height: 0.9;
+        margin: 0;
+        padding-bottom: 20px;
+    }
+    margin-top: 70px;
+    display: grid;
+    grid-template-areas: "info photo";
+    grid-column-gap: 40px;
+    .main {
+        grid-area: info;
+    }
+    .profile-picture {
+        grid-area: photo;
+        width: 300px;
+        img {
+            width: 100%;
+        }
+    }
+    .description {
+        font-weight: 500;
+    }
+    .contact {
+        list-style-type: none;
+        padding: 20px 0;
+        a {
+            display: inline-block;
+            color: $text;
+            font-weight: 500;
+            padding: 5px 0;
+            text-decoration: none;
+            span {
+                display: inline-block;
+                border-bottom: 2px solid $text;
+            }
+        }
+        .email {
+            padding-left: 35px;
+            background: url("assets/email.svg") 0 50%/18px no-repeat;
+        }
+        .github {
+            padding-left: 35px;
+            background: url("assets/github.svg") 0 50%/18px no-repeat;
+        }
+    }
+}
