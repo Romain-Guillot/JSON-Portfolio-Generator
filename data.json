@@ -23,16 +23,24 @@
     ],
     "skills": [
         {
-            "category": "Developement",
-            "details": "Android SDK, Flutter, Java, Python, Dart, C#"
+            "category": "Languages and frameworks",
+            "details": "Java, Dart, Python, Javascript, HTML/CSS (and proficient with C and C#)"
+        },
+        {
+            "category": "Languages and tools",
+            "details": "Flutter, Android, Docker, Node.js, Tensorflow, Django"
         },
         {
             "category": "Software enginneering",
-            "details": "Agile, CI/CD"
+            "details": "Agile, CI/CD, Git"
+        },
+        {
+            "category": "Cloud / database",
+            "details": "(My)SQL, MongoDB, Firebase"
         },
         {
             "category": "Languages",
-            "details": "French (native), English"
+            "details": "French (native), English (professional)"
         }
     ],
     "projects" : [

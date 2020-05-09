@@ -1,28 +1,21 @@
-$spacing: 20px;
+$spacing: 30px;
+$small-spacing: 10px;
 .resume-container {
     margin-top: 15px;
     h2 {
+        font-size: 1.5em;
         position: relative;
         margin: $spacing 0 5px 0;
         padding: 0;
     }
-    h2:after {
-        content: "";
-        position: absolute;
-        height: 3px;
-        background: $primary;
-        top: 115%;
-        width: 35px;
-        left: 0;
-    }
     .main-description {
         font-weight: 300;
-        margin: 0 0 $spacing 0;
+        margin: 0 0 $small-spacing 0;
     }
     .contact-info {
         list-style-type: none;
         padding: 0;
-        margin: $spacing 0;
+        margin: 0 0 $spacing 0;
         .country, .email, .github {
             display: inline-block;
             color: $text;
@@ -44,8 +37,9 @@ $spacing: 20px;
         > ul {
             list-style-type: none;
             padding: 0;
+            margin: 0;
             li {
-                margin-bottom: $spacing;
+                margin-bottom: $small-spacing;
                 display: flex;
                 align-items: flex-start;
                 @media only screen and (max-width: $small-devices) {
@@ -55,10 +49,17 @@ $spacing: 20px;
         }
         .date {
             font-weight: $weight-bold;
-            margin-right: 25px
+            margin-left: 25px
         }
         .details {
             flex: 1;
+        }
+        .formation:after {
+            content: ", ";
+        }
+        .formation {
+            font-weight: $weight-bold;
+            display: inline;
         }
         .school, .formation, .description {
             margin: 0;
@@ -66,16 +67,10 @@ $spacing: 20px;
             font-size: 1em;
         }
         .school {
-            font-weight: $weight-bold;
+            font-weight: $weight-regular;
             display: inline;
-        }
-        .school:after {
-            content: ", ";
-        }
-        .formation {
-            font-weight: $weight-bold;
             color: $text-light;
-            display: inline;
+            font-style: italic;
         }
         .description {
             margin-top: 7px;
@@ -87,7 +82,11 @@ $spacing: 20px;
     .skills {
         > ul {
             padding: 0;
+            margin: 0;
             list-style-type: none;
+            li {
+                margin-bottom: $small-spacing;
+            }
             .title, .details {
                 display: inline;
                 font-size: 1em;
@@ -100,6 +99,7 @@ $spacing: 20px;
     .projects {
         ul {
             padding: 0;
+            margin: 0;
             list-style-type: none;
             // display: grid;
             // grid-template-columns: 1fr 1fr;
@@ -107,7 +107,7 @@ $spacing: 20px;
             // @media only screen and (max-width: $small-devices) {
             //     display: block;
                 li {
-                    margin-bottom: $spacing;
+                    margin-bottom: $small-spacing;
                 }
             // }
         }
@@ -123,9 +123,10 @@ $spacing: 20px;
         .title {
             font-weight: $weight-bold;
         }
+        .stack {
+            font-style: italic;
+        }
         .description, .stack {
-            margin-top: 7px;
-            font-size: 0.9em;
             color: $text-light;
         }
     }

@@ -186,30 +186,21 @@ main {
 }
 
 .resume-container h2 {
+  font-size: 1.5em;
   position: relative;
-  margin: 20px 0 5px 0;
+  margin: 30px 0 5px 0;
   padding: 0;
-}
-
-.resume-container h2:after {
-  content: "";
-  position: absolute;
-  height: 3px;
-  background: #F54040;
-  top: 115%;
-  width: 35px;
-  left: 0;
 }
 
 .resume-container .main-description {
   font-weight: 300;
-  margin: 0 0 20px 0;
+  margin: 0 0 10px 0;
 }
 
 .resume-container .contact-info {
   list-style-type: none;
   padding: 0;
-  margin: 20px 0;
+  margin: 0 0 30px 0;
 }
 
 .resume-container .contact-info .country, .resume-container .contact-info .email, .resume-container .contact-info .github {
@@ -235,10 +226,11 @@ main {
 .resume-container .education > ul {
   list-style-type: none;
   padding: 0;
+  margin: 0;
 }
 
 .resume-container .education > ul li {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   display: flex;
   align-items: flex-start;
 }
@@ -251,11 +243,20 @@ main {
 
 .resume-container .education .date {
   font-weight: 500;
-  margin-right: 25px;
+  margin-left: 25px;
 }
 
 .resume-container .education .details {
   flex: 1;
+}
+
+.resume-container .education .formation:after {
+  content: ", ";
+}
+
+.resume-container .education .formation {
+  font-weight: 500;
+  display: inline;
 }
 
 .resume-container .education .school, .resume-container .education .formation, .resume-container .education .description {
@@ -265,18 +266,10 @@ main {
 }
 
 .resume-container .education .school {
-  font-weight: 500;
+  font-weight: 400;
   display: inline;
-}
-
-.resume-container .education .school:after {
-  content: ", ";
-}
-
-.resume-container .education .formation {
-  font-weight: 500;
   color: rgba(0, 0, 0, 0.6);
-  display: inline;
+  font-style: italic;
 }
 
 .resume-container .education .description {
@@ -288,7 +281,12 @@ main {
 
 .resume-container .skills > ul {
   padding: 0;
+  margin: 0;
   list-style-type: none;
+}
+
+.resume-container .skills > ul li {
+  margin-bottom: 10px;
 }
 
 .resume-container .skills > ul .title, .resume-container .skills > ul .details {
@@ -302,11 +300,12 @@ main {
 
 .resume-container .projects ul {
   padding: 0;
+  margin: 0;
   list-style-type: none;
 }
 
 .resume-container .projects ul li {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .resume-container .projects .type, .resume-container .projects .title, .resume-container .projects .description, .resume-container .projects .stack {
@@ -324,9 +323,11 @@ main {
   font-weight: 500;
 }
 
+.resume-container .projects .stack {
+  font-style: italic;
+}
+
 .resume-container .projects .description, .resume-container .projects .stack {
-  margin-top: 7px;
-  font-size: 0.9em;
   color: rgba(0, 0, 0, 0.6);
 }
 
@@ -377,7 +378,6 @@ main {
   body {
     font-size: 14px;
     margin-top: 0;
-    font-family: "Merriweather";
   }
   .header .menu {
     display: none;
