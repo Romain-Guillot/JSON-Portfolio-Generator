@@ -4,6 +4,7 @@ import sass
 import json
 from distutils.dir_util import copy_tree
 import subprocess
+import logging
 
 
 OUTPUT_DIR = "output"
@@ -80,12 +81,14 @@ def prepareOutputDir() :
 
 
 with open(os.path.join(TEMPLATE_DIR, 'body.mustache'), 'r') as body_file  :
+    logging.getLogger().setLevel(logging.INFO)
     prepareOutputDir()
     data = loadData()
     homepage_html = makeHomepage(data)
     resume_html = makeResume(data)
     syle_css = makeStyle()
     projects_html = makeProjects()
+    logging.info("Protfolio created. See the " + OUTPUT_DIR + " directory.")
     # TODO: makePDF()
 
 
