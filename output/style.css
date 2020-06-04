@@ -11,6 +11,7 @@ body {
   align-content: flex-start;
   max-width: 1024px;
   margin: auto;
+  padding: 0 15px;
 }
 
 a {
@@ -71,7 +72,7 @@ button span, .button span {
   font-size: 1.9em;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480px) {
   #header .title {
     font-size: 1.5em;
   }
@@ -143,7 +144,7 @@ button span, .button span {
   width: 300px;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 480px) {
   .homepage .profile-picture {
     display: none;
   }
@@ -214,7 +215,7 @@ button span, .button span {
 
 .resume-container .main-description {
   font-weight: 300;
-  margin: 0 0 15px 0;
+  margin: 15px 0;
 }
 
 .resume-container .contact-info {
@@ -251,23 +252,26 @@ button span, .button span {
 
 .resume-container .education > ul li {
   margin-bottom: 15px;
-  display: flex;
-  align-items: flex-start;
 }
 
-@media only screen and (max-width: 768px) {
+@media (min-width: 480px) {
   .resume-container .education > ul li {
-    display: block;
+    display: grid;
+    grid-template-areas: "details date";
+    grid-template-columns: 1fr 200px;
+    align-items: flex-start;
+    gap: 25px;
   }
 }
 
 .resume-container .education .date {
+  text-align: right;
   font-weight: 500;
-  margin-left: 25px;
+  grid-area: date;
 }
 
 .resume-container .education .details {
-  flex: 1;
+  grid-area: details;
 }
 
 .resume-container .education .formation:after {
@@ -307,10 +311,15 @@ button span, .button span {
 
 .resume-container .skills > ul li {
   margin-bottom: 15px;
-  display: grid;
-  grid-template-areas: "category skills";
-  grid-template-columns: 200px auto;
-  gap: 15px;
+}
+
+@media (min-width: 480px) {
+  .resume-container .skills > ul li {
+    display: grid;
+    grid-template-areas: "category skills";
+    grid-template-columns: 200px auto;
+    gap: 15px;
+  }
 }
 
 .resume-container .skills > ul .title, .resume-container .skills > ul .details {
@@ -322,7 +331,12 @@ button span, .button span {
 .resume-container .skills > ul .title {
   grid-area: category;
   font-weight: 500;
-  text-align: right;
+}
+
+@media (min-width: 480px) {
+  .resume-container .skills > ul .title {
+    text-align: right;
+  }
 }
 
 .resume-container .skills > ul .details {

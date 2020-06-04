@@ -1,9 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <meta charset="UTF-8">
+
+        <meta name="description" content="">
+        <meta name="language" content="fr">
+        <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0">
+        <meta name="theme-color" content="#F54040">
+
+        <meta property="og:site_name" content="Zeste de Savoir">
+        <meta property="og:title" content="Zeste de Savoir">
+        <meta property="og:url" content="https://zestedesavoir.com/">
+        <meta property="og:language" content="fr_FR">
+        <meta property="og:image:url" content="http://zestedesavoir.com/static/images/favicons/512.c00dbe2ae399.png">
+        <meta property="og:type" content="website">
+
         <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
         <link href="style.css" rel="stylesheet">
-        <meta charset="UTF-8">
+
         <title>Romain Guillot • Résumé</title>
     </head>
     <body>
@@ -24,18 +38,21 @@
         <main>
             <div class="resume-container">
 <form method="get" action="resume.pdf" target="_blank">
-    <!-- A form with a button is used for accessibility and to make a valid HTML https://validator.w3.org/ -->
-    <form method="get" action="resume.pdf" target="_blank">
-        <button type="submit" class="download">
-            <svg enable-background="new 0 0 451.111 451.111" height="512" viewBox="0 0 451.111 451.111" width="512" xmlns="http://www.w3.org/2000/svg"><path d="m225.556 354.445 145-145-48.333-48.333-64.444 64.444v-225.556h-64.444v225.556l-64.444-64.444-48.333 48.333z"/><path d="m0 386.667h451.111v64.444h-451.111z"/></svg>
-            <span>Download my resumé (PDF)</span>
-        </button>
-    </form>    <p class="main-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque mollis nulla a euismod faucibus. Pellentesque tincidunt, arcu ut efficitur eleifend, risus sapien sagittis sem, id porttitor nulla felis ac metus. Aliquam ut ultrices leo.</p>
+    <div class="no-print">
+        <!-- A form with a button is used for accessibility and to make a valid HTML https://validator.w3.org/ -->
+        <form method="get" action="resume.pdf" target="_blank">
+            <button type="submit" class="download">
+                <svg enable-background="new 0 0 451.111 451.111" height="512" viewBox="0 0 451.111 451.111" width="512" xmlns="http://www.w3.org/2000/svg"><path d="m225.556 354.445 145-145-48.333-48.333-64.444 64.444v-225.556h-64.444v225.556l-64.444-64.444-48.333 48.333z"/><path d="m0 386.667h451.111v64.444h-451.111z"/></svg>
+                <span>Download my resumé (PDF)</span>
+            </button>
+        </form>    </div>
+    
+    <p class="main-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque mollis nulla a euismod faucibus. Pellentesque tincidunt, arcu ut efficitur eleifend, risus sapien sagittis sem, id porttitor nulla felis ac metus. Aliquam ut ultrices leo.</p>
 
 
     <ul class="contact-info">
         <li><span class="country">France</span></li>
-        <li><a class="email">rguillot42@gmail.com</a></li>
+        <li><a class="email">romain.guillot.contact@gmail.com</a></li>
         <li><a  class="github">github.com/Romain-Guillot</a></li>
     </ul>
 
@@ -44,23 +61,21 @@
     <div class="education">
         <ul>
             <li>
+                <div class="date">2019 - Present</div>
                 <div class="details">
                     <h3 class="formation">Master's degree in Computer Science (Double Degree)</h3>
                     <p class="school">Université du Québec à Chicoutimi (UQAC)</p>
                     <p class="description">Software engineering, security, mobile developpement, data mining</p>
                 </div>
-                <div class="date">2019 - Present</div>
-
             </li>
         
             <li>
+                <div class="date">2017 - Present</div>
                 <div class="details">
                     <h3 class="formation">Engineer degree speciality: Computer science and software engineering</h3>
                     <p class="school">École Polytechnique de l'Université de Grenoble Alpes (Polytech Grenoble)</p>
                     <p class="description">Algorithms, Data Structure, Hybrid Application</p>
                 </div>
-                <div class="date">2017 - Present</div>
-
             </li>
         </ul>
     </div>

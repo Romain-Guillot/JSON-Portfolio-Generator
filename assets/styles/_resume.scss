@@ -18,7 +18,7 @@ $small-spacing: 15px;
     }
     .main-description {
         font-weight: 300;
-        margin: 0 0 $small-spacing 0;
+        margin: $small-spacing 0;
     }
     .contact-info {
         list-style-type: none;
@@ -48,19 +48,23 @@ $small-spacing: 15px;
             margin: 0;
             li {
                 margin-bottom: $small-spacing;
-                display: flex;
-                align-items: flex-start;
-                @media only screen and (max-width: $small-devices) {
-                    display: block;
+
+                @media (min-width: $small-devices) {
+                    display: grid;
+                    grid-template-areas: "details date";
+                    grid-template-columns: 1fr 200px;
+                    align-items: flex-start;
+                    gap: 25px;
                 }
             }
         }
         .date {
+            text-align: right;
             font-weight: $weight-bold;
-            margin-left: 25px
+            grid-area: date;
         }
         .details {
-            flex: 1;
+            grid-area: details;
         }
         .formation:after {
             content: ", ";
@@ -94,10 +98,13 @@ $small-spacing: 15px;
             list-style-type: none;
             li {
                 margin-bottom: $small-spacing;
-                display: grid;
-                grid-template-areas: "category skills";
-                grid-template-columns: 200px auto;
-                gap: $small-spacing;
+     
+                @media (min-width: $small-devices) {
+                    display: grid;
+                    grid-template-areas: "category skills";
+                    grid-template-columns: 200px auto;
+                    gap: $small-spacing;
+                }
             }
             .title, .details {
                 margin: 0;
@@ -107,7 +114,9 @@ $small-spacing: 15px;
             .title {
                 grid-area: category;
                 font-weight: $weight-bold;
-                text-align: right;
+                @media (min-width: $small-devices) {
+                    text-align: right;
+                }
             }
             .details {
                 grid-area: skills;

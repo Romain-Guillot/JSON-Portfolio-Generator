@@ -1,6 +1,9 @@
 <div class="resume-container">
 <form method="get" action="resume.pdf" target="_blank">
-    {{> download-resume }}
+    <div class="no-print">
+        {{> download-resume }}
+    </div>
+    
     <p class="main-description">{{description}}</p>
 
 
@@ -15,13 +18,12 @@
     <div class="education">
         <ul>{{# education}}
             <li>
+                <div class="date">{{date}}</div>
                 <div class="details">
                     <h3 class="formation">{{formation}}</h3>
                     <p class="school">{{school}}</p>
                     <p class="description">{{description}}</p>
                 </div>
-                <div class="date">{{date}}</div>
-
             </li>
         {{/ education}}</ul>
     </div>

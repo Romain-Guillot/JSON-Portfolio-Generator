@@ -15,6 +15,7 @@ body {
     align-content: flex-start;
     max-width: $page-width;
     margin: auto;
+    padding: 0 15px;
 }
 
 a {
@@ -35,6 +36,7 @@ a {
 main {
     flex: 1 0 auto;
 }
+
 button, .button {
     background-color: $primary-light;
     color: $primary;
