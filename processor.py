@@ -9,6 +9,7 @@ import logging
 
 OUTPUT_DIR = "output"
 TEMPLATE_DIR = "templates"
+PARTIALS_DIR = os.path.join(TEMPLATE_DIR, "partials")
 ASSETS_DIR = "assets"
 
 
@@ -20,54 +21,38 @@ def loadData() :
 
 def renderPage(config) :
     with open(os.path.join(TEMPLATE_DIR, 'body.mustache'), 'r') as body_file, \
-         open(os.path.join(TEMPLATE_DIR, 'header.mustache'), 'r') as header_file :
-        header_html = chevron.render(header_file, {config['page']: True})
-        return chevron.render(body_file, {'header': header_html, **config})
+         open(os.path.join(PARTIALS_DIR, 'header.ms'), 'r') as header_file :
+        header_html = chevron.render(header_file, {config['page']: True, **config})
+        args = {
+            'template': body_file.read(), 
+            'partials_path': "partials/",
+            'partials_ext': 'ms',
+            'data': {
+                'header': header_html,
+                **config
+            },
+        }
+        return chevron.render(**args)
 
 
-def makeHomepage(data) :
-    with open(os.path.join(TEMPLATE_DIR, 'home.mustache'), 'r') as homepage_file, \
-         open(os.path.join(OUTPUT_DIR, 'index.html'), 'w') as output_file :
+def buildPage(page, name, data) :
+    with open(os.path.join(TEMPLATE_DIR, page + ".mustache"), 'r') as template_file, \
+         open(os.path.join(OUTPUT_DIR, page + ".html"), 'w') as output_file :
         config = {
-            'page': 'homepage',
-            'title': "Romain Guillot",
-            'body': chevron.render(homepage_file, data)
+            'page': name,
+            'body': chevron.render(template_file, data),
+            **data,
         }
         page = renderPage(config)
         output_file.write(page)
-        return page
 
-
-def makeResume(data) :
-    with open(os.path.join(TEMPLATE_DIR, 'resume.mustache'), 'r') as homepage_file, \
-         open(os.path.join(OUTPUT_DIR, 'resume.html'), 'w') as output_file :
-        config = {
-            'page': 'resume',
-            'title': "Romain Guillot - Resumé",
-            'body': chevron.render(homepage_file, data)
-        }
-        page = renderPage(config)
-        output_file.write(page)
-        return page
-
-
-def makeProjects() :
-    with open(os.path.join(TEMPLATE_DIR, 'projects.mustache'), 'r') as homepage_file, \
-         open(os.path.join(OUTPUT_DIR, 'projects.html'), 'w') as output_file :
-        config = {
-            'page': 'projects',
-            'title': "Romain Guillot - Projects",
-            'body': chevron.render(homepage_file, data)
-        }
-        page = renderPage(config)
-        output_file.write(page)
 
 # WIP: not yet stable
-def makePDF():
+def buildPDF():
     subprocess.run("/usr/bin/google-chrome-unstable --headless --disable-gpu --print-to-pdf-no-header --print-to-pdf file:///home/ob/Documents/projects/Done/Portfolio/output/resume.html", shell=True, check=True)
 
 
-def makeStyle() :
+def buildStyle() :
     with open(os.path.join(ASSETS_DIR, 'style.scss'), 'r') as style_file, \
          open(os.path.join(OUTPUT_DIR, 'style.css'), 'w') as style_output_file :
         style = sass.compile(string=style_file.read(), include_paths=["assets"], output_style="expanded")
@@ -84,10 +69,10 @@ with open(os.path.join(TEMPLATE_DIR, 'body.mustache'), 'r') as body_file  :
     logging.getLogger().setLevel(logging.INFO)
     prepareOutputDir()
     data = loadData()
-    homepage_html = makeHomepage(data)
-    resume_html = makeResume(data)
-    syle_css = makeStyle()
-    projects_html = makeProjects()
+    homepage_html = buildPage("index", None, data)
+    resume_html = buildPage("resume", "Résumé", data)
+    projects_html = buildPage("projects", "Projects", data)
+    syle_css = buildStyle()
     logging.info("Protfolio created. See the " + OUTPUT_DIR + " directory.")
     # TODO: makePDF()
 
