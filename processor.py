@@ -21,12 +21,11 @@ def loadData() :
 
 def renderPage(config) :
     with open(os.path.join(TEMPLATE_DIR, 'body.mustache'), 'r') as body_file, \
-         open(os.path.join(PARTIALS_DIR, 'header.ms'), 'r') as header_file :
+         open(os.path.join(PARTIALS_DIR, 'header.mustache'), 'r') as header_file :
         header_html = chevron.render(header_file, {config['page']: True, **config})
         args = {
             'template': body_file.read(), 
-            'partials_path': "partials/",
-            'partials_ext': 'ms',
+            'partials_path': "templates/partials/",
             'data': {
                 'header': header_html,
                 **config
@@ -38,9 +37,11 @@ def renderPage(config) :
 def buildPage(page, name, data) :
     with open(os.path.join(TEMPLATE_DIR, page + ".mustache"), 'r') as template_file, \
          open(os.path.join(OUTPUT_DIR, page + ".html"), 'w') as output_file :
+        args = {'template': template_file.read(), 'partials_path': "templates/partials/", 'data': data}
         config = {
             'page': name,
-            'body': chevron.render(template_file, data),
+            'is-'+page: True,
+            'body': chevron.render(**args),
             **data,
         }
         page = renderPage(config)

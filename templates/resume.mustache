@@ -1,4 +1,6 @@
 <div class="resume-container">
+<form method="get" action="resume.pdf" target="_blank">
+    {{> download-resume }}
     <p class="main-description">{{description}}</p>
 
 
@@ -29,7 +31,7 @@
     <div class="skills">
         <ul>{{# skills}}
             <li>
-                <h3 class="title">{{category}}</h3> : <p class="details">{{details}}</p>
+                <h3 class="title">{{category}}</h3><p class="details">{{details}}</p>
             </li>
         {{/ skills}}</ul>
     </div>
@@ -46,5 +48,4 @@
             </li>
         {{/ projects}}</ul>
     </div>
-
 </div>

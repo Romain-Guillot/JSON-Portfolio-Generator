@@ -5,6 +5,12 @@ body {
   margin: 15px;
   padding: 0;
   font-weight: 400;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  max-width: 1024px;
+  margin: auto;
 }
 
 a {
@@ -24,11 +30,10 @@ a {
 }
 
 main {
-  max-width: 1024px;
-  margin: auto;
+  flex: 1 0 auto;
 }
 
-.button {
+button, .button {
   background-color: rgba(245, 64, 64, 0.1);
   color: #F54040;
   padding: 10px 15px;
@@ -41,52 +46,52 @@ main {
   cursor: pointer;
 }
 
-.button svg {
+button svg, .button svg {
   display: inline-block;
   vertical-align: middle;
-  height: 18px;
-  width: 18px;
+  height: 16px;
+  width: 16px;
   fill: #F54040;
   padding-right: 10px;
 }
 
-.button span {
+button span, .button span {
   display: inline-block;
   vertical-align: middle;
 }
 
-.header {
+#header {
   display: grid;
   display: flex;
   align-items: center;
 }
 
-.header .title {
+#header .title {
   flex: 1;
   font-size: 1.9em;
 }
 
 @media only screen and (max-width: 768px) {
-  .header .title {
+  #header .title {
     font-size: 1.5em;
   }
 }
 
-.header .title a {
+#header .title a {
   font-weight: 900;
   text-decoration: none;
 }
 
-.header .menu {
+#header .menu {
   list-style-type: none;
   padding: 0;
 }
 
-.header .menu li {
+#header .menu li {
   display: inline-block;
 }
 
-.header .menu li a {
+#header .menu li a {
   display: inline-block;
   padding: 5px;
   margin: 0 10px;
@@ -95,11 +100,11 @@ main {
   font-weight: 500;
 }
 
-.header .selected {
+#header .selected {
   position: relative;
 }
 
-.header .selected::after {
+#header .selected::after {
   content: "";
   position: absolute;
   height: 3px;
@@ -108,6 +113,12 @@ main {
   width: 35px;
   left: 50%;
   transform: translateX(-50%);
+}
+
+#footer {
+  font-style: italic;
+  text-align: center;
+  margin: 30px auto 10px auto;
 }
 
 .homepage {
@@ -168,7 +179,7 @@ main {
 
 .homepage .contact .email, .homepage .contact .github {
   padding-left: 35px;
-  background-size: 18px;
+  background-size: 16px;
   background-position: 0 50%;
   background-repeat: no-repeat;
 }
@@ -186,21 +197,30 @@ main {
 }
 
 .resume-container h2 {
-  font-size: 1.5em;
   position: relative;
-  margin: 30px 0 5px 0;
+  margin: 35px 0 8px 0;
   padding: 0;
+}
+
+.resume-container h2:after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  background: #F54040;
+  top: 100%;
+  width: 35px;
+  left: 0;
 }
 
 .resume-container .main-description {
   font-weight: 300;
-  margin: 0 0 10px 0;
+  margin: 0 0 15px 0;
 }
 
 .resume-container .contact-info {
   list-style-type: none;
   padding: 0;
-  margin: 0 0 30px 0;
+  margin: 0 0 35px 0;
 }
 
 .resume-container .contact-info .country, .resume-container .contact-info .email, .resume-container .contact-info .github {
@@ -230,7 +250,7 @@ main {
 }
 
 .resume-container .education > ul li {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   display: flex;
   align-items: flex-start;
 }
@@ -286,16 +306,27 @@ main {
 }
 
 .resume-container .skills > ul li {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
+  display: grid;
+  grid-template-areas: "category skills";
+  grid-template-columns: 200px auto;
+  gap: 15px;
 }
 
 .resume-container .skills > ul .title, .resume-container .skills > ul .details {
-  display: inline;
+  margin: 0;
+  padding: 0;
   font-size: 1em;
 }
 
 .resume-container .skills > ul .title {
+  grid-area: category;
   font-weight: 500;
+  text-align: right;
+}
+
+.resume-container .skills > ul .details {
+  grid-area: skills;
 }
 
 .resume-container .projects ul {
@@ -305,7 +336,7 @@ main {
 }
 
 .resume-container .projects ul li {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .resume-container .projects .type, .resume-container .projects .title, .resume-container .projects .description, .resume-container .projects .stack {
@@ -375,11 +406,12 @@ main {
 }
 
 @media print {
-  body {
+  body, html {
     font-size: 14px;
     margin-top: 0;
+    padding: 0;
   }
-  .header .menu {
+  .no-print {
     display: none;
   }
   .resume-container .contact-info li {

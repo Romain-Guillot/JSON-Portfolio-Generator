@@ -9,6 +9,12 @@ body {
     margin: 15px;
     padding: 0;
     font-weight: $weight-regular;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    max-width: $page-width;
+    margin: auto;
 }
 
 a {
@@ -27,11 +33,9 @@ a {
 }
 
 main {
-    max-width: $page-width;
-    margin: auto;
+    flex: 1 0 auto;
 }
-
-.button {
+button, .button {
     background-color: $primary-light;
     color: $primary;
     padding: 10px 15px;

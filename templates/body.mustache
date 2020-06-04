@@ -4,14 +4,18 @@
         <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
         <link href="style.css" rel="stylesheet">
         <meta charset="UTF-8">
-        <title>{{name}} • {{page}}</title>
+        <title>{{name}}{{#page}} • {{page}}{{/page}}</title>
     </head>
     <body>
-        <main>
+    
+        <header id="header">
             {{& header }}
+        </header>
+        <main>
             {{& body}}
-
-            
         </main>
     </body>
+    <footer id="footer" class="no-print">
+        Generate with my <a href="">portfolio generator</a> built with Python, Mustache and Sass
+    </footer>
 </html>

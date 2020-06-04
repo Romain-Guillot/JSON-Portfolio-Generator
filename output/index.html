@@ -4,23 +4,24 @@
         <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
         <link href="style.css" rel="stylesheet">
         <meta charset="UTF-8">
-        <title>Romain Guillot • </title>
+        <title>Romain Guillot</title>
     </head>
     <body>
+    
+        <header id="header">
+            <div class="title"><a href="index.html">Romain Guillot</a></div>
+<nav>
+    <ul class="menu no-print">
+        <li class="about selected"><a href="index.html">About me</a></li>
+        <li class="resume "><a href="resume.html">Resumé</a></li>
+        <li class="projects "><a href="projects.html">Projects</a></li>
+    </ul>
+</nav>
+
+
+
+        </header>
         <main>
-            <header class="header">
-    <div class="title"><a href="index.html">Romain Guillot</a></div>
-    <nav>
-        <ul class="menu">
-            <li class="about selectedselectedselectedselectedselected"><a href="index.html">About me</a></li>
-            <li class="resume selectedselectedselectedselectedselected"><a href="resume.html">Resumé</a></li>
-            <li class="projects selectedselectedselectedselectedselected"><a href="projects.html">Projects</a></li>
-        </ul>
-    </nav>
-</header>
-
-
-
             <div class="homepage">
     <div class="presentation">
         <h1>Software engineering student</h1>
@@ -34,20 +35,20 @@
 
         <!-- A form with a button is used for accessibility and to make a valid HTML https://validator.w3.org/ -->
         <form method="get" action="resume.pdf" target="_blank">
-            <button type="submit" class="button download">
+            <button type="submit" class="download">
                 <svg enable-background="new 0 0 451.111 451.111" height="512" viewBox="0 0 451.111 451.111" width="512" xmlns="http://www.w3.org/2000/svg"><path d="m225.556 354.445 145-145-48.333-48.333-64.444 64.444v-225.556h-64.444v225.556l-64.444-64.444-48.333 48.333z"/><path d="m0 386.667h451.111v64.444h-451.111z"/></svg>
                 <span>Download my resumé (PDF)</span>
             </button>
-        </form>
-    </div>
+        </form>    </div>
 
     <div class="profile-picture">
         <img src="assets/photo.jpeg" alt="Photo of myself">
     </div>
 </div>
 
-
-            
         </main>
     </body>
+    <footer id="footer" class="no-print">
+        Generate with my <a href="">portfolio generator</a> built with Python, Mustache and Sass
+    </footer>
 </html>
