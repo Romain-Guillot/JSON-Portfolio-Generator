@@ -1,18 +1,15 @@
-<div class="resume-container">
-<form method="get" action="resume.pdf" target="_blank">
+<div id="resume-wrapper">
     <div class="no-print">
         {{> download-resume }}
     </div>
     
     <p class="main-description">{{description}}</p>
 
-
     <ul class="contact-info">
         <li><span class="country">{{country}}</span></li>
         <li><a class="email">{{contact.email}}</a></li>
         <li><a  class="github">{{contact.github}}</a></li>
     </ul>
-
 
     <h2>Education</h2>
     <div class="education">
@@ -28,7 +25,6 @@
         {{/ education}}</ul>
     </div>
 
-
     <h2>Skills</h2>
     <div class="skills">
         <ul>{{# skills}}
@@ -38,12 +34,11 @@
         {{/ skills}}</ul>
     </div>
 
-
     <h2>Experience and projects</h2>
     <div class="projects">
         <ul>{{# projects}}
             <li>
-                <span class="type">{{type}}</span>
+                <p class="type">{{type}}</p>
                 <h3 class="title">{{title}}</h3>
                 <p class="description">{{description}}</p>
                 <p class="stack">{{stack}}</p>

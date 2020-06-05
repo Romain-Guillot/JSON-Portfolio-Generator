@@ -1,11 +1,14 @@
 import os
 import chevron
-import sass
+
 import json
 from distutils.dir_util import copy_tree
 import subprocess
 import logging
 
+from lib.github_service import GithubService
+from lib.sass_service import SassService
+from lib.pdf_service import PDFService
 
 OUTPUT_DIR = "build"
 TEMPLATE_DIR = "templates"
@@ -50,21 +53,15 @@ def buildPage(page, name, data) :
 
 
 # WIP: not yet stable
-def buildPDF():
-    subprocess.run("/usr/bin/google-chrome-unstable --headless --disable-gpu --print-to-pdf-no-header --print-to-pdf file:///home/ob/Documents/projects/Done/Portfolio/output/resume.html", shell=True, check=True)
 
 
-def buildStyle() :
-    with open(os.path.join(ASSETS_DIR, 'style.scss'), 'r') as style_file, \
-         open(os.path.join(OUTPUT_DIR, 'style.css'), 'w') as style_output_file :
-        style = sass.compile(string=style_file.read(), include_paths=[ASSETS_DIR], output_style="expanded")
-        style_output_file.write(style)
-        return style
 
 def prepareOutputDir() :
     if not os.path.exists(OUTPUT_DIR):
         os.makedirs(OUTPUT_DIR)
     copy_tree(ASSETS_DIR, os.path.join(OUTPUT_DIR, ASSETS_DIR))
+
+
 
 
 with open(os.path.join(TEMPLATE_DIR, 'body.mustache'), 'r') as body_file  :
@@ -74,6 +71,8 @@ with open(os.path.join(TEMPLATE_DIR, 'body.mustache'), 'r') as body_file  :
     homepage_html = buildPage("index", None, data)
     resume_html = buildPage("resume", "Résumé", data)
     projects_html = buildPage("projects", "Projects", data)
-    syle_css = buildStyle()
+    SassService(ASSETS_DIR, OUTPUT_DIR).compile()
+    GithubService(OUTPUT_DIR).publish()
+    PDFService("/usr/bin/google-chrome", "file:///home/ob/Documents/projects/Active/Portfolio/build/resume.html").build()
+    
     logging.info("Protfolio created. See the " + OUTPUT_DIR + " directory.")
-    # TODO: makePDF()

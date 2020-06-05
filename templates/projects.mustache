@@ -1,13 +1,12 @@
-<div class="projects-container">
-
-<ul>{{# projects}}
-    <li style="background-image: url({{image}})">
-        <a href={{url}}>
-            <p class="type">{{type}}</p>
-            <h2 class="title">{{title}}</h2>
-            <p class="description">{{description}}</p>
-            <p class="stack">{{stack}}<p>
-        </a>
-    </li>
-{{/ projects}}</ul>
+<div id="projects-wrapper">
+    <ul>{{# projects}}
+        <li style="background-image: url({{image}})">
+            <a href={{url}}>
+                <p class="type">{{type}}</p>
+                <h2 class="title">{{title}}</h2>
+                <p class="description">{{description}}</p>
+                <p class="stack">{{stack}}<p>
+            </a>
+        </li>
+    {{/ projects}}</ul>
 </div>

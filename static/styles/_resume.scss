@@ -1,6 +1,6 @@
 $spacing: 35px;
 $small-spacing: 15px;
-.resume-container {
+#resume-wrapper {
     margin-top: 15px;
     h2 {
         position: relative;
@@ -52,7 +52,7 @@ $small-spacing: 15px;
                 @media (min-width: $small-devices) {
                     display: grid;
                     grid-template-areas: "details date";
-                    grid-template-columns: 1fr 200px;
+                    grid-template-columns: 1fr 175px;
                     align-items: flex-start;
                     gap: 25px;
                 }
@@ -149,8 +149,15 @@ $small-spacing: 15px;
         }
         .title {
             font-weight: $weight-bold;
+            display: inline;
+        }
+        .title::after {
+            content: ", ";
         }
         .stack {
+        }
+        .description {
+            display: inline;
             font-style: italic;
         }
         .description, .stack {

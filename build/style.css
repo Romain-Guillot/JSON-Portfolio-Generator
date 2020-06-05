@@ -125,88 +125,88 @@ button span, .button span {
   margin: 30px auto 10px auto;
 }
 
-.homepage {
+#homepage-wrapper {
   margin-top: 70px;
   display: grid;
   grid-template-areas: "info photo";
   grid-column-gap: 40px;
 }
 
-.homepage h1 {
+#homepage-wrapper h1 {
   font-size: 3em;
   line-height: 0.9;
   margin: 0;
 }
 
-.homepage .main {
+#homepage-wrapper .main {
   grid-area: info;
 }
 
-.homepage .profile-picture {
+#homepage-wrapper .profile-picture {
   grid-area: photo;
   width: 300px;
 }
 
 @media only screen and (max-width: 480px) {
-  .homepage .profile-picture {
+  #homepage-wrapper .profile-picture {
     display: none;
   }
 }
 
-.homepage .profile-picture img {
+#homepage-wrapper .profile-picture img {
   width: 100%;
 }
 
-.homepage .description, .homepage .contact {
+#homepage-wrapper .description, #homepage-wrapper .contact {
   margin: 30px 0;
 }
 
-.homepage .description {
+#homepage-wrapper .description {
   font-weight: 500;
 }
 
-.homepage .contact {
+#homepage-wrapper .contact {
   list-style-type: none;
   padding: 0;
 }
 
-.homepage .contact a {
+#homepage-wrapper .contact a {
   display: inline-block;
   padding: 5px 0;
   text-decoration: none;
 }
 
-.homepage .contact a span {
+#homepage-wrapper .contact a span {
   display: inline-block;
   border-bottom: 2px solid black;
 }
 
-.homepage .contact .email, .homepage .contact .github {
+#homepage-wrapper .contact .email, #homepage-wrapper .contact .github {
   padding-left: 35px;
   background-size: 16px;
   background-position: 0 50%;
   background-repeat: no-repeat;
 }
 
-.homepage .contact .email {
+#homepage-wrapper .contact .email {
   background-image: url("assets/email.svg");
 }
 
-.homepage .contact .github {
+#homepage-wrapper .contact .github {
   background-image: url("assets/github.svg");
 }
 
-.resume-container {
+#resume-wrapper {
   margin-top: 15px;
 }
 
-.resume-container h2 {
+#resume-wrapper h2 {
   position: relative;
   margin: 35px 0 8px 0;
   padding: 0;
 }
 
-.resume-container h2:after {
+#resume-wrapper h2:after {
   content: "";
   position: absolute;
   height: 3px;
@@ -216,18 +216,18 @@ button span, .button span {
   left: 0;
 }
 
-.resume-container .main-description {
+#resume-wrapper .main-description {
   font-weight: 300;
   margin: 15px 0;
 }
 
-.resume-container .contact-info {
+#resume-wrapper .contact-info {
   list-style-type: none;
   padding: 0;
   margin: 0 0 35px 0;
 }
 
-.resume-container .contact-info .country, .resume-container .contact-info .email, .resume-container .contact-info .github {
+#resume-wrapper .contact-info .country, #resume-wrapper .contact-info .email, #resume-wrapper .contact-info .github {
   display: inline-block;
   color: inherit;
   font-weight: 500;
@@ -235,89 +235,89 @@ button span, .button span {
   text-decoration: none;
 }
 
-.resume-container .contact-info .country {
+#resume-wrapper .contact-info .country {
   background: url("assets/location.svg") 0 50%/18px no-repeat;
 }
 
-.resume-container .contact-info .email {
+#resume-wrapper .contact-info .email {
   background: url("assets/email.svg") 0 50%/18px no-repeat;
 }
 
-.resume-container .contact-info .github {
+#resume-wrapper .contact-info .github {
   background: url("assets/github.svg") 0 50%/18px no-repeat;
 }
 
-.resume-container .education > ul {
+#resume-wrapper .education > ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
 
-.resume-container .education > ul li {
+#resume-wrapper .education > ul li {
   margin-bottom: 15px;
 }
 
 @media (min-width: 480px) {
-  .resume-container .education > ul li {
+  #resume-wrapper .education > ul li {
     display: grid;
     grid-template-areas: "details date";
-    grid-template-columns: 1fr 200px;
+    grid-template-columns: 1fr 175px;
     align-items: flex-start;
     gap: 25px;
   }
 }
 
-.resume-container .education .date {
+#resume-wrapper .education .date {
   text-align: right;
   font-weight: 500;
   grid-area: date;
 }
 
-.resume-container .education .details {
+#resume-wrapper .education .details {
   grid-area: details;
 }
 
-.resume-container .education .formation:after {
+#resume-wrapper .education .formation:after {
   content: ", ";
 }
 
-.resume-container .education .formation {
+#resume-wrapper .education .formation {
   font-weight: 500;
   display: inline;
 }
 
-.resume-container .education .school, .resume-container .education .formation, .resume-container .education .description {
+#resume-wrapper .education .school, #resume-wrapper .education .formation, #resume-wrapper .education .description {
   margin: 0;
   padding: 0;
   font-size: 1em;
 }
 
-.resume-container .education .school {
+#resume-wrapper .education .school {
   font-weight: 400;
   display: inline;
   color: rgba(0, 0, 0, 0.6);
   font-style: italic;
 }
 
-.resume-container .education .description {
+#resume-wrapper .education .description {
   margin-top: 7px;
   font-size: 0.9em;
   color: rgba(0, 0, 0, 0.6);
   display: none;
 }
 
-.resume-container .skills > ul {
+#resume-wrapper .skills > ul {
   padding: 0;
   margin: 0;
   list-style-type: none;
 }
 
-.resume-container .skills > ul li {
+#resume-wrapper .skills > ul li {
   margin-bottom: 15px;
 }
 
 @media (min-width: 480px) {
-  .resume-container .skills > ul li {
+  #resume-wrapper .skills > ul li {
     display: grid;
     grid-template-areas: "category skills";
     grid-template-columns: 200px auto;
@@ -325,66 +325,72 @@ button span, .button span {
   }
 }
 
-.resume-container .skills > ul .title, .resume-container .skills > ul .details {
+#resume-wrapper .skills > ul .title, #resume-wrapper .skills > ul .details {
   margin: 0;
   padding: 0;
   font-size: 1em;
 }
 
-.resume-container .skills > ul .title {
+#resume-wrapper .skills > ul .title {
   grid-area: category;
   font-weight: 500;
 }
 
 @media (min-width: 480px) {
-  .resume-container .skills > ul .title {
+  #resume-wrapper .skills > ul .title {
     text-align: right;
   }
 }
 
-.resume-container .skills > ul .details {
+#resume-wrapper .skills > ul .details {
   grid-area: skills;
 }
 
-.resume-container .projects ul {
+#resume-wrapper .projects ul {
   padding: 0;
   margin: 0;
   list-style-type: none;
 }
 
-.resume-container .projects ul li {
+#resume-wrapper .projects ul li {
   margin-bottom: 15px;
 }
 
-.resume-container .projects .type, .resume-container .projects .title, .resume-container .projects .description, .resume-container .projects .stack {
+#resume-wrapper .projects .type, #resume-wrapper .projects .title, #resume-wrapper .projects .description, #resume-wrapper .projects .stack {
   margin: 0;
   padding: 0;
   font-size: 1em;
 }
 
-.resume-container .projects .type {
+#resume-wrapper .projects .type {
   font-weight: 500;
   color: rgba(0, 0, 0, 0.6);
 }
 
-.resume-container .projects .title {
+#resume-wrapper .projects .title {
   font-weight: 500;
+  display: inline;
 }
 
-.resume-container .projects .stack {
+#resume-wrapper .projects .title::after {
+  content: ", ";
+}
+
+#resume-wrapper .projects .description {
+  display: inline;
   font-style: italic;
 }
 
-.resume-container .projects .description, .resume-container .projects .stack {
+#resume-wrapper .projects .description, #resume-wrapper .projects .stack {
   color: rgba(0, 0, 0, 0.6);
 }
 
-.projects-container ul {
+#projects-wrapper ul {
   list-style-type: none;
   padding: 0;
 }
 
-.projects-container li {
+#projects-wrapper li {
   padding-left: 110px;
   background-repeat: no-repeat;
   background-size: 75px;
@@ -392,32 +398,32 @@ button span, .button span {
   margin: 50px 0;
 }
 
-.projects-container a {
+#projects-wrapper a {
   text-decoration: none;
   color: inherit;
   font-weight: 400;
 }
 
-.projects-container .type, .projects-container .title, .projects-container .description, .projects-container .stack {
+#projects-wrapper .type, #projects-wrapper .title, #projects-wrapper .description, #projects-wrapper .stack {
   margin: 0;
   padding: 0;
   font-size: 1em;
 }
 
-.projects-container .type, .projects-container .title {
+#projects-wrapper .type, #projects-wrapper .title {
   font-size: 1.1em;
 }
 
-.projects-container .type {
+#projects-wrapper .type {
   color: rgba(0, 0, 0, 0.6);
   font-weight: 900;
 }
 
-.projects-container .title {
+#projects-wrapper .title {
   font-weight: 900;
 }
 
-.projects-container .description, .projects-container .stack {
+#projects-wrapper .description, #projects-wrapper .stack {
   margin-top: 7px;
   color: rgba(0, 0, 0, 0.6);
 }
@@ -431,7 +437,7 @@ button span, .button span {
   .no-print {
     display: none;
   }
-  .resume-container .contact-info li {
+  #resume-wrapper .contact-info li {
     display: inline-block;
     margin-right: 30px;
   }
