@@ -1,10 +1,13 @@
-body {
-  font-family: "Ubuntu", arial, sans-serif;
+html {
   color: black;
   background-color: white;
+  font-family: "Ubuntu", arial, sans-serif;
+  font-weight: 400;
+}
+
+body {
   margin: 15px;
   padding: 0;
-  font-weight: 400;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -15,7 +18,7 @@ body {
 }
 
 a {
-  color: black;
+  color: inherit;
   text-decoration: underline;
   font-weight: 500;
 }
@@ -97,7 +100,7 @@ button span, .button span {
   padding: 5px;
   margin: 0 10px;
   text-decoration: none;
-  color: black;
+  color: inherit;
   font-weight: 500;
 }
 
@@ -226,7 +229,7 @@ button span, .button span {
 
 .resume-container .contact-info .country, .resume-container .contact-info .email, .resume-container .contact-info .github {
   display: inline-block;
-  color: black;
+  color: inherit;
   font-weight: 500;
   padding: 6px 0 6px 30px;
   text-decoration: none;

@@ -7,10 +7,10 @@ import subprocess
 import logging
 
 
-OUTPUT_DIR = "output"
+OUTPUT_DIR = "build"
 TEMPLATE_DIR = "templates"
 PARTIALS_DIR = os.path.join(TEMPLATE_DIR, "partials")
-ASSETS_DIR = "assets"
+ASSETS_DIR = "static"
 
 
 def loadData() :
@@ -42,6 +42,7 @@ def buildPage(page, name, data) :
             'page': name,
             'is-'+page: True,
             'body': chevron.render(**args),
+            'description-page': data["meta"]["description-" + page],
             **data,
         }
         page = renderPage(config)
@@ -56,14 +57,14 @@ def buildPDF():
 def buildStyle() :
     with open(os.path.join(ASSETS_DIR, 'style.scss'), 'r') as style_file, \
          open(os.path.join(OUTPUT_DIR, 'style.css'), 'w') as style_output_file :
-        style = sass.compile(string=style_file.read(), include_paths=["assets"], output_style="expanded")
+        style = sass.compile(string=style_file.read(), include_paths=[ASSETS_DIR], output_style="expanded")
         style_output_file.write(style)
         return style
 
 def prepareOutputDir() :
     if not os.path.exists(OUTPUT_DIR):
         os.makedirs(OUTPUT_DIR)
-    copy_tree("assets/", "output/assets/")
+    copy_tree(ASSETS_DIR, os.path.join(OUTPUT_DIR, ASSETS_DIR))
 
 
 with open(os.path.join(TEMPLATE_DIR, 'body.mustache'), 'r') as body_file  :
@@ -76,20 +77,3 @@ with open(os.path.join(TEMPLATE_DIR, 'body.mustache'), 'r') as body_file  :
     syle_css = buildStyle()
     logging.info("Protfolio created. See the " + OUTPUT_DIR + " directory.")
     # TODO: makePDF()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# eof

@@ -7,6 +7,13 @@
         "email": "romain.guillot.contact@gmail.com",
         "github": "github.com/Romain-Guillot"
     },
+    "meta": {
+        "language": "en",
+        "site-url": "www.example.com",
+        "description-index": "Index",
+        "description-resume": "Resume",
+        "description-projects": "Projects"
+    },
     "education" : [
         {
             "date": "2019 - Present",

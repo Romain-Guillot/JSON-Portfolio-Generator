@@ -2,13 +2,15 @@
 // Customize basic html tag and basic classes that can be reused accross the app
 // Ex: link, button class, ...
 
-body {
-    font-family: $font-family;
+html {
     color: $text;
     background-color: $foreground;
+    font-family: $font-family;
+    font-weight: $weight-regular;
+}
+body {
     margin: 15px;
     padding: 0;
-    font-weight: $weight-regular;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -19,7 +21,7 @@ body {
 }
 
 a {
-    color: $text;
+    color: inherit;
     text-decoration: underline;
     font-weight: $weight-bold;
 }
