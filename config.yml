@@ -9,4 +9,4 @@ src:
 mustache_ext: "mustache"
 partial_ext: "mustache"
 resume_projects_limit: 4
-git-publish: false
+git_publish: true

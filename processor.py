@@ -48,6 +48,7 @@ def publishOnGithub(config) :
     """
     Publish the output directory in the default git remote
     """
+    OUTPUT_DIR = config['output']
     publicationRequired = config['git_publish']
     if publicationRequired :
         GithubService(OUTPUT_DIR).publish()
@@ -85,6 +86,7 @@ if __name__ == '__main__' :
     data = loadData(config)
     renderPages(config, data)
     buildStyle(config)
+    publishOnGithub(config)
     
     # PDFService("/usr/bin/google-chrome", "file:///home/ob/Documents/projects/Active/Portfolio/build/resume.html").build()
     
