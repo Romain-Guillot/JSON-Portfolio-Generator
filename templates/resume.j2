@@ -1,0 +1,58 @@
+{% extends "base.j2" %}
+
+{% block content %}
+    <div id="resume-wrapper">
+        <div class="no-print">
+            {% include 'partials/download_resume.j2' %}
+        </div>
+        
+        <p class="main-description">{{description}}</p>
+
+        <ul class="contact-info">
+            <li><span class="country">{{country}}</span></li>
+            <li><a class="email">{{contact.email}}</a></li>
+            <li><a  class="github">{{contact.github}}</a></li>
+        </ul>
+
+        <h2>Education</h2>
+        <div class="education">
+            <ul>
+                {% for formation in eduction %}
+                <li>
+                    <div class="date">{{formation.date}}</div>
+                    <div class="details">
+                        <h3 class="formation">{{formation.formation}}</h3>
+                        <p class="school">{{formation.school}}</p>
+                        <p class="description">{{formation.description}}</p>
+                    </div>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+
+        <h2>Skills</h2>
+        <div class="skills">
+            <ul>
+                {% for skill in skills %}
+                <li>
+                    <h3 class="title">{{skill.category}}</h3><p class="details">{{skill.details}}</p>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+
+        <h2>Experience and projects</h2>
+        <div class="projects">
+            <ul>
+                {% for project in projects[:config.resume_projects_limit] %}
+                <li>
+                    <p class="type">{{project.type}}</p>
+                    <h3 class="title">{{project.title}}</h3>
+                    <p class="description">{{project.description}}</p>
+                    <p class="stack">{{project.stack}}</p>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+{% endblock %}

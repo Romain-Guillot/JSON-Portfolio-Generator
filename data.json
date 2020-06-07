@@ -87,6 +87,16 @@
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque mollis nulla a euismod faucibus. Pellentesque tincidunt, arcu ut efficitur eleifend, risus sapien sagittis sem, id porttitor nulla felis ac metus.",
             "stack": "Android SDK, Kotlin, Firebase (Authentication, Cloud Firestore)",
             "url": "http://www.example.com"
+        },
+        {
+            "title": "Portfolio Generator"
+        },
+        {
+            "title": "StableManager"
+
+        },
+        {
+            "title": "SmartRecruiting"
         }
     ]
 }

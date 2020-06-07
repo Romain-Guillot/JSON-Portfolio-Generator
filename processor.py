@@ -1,5 +1,4 @@
 import os
-import chevron
 
 import json
 from distutils.dir_util import copy_tree
@@ -9,70 +8,58 @@ import logging
 from lib.github_service import GithubService
 from lib.sass_service import SassService
 from lib.pdf_service import PDFService
-
-OUTPUT_DIR = "build"
-TEMPLATE_DIR = "templates"
-PARTIALS_DIR = os.path.join(TEMPLATE_DIR, "partials")
-ASSETS_DIR = "static"
+from lib.jinja_service import JinjaService
+from lib.config import Config
 
 
-def loadData() :
-    with open('data.json', 'r') as data_file :
+def loadData(config) :
+    dataFilename = config['data']
+    logging.info("Data file : " + dataFilename)
+    with open(dataFilename, 'r') as data_file :
         data = json.loads(data_file.read())
-        return data
+        return {'config': config.config, **data}
 
 
-def renderPage(config) :
-    with open(os.path.join(TEMPLATE_DIR, 'body.mustache'), 'r') as body_file, \
-         open(os.path.join(PARTIALS_DIR, 'header.mustache'), 'r') as header_file :
-        header_html = chevron.render(header_file, {config['page']: True, **config})
-        args = {
-            'template': body_file.read(), 
-            'partials_path': "templates/partials/",
-            'data': {
-                'header': header_html,
-                **config
-            },
-        }
-        return chevron.render(**args)
-
-
-def buildPage(page, name, data) :
-    with open(os.path.join(TEMPLATE_DIR, page + ".mustache"), 'r') as template_file, \
-         open(os.path.join(OUTPUT_DIR, page + ".html"), 'w') as output_file :
-        args = {'template': template_file.read(), 'partials_path': "templates/partials/", 'data': data}
-        config = {
-            'page': name,
-            'is-'+page: True,
-            'body': chevron.render(**args),
-            'description-page': data["meta"]["description-" + page],
-            **data,
-        }
-        page = renderPage(config)
-        output_file.write(page)
-
-
-# WIP: not yet stable
-
-
-
-def prepareOutputDir() :
+def prepareOutputDir(config) :
+    OUTPUT_DIR = config['output']
+    ASSETS_DIR = config['src']['static']['dir']
     if not os.path.exists(OUTPUT_DIR):
         os.makedirs(OUTPUT_DIR)
     copy_tree(ASSETS_DIR, os.path.join(OUTPUT_DIR, ASSETS_DIR))
 
 
+def publishOnGithub(config) :
+    publicationRequired = config['git_publish']
+    if publicationRequired :
+        logging.info("Github publication enable")
+        GithubService(OUTPUT_DIR).publish()
+    else :
+        logging.info("Github publication disable")
 
 
-with open(os.path.join(TEMPLATE_DIR, 'body.mustache'), 'r') as body_file  :
-    logging.getLogger().setLevel(logging.INFO)
-    prepareOutputDir()
-    data = loadData()
-    homepage_html = buildPage("index", None, data)
-    resume_html = buildPage("resume", "Résumé", data)
-    projects_html = buildPage("projects", "Projects", data)
+def renderPages(config, data) :
+    OUTPUT_DIR = config['output']
+    jinjaService = JinjaService("templates", OUTPUT_DIR)
+    jinjaService.renderPage("index", None, data)
+    jinjaService.renderPage("resume", "Résumé", data)
+    jinjaService.renderPage("projects", "Projects", data)
+
+
+def buildStyle(config) :
+    ASSETS_DIR = config['src']['static']['dir']
+    OUTPUT_DIR = config['output']
     SassService(ASSETS_DIR, OUTPUT_DIR).compile()
-    GithubService(OUTPUT_DIR).publish()
-    PDFService("/usr/bin/google-chrome", "file:///home/ob/Documents/projects/Active/Portfolio/build/resume.html").build()
+
+
+if __name__ == '__main__' :
+    logging.getLogger().setLevel(logging.INFO)
+
+    config = Config("config.yml")
+    prepareOutputDir(config)
+    data = loadData(config)
+    renderPages(config, data)
+    buildStyle(config)
     
-    logging.info("Protfolio created. See the " + OUTPUT_DIR + " directory.")
+    # PDFService("/usr/bin/google-chrome", "file:///home/ob/Documents/projects/Active/Portfolio/build/resume.html").build()
+    
+    # logging.info("Protfolio created. See the " + OUTPUT_DIR + " directory.")

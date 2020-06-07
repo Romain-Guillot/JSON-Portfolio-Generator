@@ -10,7 +10,7 @@
 
         <meta property="og:site_name" content="Romain Guillotr">
         <meta property="og:title" content="Romain Guillot">
-        <meta property="og:url" content="www.example.com">
+        <meta property="og:url" content="">
         <meta property="og:language" content="en">
         <meta property="og:image:url" content="">
         <meta property="og:type" content="website">
@@ -18,51 +18,54 @@
         <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
         <link href="style.css" rel="stylesheet">
 
+
         <title>Romain Guillot</title>
     </head>
     <body>
+
+    
     
         <header id="header">
-            <div class="title"><a href="index.html">Romain Guillot</a></div>
-<nav>
-    <ul class="menu no-print">
-        <li class="about selected"><a href="index.html">About me</a></li>
-        <li class="resume "><a href="resume.html">Resume</a></li>
-        <li class="projects "><a href="projects.html">Projects</a></li>
-    </ul>
-</nav>
-
-
-
-        </header>
-        <main>
-            <div id="homepage-wrapper">
-    <div class="presentation">
-        <h1>Software engineering student</h1>
-
-        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque mollis nulla a euismod faucibus. Pellentesque tincidunt, arcu ut efficitur eleifend, risus sapien sagittis sem, id porttitor nulla felis ac metus. Aliquam ut ultrices leo.</p>
-
-        <ul class="contact">
-            <li><a href="mailto:romain.guillot.contact@gmail.com" class="email"><span>romain.guillot.contact@gmail.com</span></a></li>
-            <li><a href="https://github.com/Romain-Guillot" class="github" target="_blank"><span>github.com/Romain-Guillot</span></a></li>
+    <div class="title"><a href="index.html">Romain Guillot</a></div>
+    <nav>
+        <ul class="menu no-print">
+            <li class="about selected"><a href="index.html">About me</a></li>
+            <li class="resume "><a href="resume.html">Resume</a></li>
+            <li class="projects "><a href="projects.html">Projects</a></li>
         </ul>
+    </nav>
+</header>
+        <main>
+            
+    <div id="homepage-wrapper">
+        <div class="presentation">
+            <h1>Software engineering student</h1>
+
+            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque mollis nulla a euismod faucibus. Pellentesque tincidunt, arcu ut efficitur eleifend, risus sapien sagittis sem, id porttitor nulla felis ac metus. Aliquam ut ultrices leo.</p>
+
+            <ul class="contact">
+                <li><a href="mailto:romain.guillot.contact@gmail.com" class="email"><span>romain.guillot.contact@gmail.com</span></a></li>
+                <li><a href="https://github.com/Romain-Guillot" class="github" target="_blank"><span>github.com/Romain-Guillot</span></a></li>
+            </ul>
 
         <!-- A form with a button is used for accessibility and to make a valid HTML https://validator.w3.org/ -->
-        <form method="get" action="resume.pdf" target="_blank">
-            <button type="submit" class="download">
-                <svg enable-background="new 0 0 451.111 451.111" height="512" viewBox="0 0 451.111 451.111" width="512" xmlns="http://www.w3.org/2000/svg"><path d="m225.556 354.445 145-145-48.333-48.333-64.444 64.444v-225.556h-64.444v225.556l-64.444-64.444-48.333 48.333z"/><path d="m0 386.667h451.111v64.444h-451.111z"/></svg>
-                <span>Download my resumé (PDF)</span>
-            </button>
-        </form>    </div>
+<form method="get" action="resume.pdf" target="_blank">
+    <button type="submit" class="download">
+        <svg enable-background="new 0 0 451.111 451.111" height="512" viewBox="0 0 451.111 451.111" width="512" xmlns="http://www.w3.org/2000/svg"><path d="m225.556 354.445 145-145-48.333-48.333-64.444 64.444v-225.556h-64.444v225.556l-64.444-64.444-48.333 48.333z"/><path d="m0 386.667h451.111v64.444h-451.111z"/></svg>
+        <span>Download my resumé (PDF)</span>
+    </button>
+</form>
+        </div>
 
-    <div class="profile-picture">
-        <img src="assets/photo.jpeg" alt="Photo of myself">
+        <div class="profile-picture">
+            <img src="assets/photo.jpeg" alt="Photo of myself">
+        </div>
     </div>
-</div>
 
         </main>
+        <footer id="footer" class="no-print">
+    Built and published with my <a href="">portfolio generator</a> built with Python, Jinja2 and Sass
+</footer>
+
     </body>
-    <footer id="footer" class="no-print">
-        Built and published with my <a href="">portfolio generator</a> built with Python, Mustache and Sass
-    </footer>
 </html>

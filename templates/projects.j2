@@ -1,0 +1,18 @@
+{% extends "base.j2" %}
+
+{% block content %}
+    <div id="projects-wrapper">
+        <ul>
+            {% for project in projects %}
+            <li style="background-image: url({{image}})">
+                <a href={{url}}>
+                    <p class="type">{{project.type}}</p>
+                    <h2 class="title">{{project.title}}</h2>
+                    <p class="description">{{project.description}}</p>
+                    <p class="stack">{{project.stack}}<p>
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+{% endblock %}
