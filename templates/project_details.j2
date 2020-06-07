@@ -1,25 +1,36 @@
 {% extends "base.j2" %}
 
+
+{% block head %}
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+{% endblock %}
+
+
 {% block content %}
+<div id="project-details-wrapper">
+    <header>
+        <div class="logo">
+            <img src="{{project.image}}">
+        </div>
+        <div class="title">
+            <h1>{{project.title}}</h1>
+            <p class="subtitle">{{project.subtitle}}</p>
+        </div>
+    </header>
 
-    <h1>{{project.title}}</h1>
-    <p>{{project.subtitle}}</p>
 
-    <p>{{project.description}}</p>
+    <p class="description">{{project.description}}</p>
 
-
-
-    <ul>
+    <ul class="links">
         {% for url in project.urls %}
         <li>
-            <a href="{{url.url}}" alt="{{url.name}}" class="{{url.type}}"><p>{{url.name}} {{url.url}}</a>
+            <a href="{{url.url}}" alt="{{url.name}}" class="{{url.type}}"><span class="url-name">{{url.name}}<span> <span class="url-link">{{url.url}}<span></a>
         </li>
         {% endfor %}
     </ul>
 
-
     <h2>Technologies</h2>
-    <ul>
+    <ul class="stack">
         {% for s in project.stack %}
         <li>
             <img src="{{s.image}}" alt="{{s.type}}">
@@ -44,13 +55,14 @@
         <div class="swiper-button-prev"></div>
         <div class="swiper-button-next"></div>
     </div>
-
+</div>
 {% endblock %}
+
 
 {% block scripts %}
     <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
 
-      <script>
+    <script>
         var mySwiper = new Swiper ('.swiper-container', {
             // Optional parameters
             direction: 'horizontal',
@@ -66,7 +78,6 @@
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
             },
-
         })
     </script>
 {% endblock %}

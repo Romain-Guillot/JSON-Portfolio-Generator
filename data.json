@@ -59,11 +59,9 @@
             "image": "https://raw.githubusercontent.com/Romain-Guillot/Trare/master/res/img/logo.png",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque mollis nulla a euismod faucibus. Pellentesque tincidunt, arcu ut efficitur eleifend, risus sapien sagittis sem, id porttitor nulla felis ac metus.",
             "stack": [
-                {"name": "Flutter/Dart", "description": "", "image": "flutter.png"},
-                {"name": "Firebase (Crashlytics, Cloud Firestore, Storage)", "description": "", "image": "flutter.png"},
-                {"name": "SQL", "description": "", "image": "flutter.png"},
-                {"name": "Travis CI", "description": "sddsfs", "image": "flutter.png"},
-                {"name": "SonarQube", "description": "", "image": "flutter.png"}
+                {"name": "Flutter/Dart", "description": "Lorem ipsum", "image": "static/projects/stack/flutter.png"},
+                {"name": "Firebase (Crashlytics, Cloud Firestore, Storage)", "description": "Lorem Ipsum", "image": "static/projects/stack/firebase.png"},
+                {"name": "Latex", "description": "Lorem Ipsum", "image": "static/projects/stack/latex.png"}
             ],
             "urls": [
                 {"type": "github", "name": "Application mobile", "url": "https://github.com/Romain-Guillot/GeoQuiz-ClientApp"},
@@ -80,7 +78,7 @@
             "type": "Personnal project",
             "id": "geoquiz",
             "title": "GeoQuiz - Mobile application and administration web interface for geographical quizzes",
-            "image": "https://github.com/Romain-Guillot/GeoQuiz-Documents/raw/master/client_app_logo/logo_128.png?raw=true",
+            "image": "https://github.com/Romain-Guillot/GeoQuiz-Documents/raw/master/client_app_logo/logo_128.png",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque mollis nulla a euismod faucibus. Pellentesque tincidunt, arcu ut efficitur eleifend, risus sapien sagittis sem, id porttitor nulla felis ac metus.",
             "stack": [
                 {"name": "Flutter/Dart", "description": "", "image": "flutter.png"},

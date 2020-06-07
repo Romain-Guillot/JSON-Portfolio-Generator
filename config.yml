@@ -3,15 +3,8 @@ data: "data.json"
 output: "build/"
 
 src:
-  templates: 
-    dir: "templates/"
-    partials: "templates/partials/"
-
-  static:
-    dir: "static/"
-    fonts: "static/fonts/"
-    styles: "styles/"
-    images: "."
+  templates: "templates/"
+  static: "static/"
 
 mustache_ext: "mustache"
 partial_ext: "mustache"

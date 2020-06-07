@@ -47,10 +47,10 @@ $spacing: 30px;
             background-repeat: no-repeat;
         }
         .email {
-            background-image: url("assets/email.svg") ;
+            background-image: $email-asset ;
         }
         .github {
-            background-image: url("assets/github.svg");
+            background-image: $github-asset;
         }
     }
 }

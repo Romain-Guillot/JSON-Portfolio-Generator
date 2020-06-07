@@ -32,13 +32,13 @@ $small-spacing: 15px;
             text-decoration: none;
         }
         .country {
-            background: url('assets/location.svg') 0 50%/18px no-repeat;
+            background: $location-asset 0 50%/18px no-repeat;
         }
         .email {
-            background: url('assets/email.svg') 0 50%/18px no-repeat;
+            background: $email-asset 0 50%/18px no-repeat;
         }
         .github {
-            background: url('assets/github.svg') 0 50%/18px no-repeat;
+            background: $github-asset 0 50%/18px no-repeat;
         }
     }
     .education {

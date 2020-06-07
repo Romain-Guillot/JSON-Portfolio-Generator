@@ -49,7 +49,7 @@
                     <p class="type">{{project.type}}</p>
                     <h3 class="title">{{project.title}} - {{project.subtitle}}</h3>
                     <p class="description">{{project.description}}</p>
-                    <p class="stack">{{project.stack}}</p>
+                    <p class="stack">{{ project.stack|join(", ", attribute='name') }}</p>
                 </li>
                 {% endfor %}
             </ul>

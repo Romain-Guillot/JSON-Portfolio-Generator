@@ -5,7 +5,7 @@ class SassService:
     """
     Service to compile .scss files
     """
-    def __init__(self, workingDir, outputDir, filename="style"):
+    def __init__(self, workingDir, outputDir, filename="main"):
         self.workingDir = workingDir
         self.outputDir = outputDir
         self.filename = filename

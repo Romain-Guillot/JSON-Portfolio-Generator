@@ -5,14 +5,12 @@
     <div id="projects-wrapper">
         <ul>
             {% for project in projects %}
-            <li style="background-image: url({{image}})">
+            <li style="background-image: url({{project.image}})">
                 <a href="{{project.id}}.html">
                     <p class="type">{{project.type}}</p>
                     <h2 class="title">{{project.title}}</h2>
                     <p class="description">{{project.description}}</p>
-                    <p class="stack">
-                        {% for stack in project.stack %}{{stack.name}}{% endfor %}
-                    <p>
+                    <p class="stack">{{ project.stack|join(", ", attribute='name') }}<p>
                 </a>
             </li>
             {% endfor %}
