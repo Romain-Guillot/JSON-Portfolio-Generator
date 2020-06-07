@@ -53,50 +53,165 @@
     "projects" : [
         {
             "type": "Internship - UTP Malaysia (Summer 2019)",
-            "title": "Stutherapy - Mobile application for stutterers",
+            "id": "stutherapy",
+            "title": "Stutherapy",
+            "subtitle": "Mobile application for stutterers",
             "image": "https://raw.githubusercontent.com/Romain-Guillot/Trare/master/res/img/logo.png",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque mollis nulla a euismod faucibus. Pellentesque tincidunt, arcu ut efficitur eleifend, risus sapien sagittis sem, id porttitor nulla felis ac metus.",
-            "stack": "Flutter/Dart, Firebase (Authentication, Cloud Firestore, Cloud Functions, Storage)",
-            "url": "http://www.example.com"
+            "stack": [
+                {"name": "Flutter/Dart", "description": "", "image": "flutter.png"},
+                {"name": "Firebase (Crashlytics, Cloud Firestore, Storage)", "description": "", "image": "flutter.png"},
+                {"name": "SQL", "description": "", "image": "flutter.png"},
+                {"name": "Travis CI", "description": "sddsfs", "image": "flutter.png"},
+                {"name": "SonarQube", "description": "", "image": "flutter.png"}
+            ],
+            "urls": [
+                {"type": "github", "name": "Application mobile", "url": "https://github.com/Romain-Guillot/GeoQuiz-ClientApp"},
+                {"type": "github", "name": "Application web d'administration", "url": "https://github.com/Romain-Guillot/GeoQuiz-AdminApp"},
+                {"type": "playstore", "name": "Play Store", "url": "https://play.google.com/store/apps/details?id=com.develob.geoquiz"}
+            ],
+            "screenshots" : [
+                {"image": "https://raw.githubusercontent.com/Romain-Guillot/stuttherapy_report/master/content/imgs/screen15.jpg?token=ACAQYACAKSIMU4CTPOPYP5K64WISM", "description": ""},
+                {"image": "https://raw.githubusercontent.com/Romain-Guillot/stuttherapy_report/master/content/imgs/screen14.jpg?token=ACAQYAEH3CRJ2EZCMBHJFKK64WIUQ", "description": ""},
+                {"image": "https://raw.githubusercontent.com/Romain-Guillot/stuttherapy_report/master/content/imgs/screen11.jpg?token=ACAQYAA7XHZE33W2UMIGFAC64WIUS", "description": ""}
+            ]
         },
         {
             "type": "Personnal project",
+            "id": "geoquiz",
             "title": "GeoQuiz - Mobile application and administration web interface for geographical quizzes",
             "image": "https://github.com/Romain-Guillot/GeoQuiz-Documents/raw/master/client_app_logo/logo_128.png?raw=true",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque mollis nulla a euismod faucibus. Pellentesque tincidunt, arcu ut efficitur eleifend, risus sapien sagittis sem, id porttitor nulla felis ac metus.",
-            "stack": "Flutter/Dart, Firebase (Crashlytics, Cloud Firestore, Storage), SQL, Travis CI and fastlane",
-            "url": "http://www.example.com"
+            "stack": [
+                {"name": "Flutter/Dart", "description": "", "image": "flutter.png"},
+                {"name": "Firebase (Crashlytics, Cloud Firestore, Storage)", "description": "", "image": "flutter.png"},
+                {"name": "SQL", "description": "", "image": "flutter.png"},
+                {"name": "Travis CI", "description": "", "image": "flutter.png"},
+                {"name": "SonarQube", "description": "", "image": "flutter.png"}
+            ],
+            "urls": [
+                {"type": "github", "name": "Application mobile", "url": "https://github.com/Romain-Guillot/GeoQuiz-ClientApp"},
+                {"type": "github", "name": "Application web d'administration", "url": "https://github.com/Romain-Guillot/GeoQuiz-AdminApp"},
+                {"type": "playstore", "name": "Play Store", "url": "https://play.google.com/store/apps/details?id=com.develob.geoquiz"}
+            ],
+            "screenshots" : [
+                {"image": "", "description": ""},
+                {"image": "", "description": ""},
+                {"image": "", "description": ""}
+            ]
         },
         {
             "type": "Academic project",
+            "id": "trare",
             "title": "Trare - Mobile application for connecting travellers",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque mollis nulla a euismod faucibus. Pellentesque tincidunt, arcu ut efficitur eleifend, risus sapien sagittis sem, id porttitor nulla felis ac metus.",
-            "stack": "Flutter/Dart, Firebase (Auhtentication, Cloud Firestore), SonarQube",
-            "url": "http://www.example.com"
+            "stack": [
+                {"name": "Flutter/Dart", "description": "", "image": "flutter.png"},
+                {"name": "Firebase (Crashlytics, Cloud Firestore, Storage)", "description": "", "image": "flutter.png"},
+                {"name": "SQL", "description": "", "image": "flutter.png"},
+                {"name": "Travis CI", "description": "", "image": "flutter.png"},
+                {"name": "SonarQube", "description": "", "image": "flutter.png"}
+            ],
+            "urls": [
+                {"type": "github", "name": "Application mobile", "url": "https://github.com/Romain-Guillot/GeoQuiz-ClientApp"},
+                {"type": "github", "name": "Application web d'administration", "url": "https://github.com/Romain-Guillot/GeoQuiz-AdminApp"},
+                {"type": "playstore", "name": "Play Store", "url": "https://play.google.com/store/apps/details?id=com.develob.geoquiz"}
+            ],
+            "screenshots" : [
+                {"image": "", "description": ""},
+                {"image": "", "description": ""},
+                {"image": "", "description": ""}
+            ]
         },
         {
             "type": "Personnal project",
+            "id": "kahibalo",
             "title": "Kahibalo - REST API and web application to manage his bookmarks",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque mollis nulla a euismod faucibus. Pellentesque tincidunt, arcu ut efficitur eleifend, risus sapien sagittis sem, id porttitor nulla felis ac metus.",
-            "stack": "Node.js/Express, Docker, NGINX (load balancing), MongoDB, Vuejs, HTML/CSS",
-            "url": "http://www.example.com"
+            "stack": [
+                {"name": "Flutter/Dart", "description": "", "image": "flutter.png"},
+                {"name": "Firebase (Crashlytics, Cloud Firestore, Storage)", "description": "", "image": "flutter.png"},
+                {"name": "SQL", "description": "", "image": "flutter.png"},
+                {"name": "Travis CI", "description": "", "image": "flutter.png"},
+                {"name": "SonarQube", "description": "", "image": "flutter.png"}
+            ],
+            "urls": [
+                {"type": "github", "name": "Application mobile", "url": "https://github.com/Romain-Guillot/GeoQuiz-ClientApp"},
+                {"type": "github", "name": "Application web d'administration", "url": "https://github.com/Romain-Guillot/GeoQuiz-AdminApp"},
+                {"type": "playstore", "name": "Play Store", "url": "https://play.google.com/store/apps/details?id=com.develob.geoquiz"}
+            ],
+            "screenshots" : [
+                {"image": "", "description": ""},
+                {"image": "", "description": ""},
+                {"image": "", "description": ""}
+            ]
         },
         {
             "type": "Academic project",
+            "id": "meetchup",
             "title": "Meetchup - Mobile application to share photo albums",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque mollis nulla a euismod faucibus. Pellentesque tincidunt, arcu ut efficitur eleifend, risus sapien sagittis sem, id porttitor nulla felis ac metus.",
-            "stack": "Android SDK, Kotlin, Firebase (Authentication, Cloud Firestore)",
-            "url": "http://www.example.com"
+            "stack": [
+                {"name": "Flutter/Dart", "description": "", "image": "flutter.png"},
+                {"name": "Firebase (Crashlytics, Cloud Firestore, Storage)", "description": "", "image": "flutter.png"},
+                {"name": "SQL", "description": "", "image": "flutter.png"},
+                {"name": "Travis CI", "description": "", "image": "flutter.png"},
+                {"name": "SonarQube", "description": "", "image": "flutter.png"}
+            ],
+            "urls": [
+                {"type": "github", "name": "Application mobile", "url": "https://github.com/Romain-Guillot/GeoQuiz-ClientApp"},
+                {"type": "github", "name": "Application web d'administration", "url": "https://github.com/Romain-Guillot/GeoQuiz-AdminApp"},
+                {"type": "playstore", "name": "Play Store", "url": "https://play.google.com/store/apps/details?id=com.develob.geoquiz"}
+            ],
+            "screenshots" : [
+                {"image": "", "description": ""},
+                {"image": "", "description": ""},
+                {"image": "", "description": ""}
+            ]
         },
         {
-            "title": "Portfolio Generator"
+            "title": "JSON Portfolio Generator",
+            "id": "json_portfolio_generator",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque mollis nulla a euismod faucibus. Pellentesque tincidunt, arcu ut efficitur eleifend, risus sapien sagittis sem, id porttitor nulla felis ac metus.",
+            "stack": [
+                {"name": "Flutter/Dart", "description": "", "image": "flutter.png"},
+                {"name": "Firebase (Crashlytics, Cloud Firestore, Storage)", "description": "", "image": "flutter.png"},
+                {"name": "SQL", "description": "", "image": "flutter.png"},
+                {"name": "Travis CI", "description": "", "image": "flutter.png"},
+                {"name": "SonarQube", "description": "", "image": "flutter.png"}
+            ],
+            "urls": [
+                {"type": "github", "name": "Application mobile", "url": "https://github.com/Romain-Guillot/GeoQuiz-ClientApp"},
+                {"type": "github", "name": "Application web d'administration", "url": "https://github.com/Romain-Guillot/GeoQuiz-AdminApp"},
+                {"type": "playstore", "name": "Play Store", "url": "https://play.google.com/store/apps/details?id=com.develob.geoquiz"}
+            ],
+            "screenshots" : [
+                {"image": "", "description": ""},
+                {"image": "", "description": ""},
+                {"image": "", "description": ""}
+            ]
         },
         {
-            "title": "StableManager"
-
-        },
-        {
-            "title": "SmartRecruiting"
+            "title": "SmartRecruiting",
+            "id": "smartrecruiting",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque mollis nulla a euismod faucibus. Pellentesque tincidunt, arcu ut efficitur eleifend, risus sapien sagittis sem, id porttitor nulla felis ac metus.",
+            "stack": [
+                {"name": "Flutter/Dart", "description": "ffdg", "image": "flutter.png"},
+                {"name": "Firebase (Crashlytics, Cloud Firestore, Storage)", "description": "", "image": "flutter.png"},
+                {"name": "SQL", "description": "dfgdf", "image": "flutter.png"},
+                {"name": "Travis CI", "description": "", "image": "flutter.png"},
+                {"name": "SonarQube", "description": "", "image": "flutter.png"}
+            ],
+            "urls": [
+                {"type": "github", "name": "Application mobile", "url": "https://github.com/Romain-Guillot/GeoQuiz-ClientApp"},
+                {"type": "github", "name": "Application web d'administration", "url": "https://github.com/Romain-Guillot/GeoQuiz-AdminApp"},
+                {"type": "playstore", "name": "Play Store", "url": "https://play.google.com/store/apps/details?id=com.develob.geoquiz"}
+            ],
+            "screenshots" : [
+                {"image": "", "description": ""},
+                {"image": "", "description": ""},
+                {"image": "", "description": ""}
+            ]
         }
     ]
 }

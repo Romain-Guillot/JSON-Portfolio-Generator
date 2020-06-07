@@ -1,12 +1,72 @@
-<div id="projects-wrapper">
-    <ul>{{# projects}}
-        <li style="background-image: url({{image}})">
-            <a href={{url}}>
-                <p class="type">{{type}}</p>
-                <h2 class="title">{{title}}</h2>
-                <p class="description">{{description}}</p>
-                <p class="stack">{{stack}}<p>
-            </a>
+{% extends "base.j2" %}
+
+{% block content %}
+
+    <h1>{{project.title}}</h1>
+    <p>{{project.subtitle}}</p>
+
+    <p>{{project.description}}</p>
+
+
+
+    <ul>
+        {% for url in project.urls %}
+        <li>
+            <a href="{{url.url}}" alt="{{url.name}}" class="{{url.type}}"><p>{{url.name}} {{url.url}}</a>
         </li>
-    {{/ projects}}</ul>
-</div>
+        {% endfor %}
+    </ul>
+
+
+    <h2>Technologies</h2>
+    <ul>
+        {% for s in project.stack %}
+        <li>
+            <img src="{{s.image}}" alt="{{s.type}}">
+            <p>{{s.description}}</p>
+        </li>
+        {% endfor %}
+    </ul>
+
+    <h2>Screenshots</h2>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            {% for screen in project.screenshots %}
+                <div class="swiper-slide">
+                    <img src="{{screen.image}}">
+                </div>
+            {% endfor %}
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+
+{% endblock %}
+
+{% block scripts %}
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+
+      <script>
+        var mySwiper = new Swiper ('.swiper-container', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+        })
+    </script>
+{% endblock %}

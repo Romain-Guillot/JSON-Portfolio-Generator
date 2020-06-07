@@ -125,6 +125,11 @@ button span, .button span {
   margin: 30px auto 10px auto;
 }
 
+#footer p {
+  margin: 0;
+  padding: 0;
+}
+
 #homepage-wrapper {
   margin-top: 70px;
   display: grid;
@@ -395,7 +400,7 @@ button span, .button span {
   background-repeat: no-repeat;
   background-size: 75px;
   background-position: 0 0;
-  margin: 50px 0;
+  margin: 30px 0;
 }
 
 #projects-wrapper a {
@@ -426,6 +431,14 @@ button span, .button span {
 #projects-wrapper .description, #projects-wrapper .stack {
   margin-top: 7px;
   color: rgba(0, 0, 0, 0.6);
+}
+
+.swiper-container {
+  height: 600px;
+}
+
+.swiper-container img {
+  height: 100%;
 }
 
 @media print {

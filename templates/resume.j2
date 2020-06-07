@@ -17,7 +17,7 @@
         <h2>Education</h2>
         <div class="education">
             <ul>
-                {% for formation in eduction %}
+                {% for formation in education %}
                 <li>
                     <div class="date">{{formation.date}}</div>
                     <div class="details">
@@ -47,7 +47,7 @@
                 {% for project in projects[:config.resume_projects_limit] %}
                 <li>
                     <p class="type">{{project.type}}</p>
-                    <h3 class="title">{{project.title}}</h3>
+                    <h3 class="title">{{project.title}} - {{project.subtitle}}</h3>
                     <p class="description">{{project.description}}</p>
                     <p class="stack">{{project.stack}}</p>
                 </li>

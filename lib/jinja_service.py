@@ -8,13 +8,15 @@ class JinjaService :
         self.OUTPUT_DIR = outputDir;
 
     
-    def renderPage(self, filename, pageTitle, data) :
+    def renderPage(self, filename, page_title, data, description, output_file=None) :
+        if output_file is None :
+            output_file = filename
         template = self.env.get_template(filename + ".j2")
-        with open(os.path.join(self.OUTPUT_DIR, filename + ".html"), 'w') as output_file :
+        with open(os.path.join(self.OUTPUT_DIR, output_file + ".html"), 'w') as output_file :
             config = {
-                'page': pageTitle,
+                'page': page_title,
                 'is_'+filename: True,
-                'description_page': data["meta"]["description-" + filename],
+                'description_page': description,
                 **data,
             }
             page = template.render(config)

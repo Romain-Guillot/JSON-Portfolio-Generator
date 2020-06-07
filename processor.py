@@ -25,6 +25,8 @@ def prepareOutputDir(config) :
     ASSETS_DIR = config['src']['static']['dir']
     if not os.path.exists(OUTPUT_DIR):
         os.makedirs(OUTPUT_DIR)
+    if not os.path.exists(os.path.join(OUTPUT_DIR, "projects")):
+        os.makedirs(os.path.join(OUTPUT_DIR, "projects"))
     copy_tree(ASSETS_DIR, os.path.join(OUTPUT_DIR, ASSETS_DIR))
 
 
@@ -40,9 +42,14 @@ def publishOnGithub(config) :
 def renderPages(config, data) :
     OUTPUT_DIR = config['output']
     jinjaService = JinjaService("templates", OUTPUT_DIR)
-    jinjaService.renderPage("index", None, data)
-    jinjaService.renderPage("resume", "Résumé", data)
-    jinjaService.renderPage("projects", "Projects", data)
+    jinjaService.renderPage("index", None, data, data["meta"]["description-index"])
+    jinjaService.renderPage("resume", "Résumé", data, data["meta"]["description-index"])
+    jinjaService.renderPage("projects", "Projects", data, data["meta"]["description-index"])
+
+    for project in data['projects'] :
+        data = {'project': project, **data}
+        jinjaService.renderPage('project_details', project['title'], data, project['description'], project['id'])
+
 
 
 def buildStyle(config) :
