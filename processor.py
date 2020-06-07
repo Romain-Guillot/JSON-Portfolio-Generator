@@ -35,13 +35,7 @@ def prepareOutputDir(config) :
     
     if not os.path.exists(OUTPUT_DIR):
         os.makedirs(OUTPUT_DIR)
-
-    OUTPUT_ASSET_DIR = os.path.join(OUTPUT_DIR, ASSETS_DIR)
-    if not os.path.exists(OUTPUT_ASSET_DIR):
-        os.makedirs(OUTPUT_ASSET_DIR)
-    copy_tree(ASSETS_DIR, OUTPUT_ASSET_DIR)
-
-
+        
     for filename in os.listdir(OUTPUT_DIR):
         file_path = os.path.join(OUTPUT_DIR, filename)
         try:
@@ -51,6 +45,14 @@ def prepareOutputDir(config) :
                 shutil.rmtree(file_path)
         except Exception as e:
             print('Failed to delete %s. Reason: %s' % (file_path, e))
+
+    OUTPUT_ASSET_DIR = os.path.join(OUTPUT_DIR, ASSETS_DIR)
+    if not os.path.exists(OUTPUT_ASSET_DIR):
+        os.makedirs(OUTPUT_ASSET_DIR)
+    copy_tree(ASSETS_DIR, OUTPUT_ASSET_DIR)
+
+
+
 
 
 def publishOnGithub(config) :
