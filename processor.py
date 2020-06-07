@@ -33,14 +33,12 @@ def prepareOutputDir(config) :
     OUTPUT_DIR = config['output']
     ASSETS_DIR = config['src']['static']
     
-    if os.path.exists(OUTPUT_DIR):
-        shutil.rmtree(OUTPUT_DIR)
-    os.makedirs(OUTPUT_DIR)
+    if not os.path.exists(OUTPUT_DIR):
+        os.makedirs(OUTPUT_DIR)
 
     OUTPUT_ASSET_DIR = os.path.join(OUTPUT_DIR, ASSETS_DIR)
-    if os.path.exists(OUTPUT_ASSET_DIR):
-        shutil.rmtree(OUTPUT_ASSET_DIR)
-    os.makedirs(OUTPUT_ASSET_DIR)
+    if not os.path.exists(OUTPUT_ASSET_DIR):
+        os.makedirs(OUTPUT_ASSET_DIR)
     copy_tree(ASSETS_DIR, OUTPUT_ASSET_DIR)
 
 
@@ -48,11 +46,9 @@ def prepareOutputDir(config) :
         file_path = os.path.join(OUTPUT_DIR, filename)
         try:
             if os.path.isfile(file_path) or os.path.islink(file_path):
-                # os.unlink(file_path)
-                print(file_path)
-            elif os.path.isdir(file_path):
-                print(file_path)
-                # shutil.rmtree(file_path)
+                os.unlink(file_path)
+            elif os.path.isdir(file_path) and filename != ".git":
+                shutil.rmtree(file_path)
         except Exception as e:
             print('Failed to delete %s. Reason: %s' % (file_path, e))
 

@@ -13,5 +13,5 @@ class GithubService:
             raise Exception("Repo doesn't exist")
         subprocess.run(["git", "add", "--all"], cwd=self.dirPath)
         subprocess.run(["git", "commit", "-m", "Automatically add generated file"], cwd=self.dirPath)
-        subprocess.run(["git", "push", "origin", "master"], cwd=self.dirPath)
+        subprocess.run(["git", "push", "-f", "origin", "master"], cwd=self.dirPath)
         
