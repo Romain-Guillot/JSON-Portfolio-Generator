@@ -50,10 +50,13 @@
             text-decoration: none;
             min-height: 1em;
         }
+        .url-name {
+            display: inline-block;
+            margin-right: 10px;
+        }
         .url-link {
             font-weight: $weight-light;
             display: inline-block;
-            margin-left: 10px;
         }
         .github {
             background: $github-asset 0 50%/18px no-repeat;
@@ -84,7 +87,7 @@
         }
         .stack-image {
             grid-area: image;
-            height: 28px;
+            max-height: 28px;
             max-width: 150px;
         }
         .stack-description {

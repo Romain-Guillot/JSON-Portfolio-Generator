@@ -2,7 +2,7 @@
     "name": "Romain Guillot",
     "subtitle": "Recherche un stage de fin d'étude pour compléter ma formation d'ingénieur en informatique.",
     "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque mollis nulla a euismod faucibus. Pellentesque tincidunt, arcu ut efficitur eleifend, risus sapien sagittis sem, id porttitor nulla felis ac metus. Aliquam ut ultrices leo.",
-    "country": "France",
+    "country": "(+33) 6 50 67 62 89",
     "contact": {
         "email": "romain.guillot.contact@gmail.com",
         "github": "github.com/Romain-Guillot"
@@ -31,19 +31,19 @@
     "skills": [
         {
             "category": "Langages de programmation",
-            "details": "Java, Dart, Python, Javascript, HTML/(S)CSS (and proficient with C and C#)"
+            "details": "Java, Dart, Python, TypeScript, Javascript, HTML/CSS/SASS (and proficient with C and C#)"
         },
         {
-            "category": "Frameworks et outils",
-            "details": "Flutter, Android, Node.js, Docker (and proficient with Tensorflow, Django and Vue.js)"
+            "category": "Frameworks",
+            "details": "Flutter, Android, Node.js, Nest.js (and proficient with Django, Tensorflow, Vue.js et Ionic)"
         },
         {
-            "category": "Génie logiciel",
-            "details": "Agile, CI/CD (Travis and fastlane), code quality (SonarQube), Git"
+            "category": "Génie logiciel / outils",
+            "details": "Agile, CI/CD (Travis et Fastlane), Docker, Qualité (SonarQube), GoF (design patterns), UML, Git"
         },
         {
             "category": "Cloud et base de données",
-            "details": "SQL/MySQL, MongoDB, Firebase"
+            "details": "SQL, MongoDB, Firebase"
         },
         {
             "category": "Langues",
@@ -77,8 +77,8 @@
                 }
             ],
             "urls": [
-                {"type": "github", "name": "Application mobile", "url": "https://github.com/Romain-Guillot/Stuttherapy"},
-                {"type": "github", "name": "Modélisation et spécifications (diagrammes, SRS, ...)", "url": "https://github.com/Romain-Guillot/stutthearpy_docs"},
+                {"type": "github", "name": "Github (Application mobile)", "url": "https://github.com/Romain-Guillot/Stuttherapy"},
+                {"type": "github", "name": "Gitgub (Modélisation et spécifications : diagrammes, SRS, ...)", "url": "https://github.com/Romain-Guillot/stutthearpy_docs"},
                 {"type": "pdf", "name": "Rapport de fin de stage (PDF)", "url": "https://github.com/Romain-Guillot/stuttherapy_report/blob/master/rapport.pdf"}
             ],
             "screenshots" : [
@@ -127,8 +127,8 @@
                 }
             ],
             "urls": [
-                {"type": "github", "name": "Application mobile", "url": "https://github.com/Romain-Guillot/GeoQuiz-ClientApp"},
-                {"type": "github", "name": "Application web d'administration", "url": "https://github.com/Romain-Guillot/GeoQuiz-AdminApp"},
+                {"type": "github", "name": "Github (Application mobile)", "url": "https://github.com/Romain-Guillot/GeoQuiz-ClientApp"},
+                {"type": "github", "name": "Githhub (Application web d'administration)", "url": "https://github.com/Romain-Guillot/GeoQuiz-AdminApp"},
                 {"type": "playstore", "name": "Play Store", "url": "https://play.google.com/store/apps/details?id=com.develob.geoquiz"}
             ],
             "screenshots" : [
@@ -141,8 +141,8 @@
             "type": "Projet académique (hiver 2020)",
             "id": "trare",
             "title": "Trare",
+            "subtitle": "Application mobile de mise en relation de voyageurs se trouvant à proximité",
             "image": "static/projects/trare.png",
-            "subtitle": "Mobile application for connecting travellers",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque mollis nulla a euismod faucibus. Pellentesque tincidunt, arcu ut efficitur eleifend, risus sapien sagittis sem, id porttitor nulla felis ac metus.",
             "stack": [
                 {
@@ -167,7 +167,7 @@
                 }
             ],
             "urls": [
-                {"type": "github", "name": "Application mobile", "url": "https://github.com/Romain-Guillot/Trare"},
+                {"type": "github", "name": "Github", "url": "https://github.com/Romain-Guillot/Trare"},
                 {"type": "playstore", "name": "Play Store", "url": "https://play.google.com/store/apps/details?id=com.trare.app"}
             ],
             "screenshots" : [
@@ -180,13 +180,15 @@
             "type": "Projet personnel (en cours de développement)",
             "id": "kahibalo",
             "title": "Kahibalo",
-            "subtitle": "REST API and web application to manage his bookmarks",
+            "subtitle": "Web service permettant de gérer des articles de culture générale accompagné d'une web application",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque mollis nulla a euismod faucibus. Pellentesque tincidunt, arcu ut efficitur eleifend, risus sapien sagittis sem, id porttitor nulla felis ac metus.",
+            "image": "static/projects/kahibalo.png",
             "stack": [
                 {"name": "Node.js", "description": "", "image": "static/projects/stack/nodejs.png"},
                 {"name": "Nest.js", "description": "", "image": "static/projects/stack/nestjs.svg"},
                 {"name": "MongoDB", "description": "", "image": "static/projects/stack/mongodb.png"},
-                {"name": "JWT", "description": "", "image": "static/projects/stack/jwt.png"}
+                {"name": "JWT", "description": "", "image": "static/projects/stack/jwt.png"},
+                {"name": "Docker", "description": "", "image": "static/projects/stack/docker.png"}
             ],
             "urls": [
                 {"type": "github", "name": "Application mobile", "url": "https://github.com/Romain-Guillot/GeoQuiz-ClientApp"},
@@ -203,38 +205,16 @@
             "type": "Projet académique (Automne 2019)",
             "id": "meetchup",
             "title": "Meetchup",
-            "subtitle": "Mobile application to share photo albums",
+            "subtitle": "Application native Android de partage d'albums photos",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque mollis nulla a euismod faucibus. Pellentesque tincidunt, arcu ut efficitur eleifend, risus sapien sagittis sem, id porttitor nulla felis ac metus.",
+            "image": "static/projects/meetchup.png",
             "stack": [
                 {"name": "Android", "description": "", "image": "static/projects/stack/android.png"},
                 {"name": "Java", "description": "", "image": "static/projects/stack/java.png"},
                 {"name": "Firebase", "description": "", "image": "static/projects/stack/firebase.png"}
             ],
             "urls": [
-                {"type": "github", "name": "Application mobile", "url": "https://github.com/Romain-Guillot/GeoQuiz-ClientApp"},
-                {"type": "github", "name": "Application web d'administration", "url": "https://github.com/Romain-Guillot/GeoQuiz-AdminApp"},
-                {"type": "playstore", "name": "Play Store", "url": "https://play.google.com/store/apps/details?id=com.develob.geoquiz"}
-            ],
-            "screenshots" : [
-                {"image": "", "description": ""},
-                {"image": "", "description": ""},
-                {"image": "", "description": ""}
-            ]
-        },
-        {
-            "type": "Projet personnel (été 2020)",
-            "title": "JSON Portfolio Generator",
-            "id": "json_portfolio_generator",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque mollis nulla a euismod faucibus. Pellentesque tincidunt, arcu ut efficitur eleifend, risus sapien sagittis sem, id porttitor nulla felis ac metus.",
-            "stack": [
-                {"name": "Python", "description": "", "image": "static/projects/stack/python.svg"},
-                {"name": "Jinja2", "description": "", "image": "static/projects/stack/jinja.png"},
-                {"name": "Sass", "description": "", "image": "static/projects/stack/sass.png"}
-            ],
-            "urls": [
-                {"type": "github", "name": "Application mobile", "url": "https://github.com/Romain-Guillot/GeoQuiz-ClientApp"},
-                {"type": "github", "name": "Application web d'administration", "url": "https://github.com/Romain-Guillot/GeoQuiz-AdminApp"},
-                {"type": "playstore", "name": "Play Store", "url": "https://play.google.com/store/apps/details?id=com.develob.geoquiz"}
+                {"type": "github", "name": "Github", "url": "https://github.com/Romain-Guillot/GeoQuiz-ClientApp"}
             ],
             "screenshots" : [
                 {"image": "", "description": ""},
@@ -245,6 +225,7 @@
         {
             "type": "Projet académique (hiver 2019)",
             "title": "SmartRecruiting",
+            "subtitle": "",
             "id": "smartrecruiting",
             "image": "static/projects/smartrecruiting.png",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque mollis nulla a euismod faucibus. Pellentesque tincidunt, arcu ut efficitur eleifend, risus sapien sagittis sem, id porttitor nulla felis ac metus.",
@@ -257,6 +238,28 @@
             "urls": [
                 {"type": "github", "name": "Backend", "url": "https://gricad-gitlab.univ-grenoble-alpes.fr/Projets-INFO4/18-19/21/backend"},
                 {"type": "markdown", "name": "Rapport (markdown)", "url": "https://gricad-gitlab.univ-grenoble-alpes.fr/Projets-INFO4/18-19/21/docs/-/blob/master/report.md"}
+            ],
+            "screenshots" : [
+                {"image": "", "description": ""},
+                {"image": "", "description": ""},
+                {"image": "", "description": ""}
+            ]
+        },
+        {
+            "id": "json_portfolio_generator",
+            "type": "Projet personnel (été 2020)",
+            "title": "JSON Portfolio Generator",
+            "subtitle": "Générateur de portfolio (site web et document PDF) à partir d'un fichier JSON",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque mollis nulla a euismod faucibus. Pellentesque tincidunt, arcu ut efficitur eleifend, risus sapien sagittis sem, id porttitor nulla felis ac metus.",
+            "image": "static/projects/json_portfolio_generator.png",
+            "stack": [
+                {"name": "Python", "description": "", "image": "static/projects/stack/python.svg"},
+                {"name": "Jinja2", "description": "", "image": "static/projects/stack/jinja.png"},
+                {"name": "Sass", "description": "", "image": "static/projects/stack/sass.png"}
+            ],
+            "urls": [
+                {"type": "github", "name": "Github", "url": "https://github.com/Romain-Guillot/GeoQuiz-ClientApp"},
+                {"type": "web", "name": "Mon portfolio généré avec cet outil", "url": "https://romain-guillot.github.io/"}
             ],
             "screenshots" : [
                 {"image": "", "description": ""},

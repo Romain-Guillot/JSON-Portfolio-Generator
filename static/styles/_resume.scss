@@ -146,9 +146,6 @@ $small-spacing: 15px;
             font-weight: $weight-bold;
             display: inline;
         }
-        .title::after {
-            content: ", ";
-        }
         .stack {
             margin-top: 5px;
         }

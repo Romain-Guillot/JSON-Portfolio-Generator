@@ -1,18 +1,26 @@
 {% extends "base.j2" %}
 
+{% block headerclass %}no-print{% endblock %}
+
 {% block content %}
     <div id="resume-wrapper">
         <div class="no-print">
             {{button("resume.pdf", "PDF")}}
         </div>
         
-        <p class="main-description">{{description}}</p>
+        <header>
+            <div class="main-info">
+                <h1 class="only-print">Romain Guillot</h1>
+                <p class="main-description">{{subtitle}}</p>
+            </div>
 
-        <ul class="contact-info">
-            <li><span class="country">{{country}}</span></li>
-            <li><a class="email">{{contact.email}}</a></li>
-            <li><a  class="github">{{contact.github}}</a></li>
-        </ul>
+            <ul class="contact-info">
+                <li><span class="country">{{country}}</span></li>
+                <li><a class="email">{{contact.email}}</a></li>
+                <li><a  class="github">{{contact.github}}</a></li>
+            </ul>
+        </header>
+
 
         <h2>Formations</h2>
         <div class="education">

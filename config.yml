@@ -8,5 +8,5 @@ src:
 
 mustache_ext: "mustache"
 partial_ext: "mustache"
-resume_projects_limit: 5
+resume_projects_limit: 6
 git_publish: false
