@@ -63,3 +63,11 @@ button, .button {
         vertical-align: middle;
     }
 }
+
+strong {
+    font-weight: $weight-bold;
+}
+
+.rounded-image {
+    border-radius: 10px;
+}

@@ -24,13 +24,24 @@
     </head>
     <body>
 
-    {# {% if page %} • {{page}}{% endif %}  #}
-    
-        {% include 'partials/header.j2' %}
+        {% macro button(file, text) -%}
+            <form method="get" action="{{file}}" target="_blank">
+                <button type="submit" class="download">
+                    <svg enable-background="new 0 0 451.111 451.111" height="512" viewBox="0 0 451.111 451.111" width="512" xmlns="http://www.w3.org/2000/svg"><path d="m225.556 354.445 145-145-48.333-48.333-64.444 64.444v-225.556h-64.444v225.556l-64.444-64.444-48.333 48.333z"/><path d="m0 386.667h451.111v64.444h-451.111z"/></svg>
+                    <span>{{text}}</span>
+                </button>
+            </form>    
+        {%- endmacro %}
+
+        <header id="header"class="{% block headerclass %}{% endblock %}">
+            {% include 'partials/header.j2' %}
+        </header>
         <main>
             {% block content %}{% endblock %}
         </main>
-        {% include 'partials/footer.j2' %}
+        <footer id="footer" class="no-print">
+            {% include 'partials/footer.j2' %}
+        </footer>
 
         {% block scripts %}{% endblock %}
     </body>

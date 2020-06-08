@@ -1,16 +1,20 @@
 {% extends "base.j2" %}
 
+
 {% block content %}
-    <h1>Mes derniers projets</h1>
+    <h1>Mes projets récents (2019 - 2020)</h1>
     <div id="projects-wrapper">
         <ul>
             {% for project in projects %}
-            <li style="background-image: url({{project.image}})">
+            <li>
                 <a href="{{project.id}}.html">
-                    <p class="type">{{project.type}}</p>
-                    <h2 class="title">{{project.title}}</h2>
-                    <p class="description">{{project.description}}</p>
-                    <p class="stack">{{ project.stack|join(", ", attribute='name') }}<p>
+                    <img src="{{project.image}}" class="rounded-image project-image">
+                    <div class="project-content">
+                        <p class="type">{{project.type}}</p>
+                        <h2 class="title">{{project.title}} - {{project.subtitle}}</h2>
+                        <p class="description">{{project.shortdescription}}</p>
+                        <p class="stack">{{ project.stack|join(", ", attribute='name') }}<p>
+                    </div>
                 </a>
             </li>
             {% endfor %}

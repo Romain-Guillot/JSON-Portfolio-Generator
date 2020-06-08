@@ -4,13 +4,15 @@
 {% block head %}
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
 {% endblock %}
+{% block headerclass %}no-print{% endblock %}
 
 
 {% block content %}
+
 <div id="project-details-wrapper">
     <header>
         <div class="logo">
-            <img src="{{project.image}}">
+            <img src="{{project.image}}" class="rounded-image">
         </div>
         <div class="title">
             <h1>{{project.title}}</h1>
@@ -19,7 +21,7 @@
     </header>
 
 
-    <p class="description">{{project.description}}</p>
+    <div class="description">{{project.description | markdown}}</div>
 
     <ul class="links">
         {% for url in project.urls %}
@@ -33,8 +35,8 @@
     <ul class="stack">
         {% for s in project.stack %}
         <li>
-            <img src="{{s.image}}" alt="{{s.type}}">
-            <p>{{s.description}}</p>
+            <img src="{{s.image}}" alt="{{s.type}}" class="stack-image">
+            <div class="stack-description">{{s.description | markdown}}</div>
         </li>
         {% endfor %}
     </ul>

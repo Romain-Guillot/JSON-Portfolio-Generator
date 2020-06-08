@@ -12,7 +12,8 @@
                 <li><a href="https://{{contact.github}}" class="github" target="_blank"><span>{{contact.github}}</span></a></li>
             </ul>
 
-        {% include 'partials/download_resume.j2' %}
+        {{button("portofolio", "Télécharger  l'enssemble de mon portfolio (PDF)")}}
+        {{button("resume.pdf", "Télécharger uniquement mon CV (PDF)")}}
         </div>
 
         <div class="profile-picture">

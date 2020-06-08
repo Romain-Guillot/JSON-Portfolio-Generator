@@ -3,7 +3,7 @@
 {% block content %}
     <div id="resume-wrapper">
         <div class="no-print">
-            {% include 'partials/download_resume.j2' %}
+            {{button("resume.pdf", "PDF")}}
         </div>
         
         <p class="main-description">{{description}}</p>
@@ -14,7 +14,7 @@
             <li><a  class="github">{{contact.github}}</a></li>
         </ul>
 
-        <h2>Education</h2>
+        <h2>Formations</h2>
         <div class="education">
             <ul>
                 {% for formation in education %}
@@ -30,7 +30,7 @@
             </ul>
         </div>
 
-        <h2>Skills</h2>
+        <h2>Compétences</h2>
         <div class="skills">
             <ul>
                 {% for skill in skills %}
@@ -41,14 +41,14 @@
             </ul>
         </div>
 
-        <h2>Experience and projects</h2>
+        <h2>Experience and projets</h2>
         <div class="projects">
             <ul>
                 {% for project in projects[:config.resume_projects_limit] %}
                 <li>
                     <p class="type">{{project.type}}</p>
                     <h3 class="title">{{project.title}} - {{project.subtitle}}</h3>
-                    <p class="description">{{project.description}}</p>
+                    {# <p class="description">{{project.shortdescription}}</p> #}
                     <p class="stack">{{ project.stack|join(", ", attribute='name') }}</p>
                 </li>
                 {% endfor %}

@@ -64,6 +64,12 @@
         .web {
             background: $web-asset 0 50%/18px no-repeat;
         }
+        .pdf {
+            background: $pdf-asset 0 50%/18px no-repeat;
+        }
+        .markdown {
+            background: $markdown-asset 0 50%/18px no-repeat;
+        }
     }
     .stack {
         padding: 0;
@@ -74,13 +80,20 @@
             grid-template-areas: "image description";
             grid-template-columns: 150px 1fr;
             align-items: center;
+            margin: 7px 0;
         }
-        img {
+        .stack-image {
             grid-area: image;
             height: 28px;
+            max-width: 150px;
         }
-        p {
+        .stack-description {
+            font-weight: $weight-light;
             grid-area: description;
+            margin: 0;
+            p {
+                margin: 0;
+            }
         }
     }
 

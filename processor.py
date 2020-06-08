@@ -35,7 +35,7 @@ def prepareOutputDir(config) :
     
     if not os.path.exists(OUTPUT_DIR):
         os.makedirs(OUTPUT_DIR)
-        
+
     for filename in os.listdir(OUTPUT_DIR):
         file_path = os.path.join(OUTPUT_DIR, filename)
         try:
@@ -99,5 +99,5 @@ if __name__ == '__main__' :
     buildStyle(config)
     publishOnGithub(config)
     
-    # PDFService("/usr/bin/google-chrome", "file:///home/ob/Documents/projects/Active/Portfolio/build/resume.html").build()
+    PDFService("/usr/bin/google-chrome", "file:///home/ob/Documents/projects/Active/Portfolio/build/resume.html").build()
     

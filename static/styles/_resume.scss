@@ -17,7 +17,7 @@ $small-spacing: 15px;
         left: 0;
     }
     .main-description {
-        font-weight: 300;
+        font-weight: $weight-light;
         margin: $small-spacing 0;
     }
     .contact-info {
@@ -98,12 +98,12 @@ $small-spacing: 15px;
             list-style-type: none;
             li {
                 margin-bottom: $small-spacing;
-     
                 @media (min-width: $small-devices) {
                     display: grid;
                     grid-template-areas: "category skills";
                     grid-template-columns: 200px auto;
                     gap: $small-spacing;
+                    align-items: center;
                 }
             }
             .title, .details {
@@ -120,6 +120,7 @@ $small-spacing: 15px;
             }
             .details {
                 grid-area: skills;
+                font-weight: $weight-light;
             }
         }
     }
@@ -128,15 +129,9 @@ $small-spacing: 15px;
             padding: 0;
             margin: 0;
             list-style-type: none;
-            // display: grid;
-            // grid-template-columns: 1fr 1fr;
-            // grid-gap: $spacing;
-            // @media only screen and (max-width: $small-devices) {
-            //     display: block;
-                li {
-                    margin-bottom: $small-spacing;
-                }
-            // }
+            li {
+                margin-bottom: $small-spacing;
+            }
         }
         .type, .title, .description, .stack {
             margin: 0;
@@ -155,6 +150,7 @@ $small-spacing: 15px;
             content: ", ";
         }
         .stack {
+            margin-top: 5px;
         }
         .description {
             display: inline;

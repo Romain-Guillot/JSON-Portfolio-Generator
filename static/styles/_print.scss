@@ -1,18 +1,52 @@
 @media print {
+    @page { margin: 0; }
     body,html {
         font-size: 14px;
         margin-top: 0;
         padding: 0;
+        margin: 8mm;
         // font-family: "Merriweather";
     }
     .no-print {
-        display: none;
+        display: none !important;
     }
     #resume-wrapper {
+        margin-top: 0;
+        h2 {
+            margin: 0 0 8px 0;
+        }
         .contact-info {
             li {
                 display: inline-block;
                 margin-right: 30px;
+            }
+        }
+        .main-description {
+            font-weight: $weight-light;
+            margin: 0;
+        }
+        .contact-info {
+            margin-bottom: 12px;
+        }
+    }
+    #project-details-wrapper {
+        header {
+            display: block;
+            margin-left: 0;
+            h1 {
+                font-weight: $weight-black;
+                font-size: 3em;
+                padding: 0;
+                margin: 0 0 5px 0;
+            }
+            .title {
+                grid-area: title;
+            }
+            .logo {
+                grid-area: logo;
+                img {
+                    width: 75px;
+                }
             }
         }
     }

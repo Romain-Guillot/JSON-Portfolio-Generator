@@ -1,10 +1,14 @@
 import os
-from jinja2 import Environment, FileSystemLoader
+from jinja2 import Environment, FileSystemLoader, Markup
+import markdown
+
 
 class JinjaService :
     def __init__(self, templateDir, outputDir) :
         file_loader = FileSystemLoader(templateDir)
         self.env = Environment(loader=file_loader)
+        md = markdown.Markdown(extensions=['meta'])
+        self.env.filters['markdown'] = lambda text: Markup(md.convert(text))
         self.OUTPUT_DIR = outputDir;
 
     
