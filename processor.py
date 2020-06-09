@@ -75,8 +75,8 @@ def renderPages(config, data) :
 
     jinjaService = JinjaService(TEMPLATE_DIR, OUTPUT_DIR)
     jinjaService.renderPage("index", None, data, data["meta"]["description-index"])
-    jinjaService.renderPage("resume", "Résumé", data, data["meta"]["description-index"])
-    jinjaService.renderPage("projects", "Projects", data, data["meta"]["description-index"])
+    jinjaService.renderPage("resume", "Résumé", data, data["meta"]["description-resume"])
+    jinjaService.renderPage("projects", "Projects", data, data["meta"]["description-projects"])
 
     for project in data['projects'] :
         project_data = {'project': project, **data}

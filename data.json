@@ -8,38 +8,38 @@
         "github": "github.com/Romain-Guillot"
     },
     "meta": {
-        "language": "en",
-        "site-url": "www.example.com",
-        "description-index": "Index",
-        "description-resume": "Resume",
-        "description-projects": "Projects"
+        "language": "fr",
+        "site-url": "https://romain-guillot.github.io/",
+        "description-index": "Étudiant ingénieur en 5ème année d'informatique à Polytech Grenoble, j'effectue ma dernière année de formation à l'UQAC, au Québec, en vue de l'obtention d'un double diplôme de maitrise en informatique québecoise. Je recherche un stage dans le développement *full stack*. Ce stage doit être d'au minimum 675 heures sur un durée d'environ 5 mois. Je suis disponible à partir d'août.",
+        "description-resume": "Découvrez mon CV d'étudiant ingénieur en 5ème année d'informatique à Polytech Grenoble.",
+        "description-projects": "Découvrez mes projets effectués au cours de ces deux dernières années."
     },
     "education" : [
         {
-            "date": "2019 - Present",
-            "school": "Université du Québec à Chicoutimi (UQAC)",
-            "formation": "Master's degree in Computer Science (Double Degree)",
-            "description": "Software engineering, security, mobile developpement, data mining"
+            "date": "depuis 2019",
+            "school": "Université du Québec à Chicoutimi (UQAC), Canada",
+            "formation": "Maitrise en informatique professionnel (double dipôme)",
+            "description": "Génie logiciel, architecture, sécurité informatique, développement mobile, intelligence artificielle"
         },
         {
-            "date": "2017 - Present",
-            "school": "École Polytechnique de l'Université de Grenoble Alpes (Polytech Grenoble)",
-            "formation": "Engineer degree speciality: Computer science and software engineering",
-            "description": "Algorithms, Data Structure, Hybrid Application"
+            "date": "depuis 2017",
+            "school": "Polytech Grenoble, Université Grenoble Alpes, France",
+            "formation": "Cycle ingénieur en Informatique",
+            "description": "Programmation, génie logiciel, architecture, IHM, base de données, réseaux, machine learning, algorithmie"
         }
     ],
     "skills": [
         {
             "category": "Langages de programmation",
-            "details": "Java, Dart, Python, TypeScript, Javascript, HTML/CSS/SASS (and proficient with C and C#)"
+            "details": "Java, Dart, Python, TypeScript, Javascript, HTML/(S)CSS (expériences en C et C#)"
         },
         {
             "category": "Frameworks",
-            "details": "Flutter, Android, Node.js, Nest.js (and proficient with Django, Tensorflow, Vue.js et Ionic)"
+            "details": "Flutter, Android, Node.js, Nest.js (expériences avec Django, Tensorflow, Vue.js et Ionic)"
         },
         {
-            "category": "Génie logiciel / outils",
-            "details": "Agile, CI/CD (Travis et Fastlane), Docker, Qualité (SonarQube), GoF (design patterns), UML, Git"
+            "category": "Génie logiciel et outils",
+            "details": "Agile, CI/CD (Travis et Fastlane), Docker, Contrôle Qualité (SonarQube), Design Patterns (GoF), UML, Git"
         },
         {
             "category": "Cloud et base de données",
@@ -47,7 +47,7 @@
         },
         {
             "category": "Langues",
-            "details": "French (native), English (professional)"
+            "details": "Français (natif), Anglais (professionnel, technique)"
         }
     ],
     "projects" : [
@@ -88,7 +88,7 @@
             ]
         },
         {
-            "type": "Projet personnel (automne 2019 - été 2020)",
+            "type": "Projet personnel (automne 2019 - présent)",
             "id": "geoquiz",
             "title": "GeoQuiz",
             "subtitle": "Application mobile multiplateformes de quiz sur la géographie accompagné d'une application web d'administration",

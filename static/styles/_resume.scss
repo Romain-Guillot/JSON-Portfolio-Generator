@@ -7,7 +7,7 @@ $small-spacing: 15px;
         margin: $spacing 0 8px 0;
         padding: 0;
     }
-    h2:after {
+    h2:after { // small border bottom
         content: "";
         position: absolute;
         height: 3px;
@@ -24,21 +24,8 @@ $small-spacing: 15px;
         list-style-type: none;
         padding: 0;
         margin: 0 0 $spacing 0;
-        .country, .email, .github {
-            display: inline-block;
-            color: inherit;
-            font-weight: $weight-bold;
-            padding: 6px 0 6px 30px;
+        a {
             text-decoration: none;
-        }
-        .country {
-            background: $location-asset 0 50%/18px no-repeat;
-        }
-        .email {
-            background: $email-asset 0 50%/18px no-repeat;
-        }
-        .github {
-            background: $github-asset 0 50%/18px no-repeat;
         }
     }
     .education {
@@ -48,47 +35,45 @@ $small-spacing: 15px;
             margin: 0;
             li {
                 margin-bottom: $small-spacing;
-
-                @media (min-width: $small-devices) {
-                    display: grid;
-                    grid-template-areas: "details date";
-                    grid-template-columns: 1fr 175px;
-                    align-items: flex-start;
-                    gap: 25px;
+                display: grid;
+                grid-template-areas: "details date";
+                gap: 20px;
+                @media only screen and (max-width: $small-devices) {
+                    display: block;
+                }
+                .date {
+                    grid-area: date;
+                    text-align: right;
+                    font-weight: $weight-bold;
+                }
+                .details {
+                    grid-area: details;
+                    .school, .formation, .description {
+                        margin: 0;
+                        padding: 0;
+                        font-size: 1em;
+                    }
+                    .school, .formation {
+                        display: inline;
+                    }
+                    .formation:after {
+                        content: ", ";
+                    }
+                    .formation {
+                        font-weight: $weight-bold;
+                    }
+                    .school {
+                        color: $text-light;
+                        font-weight: $weight-regular;
+                        font-style: italic;
+                    }
+                    .description {
+                        margin-top: 5px;
+                        font-size: 0.9em;
+                        color: $text-light;
+                    }
                 }
             }
-        }
-        .date {
-            text-align: right;
-            font-weight: $weight-bold;
-            grid-area: date;
-        }
-        .details {
-            grid-area: details;
-        }
-        .formation:after {
-            content: ", ";
-        }
-        .formation {
-            font-weight: $weight-bold;
-            display: inline;
-        }
-        .school, .formation, .description {
-            margin: 0;
-            padding: 0;
-            font-size: 1em;
-        }
-        .school {
-            font-weight: $weight-regular;
-            display: inline;
-            color: $text-light;
-            font-style: italic;
-        }
-        .description {
-            margin-top: 7px;
-            font-size: 0.9em;
-            color: $text-light;
-            display: none;
         }
     }
     .skills {
@@ -98,12 +83,13 @@ $small-spacing: 15px;
             list-style-type: none;
             li {
                 margin-bottom: $small-spacing;
-                @media (min-width: $small-devices) {
-                    display: grid;
-                    grid-template-areas: "category skills";
-                    grid-template-columns: 200px auto;
-                    gap: $small-spacing;
-                    align-items: center;
+                display: grid;
+                grid-template-areas: "category skills";
+                grid-template-columns: 200px auto;
+                gap: $small-spacing;
+                // align-items: center;
+                @media only screen and (max-width: $small-devices) {
+                    display: block;
                 }
             }
             .title, .details {
@@ -114,13 +100,16 @@ $small-spacing: 15px;
             .title {
                 grid-area: category;
                 font-weight: $weight-bold;
-                @media (min-width: $small-devices) {
-                    text-align: right;
+                text-align: right;
+                @media only screen and (max-width: $small-devices) {
+                    text-align: left;
                 }
             }
             .details {
                 grid-area: skills;
                 font-weight: $weight-light;
+                display: flex;
+                align-items: center;
             }
         }
     }
@@ -131,30 +120,31 @@ $small-spacing: 15px;
             list-style-type: none;
             li {
                 margin-bottom: $small-spacing;
+                .type, .title, .description, .stack {
+                    margin: 0;
+                    padding: 0;
+                    font-size: 1em;
+                }
+                .type {
+                    font-weight: $weight-bold;
+                    color: $text-light;
+                }
+                .title, .description {
+                    display: inline;
+                }
+                .title {
+                    font-weight: $weight-bold;
+                }
+                .stack {
+                    margin-top: 5px;
+                }
+                .description {
+                    font-style: italic;
+                }
+                .description, .stack {
+                    color: $text-light;
+                }
             }
-        }
-        .type, .title, .description, .stack {
-            margin: 0;
-            padding: 0;
-            font-size: 1em;
-        }
-        .type {
-            font-weight: $weight-bold;
-            color: $text-light;
-        }
-        .title {
-            font-weight: $weight-bold;
-            display: inline;
-        }
-        .stack {
-            margin-top: 5px;
-        }
-        .description {
-            display: inline;
-            font-style: italic;
-        }
-        .description, .stack {
-            color: $text-light;
         }
     }
 }
