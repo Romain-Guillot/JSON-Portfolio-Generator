@@ -49,14 +49,13 @@
             </ul>
         </div>
 
-        <h2>Experience and projets</h2>
+        <h2>Experience et projets</h2>
         <div class="projects">
             <ul>
                 {% for project in projects[:config.resume_projects_limit] %}
                 <li>
                     <p class="type">{{project.type}}</p>
                     <h3 class="title">{{project.title}} - {{project.subtitle}}</h3>
-                    {# <p class="description">{{project.shortdescription}}</p> #}
                     <p class="stack">{{ project.stack|join(", ", attribute='name') }}</p>
                 </li>
                 {% endfor %}

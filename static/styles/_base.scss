@@ -71,3 +71,23 @@ strong {
 .rounded-image {
     border-radius: 10px;
 }
+
+.image-link {
+    display: inline-block;
+    padding: 5px 0;
+    padding-left: 35px;
+    background-size: $icon-size;
+    background-position:  0 50%;
+    background-repeat: no-repeat;
+    font-weight: $weight-bold;
+}
+
+.phone-link {
+    background-image: $phone-asset;
+}
+.email-link {
+    background-image: $email-asset;
+}
+.github-link {
+    background-image: $github-asset;
+}

@@ -2,22 +2,26 @@
 
 {% block content %}
     <div id="homepage-wrapper">
-        <div class="presentation">
-            <h1>{{subtitle}}</h1>
-
-            <p class="description">{{description}}</p>
-
-            <ul class="contact">
-                <li><a href="mailto:{{contact.email}}" class="email"><span>{{contact.email}}</span></a></li>
-                <li><a href="https://{{contact.github}}" class="github" target="_blank"><span>{{contact.github}}</span></a></li>
-            </ul>
-
-        {{button("portofolio", "Télécharger  l'enssemble de mon portfolio (PDF)")}}
-        {{button("resume.pdf", "Télécharger uniquement mon CV (PDF)")}}
-        </div>
-
         <div class="profile-picture">
             <img src="static/res/photo.jpeg" alt="Photo of myself">
+        </div>
+
+        <div class="presentation">
+            <div class="subtitle">{{subtitle|markdown}}</div>
+            <div class="description">{{description|markdown}}</div>
+
+            <ul class="contact">
+                <li><span class="image-link phone-link"><span>{{contact.phone}}<span></span></li>
+                <li><a href="mailto:{{contact.email}}" class="image-link email-link"><span>{{contact.email}}</span></a></li>
+                <li><a href="https://{{contact.github}}" class="image-link github-link" target="_blank"><span>{{contact.github}}</span></a></li>
+            </ul>
+
+            <div class="button-wrapper no-print">
+                {{button("portofolio", "Télécharger mon portfolio (PDF)")}}
+            </div>
+            <div class="button-wrapper no-print">
+                {{button("resume.pdf", "Télécharger uniquement mon CV (PDF)")}}
+            </div>
         </div>
     </div>
 {% endblock %}

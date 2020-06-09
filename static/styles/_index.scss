@@ -1,0 +1,56 @@
+$spacing: 30px;
+$small-spacing: 10px;
+$profile-picture-width: 300px;
+$profile-picture-width-small: 150px;
+
+#homepage-wrapper {
+    margin-top: 70px;
+    display: grid;
+    grid-template-areas: "info photo";
+    grid-column-gap: 40px;
+    .presentation {
+        p {
+            margin: $small-spacing 0;
+        }
+        .subtitle {
+            font-size: 2.5em;
+            line-height: 0.9;
+            font-weight: $weight-black;
+            margin: 0;
+            @media print {
+                font-size: 2em;
+            }
+        }
+        .description {
+            font-weight: $weight-bold;
+        }
+        .contact {
+            list-style-type: none;
+            padding: 0;
+            a {
+                text-decoration: none;
+                span { // simulate thick underlined link
+                    display: inline-block;
+                    border-bottom: 2px solid $text;
+                }
+            }
+        }
+        .description, .contact {
+            margin: $spacing 0;
+        }
+        .button-wrapper {
+            margin: $small-spacing 0;
+        }
+    }
+    .profile-picture {
+        grid-area: photo;
+        width: $profile-picture-width;
+        @media only screen and (max-width: $small-devices) {
+            display: none;
+        }
+        img {
+            width: 100%;
+        }
+    }
+
+}

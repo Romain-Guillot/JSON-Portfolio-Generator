@@ -13,7 +13,7 @@ $weight-black: 900;
 
 // Dimensions
 $page-width: 1024px;
-$small-devices: 480px;
+$small-devices: 750px;
 $radius: 10px;
 $icon-size: 16px;
 
@@ -23,6 +23,7 @@ $font-family: "Ubuntu", arial, sans-serif;
 // Assets
 $location-asset: url('static/res/location.svg');
 $email-asset: url('static/res/email.svg');
+$phone-asset: url('static/res/phone.svg');
 $github-asset: url('static/res/github.svg');
 $web-asset: url('static/res/web.svg');
 $playstore-asset: url('static/res/playstore.svg');
@@ -33,9 +34,11 @@ $markdown-asset: url('static/res/markdown.svg');
 
 // Imports
 @import 'styles/base';
+
 @import 'styles/header';
 @import 'styles/footer';
-@import 'styles/homepage';
+
+@import 'styles/_index';
 @import 'styles/resume';
 @import 'styles/projects';
 @import 'styles/project_details';

@@ -1,9 +1,9 @@
 {
     "name": "Romain Guillot",
-    "subtitle": "Recherche un stage de fin d'étude pour compléter ma formation d'ingénieur en informatique.",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque mollis nulla a euismod faucibus. Pellentesque tincidunt, arcu ut efficitur eleifend, risus sapien sagittis sem, id porttitor nulla felis ac metus. Aliquam ut ultrices leo.",
-    "country": "(+33) 6 50 67 62 89",
+    "subtitle": "Recherche un stage de fin d'étude d'au moins 5 mois pour compléter ma formation d'ingénieur en informatique.\n\nDisponible à partir d'août.",
+    "description": "Étudiant ingénieur en 5ème année d'informatique à Polytech Grenoble, j'effectue ma dernière année de formation à l'UQAC, au Québec, en vue de l'obtention d'un double diplôme de maitrise en informatique québecoise.\n\nJe recherche un stage dans le développement *full stack*. Ce stage doit être d'au minimum 675 heures sur un durée d'environ 5 mois. Je suis disponible à partir d'août.",
     "contact": {
+        "phone": "(+33) 6 50 67 62 89",
         "email": "romain.guillot.contact@gmail.com",
         "github": "github.com/Romain-Guillot"
     },
@@ -55,7 +55,7 @@
             "type": "Stage - UTP Malaysia (été 2019)",
             "id": "stutherapy",
             "title": "Stutherapy",
-            "subtitle": "Application mobile pour les bègues et les orthophonistes (exercices et suivi de progression)",
+            "subtitle": "Application mobile multiplateformes pour les bègues et les orthophonistes (exercices et suivi de progression)",
             "image": "static/projects/stutherapy.png",
             "shortdescription": "L'application propose des exercices d'élocution et un suivi de progression aux bègues. Les orthophonistes peuvent aussi utiliser cette application pour suivre et commenté la progression de leurs patients.",
             "description": "Dans le cadre de ma 4ème année d'études en informatique à Polytech Grenoble, j'ai effectué mon stage de fin d'année à Universiti Teknologi Petronas en Malaisie. Durant ce stage de 12 semaines, j'ai été amené à concevoir et à développer une application mobile.\n\nL'application mobile peut être utilisé par deux types d'utilisateur :\n\n* les personnes souffrant de bégaiement souhaitant corriger ce trouble de la parole;\n* les orthophonistes souhaitant suivre la progression de leurs patients et évaluer leurs exercices.",
@@ -66,8 +66,8 @@
                     "image": "static/projects/stack/flutter.png"
                 },
                 {
-                    "name": "Firebase (Cloud Firestore, Cloud Storage et Cloud Functions)",
-                    "description": "La base données de l'application est gérée avec **Cloud Firestore**. Les fichiers audios des utilisateurs ont été stockés sur **Cloud Storage**. Enfin, **Cloud Functions** a été utilisé pour automatiser des opérations lors d'évenements émis par Cloud Firestore et Cloud Storage.", 
+                    "name": "Firebase (Cloud Firestore, Cloud Storage, Cloud Functions et Authentication)",
+                    "description": "La base données de l'application est gérée avec **Cloud Firestore**. Les fichiers audios des utilisateurs sont stockés sur **Cloud Storage**. Certain traitements comme la compression des données sont automatiquement lancés grâce à **Cloud Functions**, le service FaaS de Firebase. L'autentification et l'autorisation des utilisateurs ont été dévoppées avec **Firebase Authentication**.", 
                     "image": "static/projects/stack/firebase.png"
                 },
                 {
@@ -91,38 +91,38 @@
             "type": "Projet personnel (automne 2019 - été 2020)",
             "id": "geoquiz",
             "title": "GeoQuiz",
-            "subtitle": "Application mobile de quiz sur la géographie accompagné d'une application web d'administration",
+            "subtitle": "Application mobile multiplateformes de quiz sur la géographie accompagné d'une application web d'administration",
             "image": "static/projects/geoquiz.png",
             "shortdescription": "",
             "description": "Ce projet est composé de deux applications dans le but de développer une application mobile de quiz sur la géographie :\n\n* l'application cliente Android et iOS permettant de jouer aux quiz avec une difficulté croissante au fur et à mesure de la progression de l'utilisateur\n* l'application web permettant gérer la base de données des questions et les langues supportées.\n\nQuatres thèmes sont actuellement proposées avec des questions de différentes formes avec du texte, des images ou des points à placer sur une carte. La progression de l'utilisateur est sauvegardé pour lui permettre de savoir son niveau et de se comparer aux autres joueurs (le *leaderboard* est en cours de développement).",
             "stack": [
                 {
                     "name": "Flutter/Dart", 
-                    "description": "", 
+                    "description": "L'application mobile ainsi que l'applicatio web ont été développées avec **Flutter**, le framework open source de développement d'application mutliplateformes créé par Google.", 
                     "image": "static/projects/stack/flutter.png"
                 },
                 {
-                    "name": "Firebase (Crashlytics, Cloud Firestore, Storage)", 
-                    "description": "", 
+                    "name": "Firebase (Crashlytics, Cloud Firestore, Cloud Storage)", 
+                    "description": "La base données de question est gérée avec **Cloud Firestore**. Les différentes ressources (drapeaux, photos de monuments, etc) sont stockées sur **Cloud Storage**. Les rapports de bugs sont collectés et analysé avec **Crashlytics**.", 
                     "image": "static/projects/stack/firebase.png"},
                 {
                     "name": "SQL", 
-                    "description": "", 
+                    "description": "La base de données de questions est sauvergardée localement sur l'appareil de l'utilisateur en **SQL**, avec **SQLite**. Leurs progressions est également stockées avec SQLite.", 
                     "image": "static/projects/stack/sqlite.png"
                 },
                 {
                     "name": "Travis CI", 
-                    "description": "", 
+                    "description": "Les pipelines de CI/CD sont orchestrées avec **Travis CI**, en particulier pour les tests, la génération automatique de *screenshots* et la publication sur le Play Store.", 
                     "image": "static/projects/stack/travisci.png"
                 },
                 {
                     "name": "Docker", 
-                    "description": "", 
+                    "description": "Un environnement de développement a été créé avec **Docker** avec toutes les technologies utilisées pour les développement des applications. L'environnement de déploiement pour l'application web a aussi été créé avec **Docker**.", 
                     "image": "static/projects/stack/docker.png"
                 },
                 {
                     "name": "SonarQube", 
-                    "description": "", 
+                    "description": "La qualité du code de des applications est analysée avec **SonarQube**.", 
                     "image": "static/projects/stack/sonarqube.png"
                 }
             ],
@@ -141,9 +141,9 @@
             "type": "Projet académique (hiver 2020)",
             "id": "trare",
             "title": "Trare",
-            "subtitle": "Application mobile de mise en relation de voyageurs se trouvant à proximité",
+            "subtitle": "Application mobile multiplateformes de mise en relation de voyageurs se trouvant à proximité",
             "image": "static/projects/trare.png",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque mollis nulla a euismod faucibus. Pellentesque tincidunt, arcu ut efficitur eleifend, risus sapien sagittis sem, id porttitor nulla felis ac metus.",
+            "description": "",
             "stack": [
                 {
                     "name": "Flutter/Dart", 
@@ -151,7 +151,7 @@
                     "image": "static/projects/stack/flutter.png"
                 },
                 {
-                    "name": "Firebase (Crashlytics, Cloud Firestore, Storage)", 
+                    "name": "Firebase (Crashlytics, Cloud Firestore, Cloud Storage, Authentication)", 
                     "description": "",
                     "image": "static/projects/stack/firebase.png"
                 },
@@ -180,8 +180,8 @@
             "type": "Projet personnel (en cours de développement)",
             "id": "kahibalo",
             "title": "Kahibalo",
-            "subtitle": "Web service permettant de gérer des articles de culture générale accompagné d'une web application",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque mollis nulla a euismod faucibus. Pellentesque tincidunt, arcu ut efficitur eleifend, risus sapien sagittis sem, id porttitor nulla felis ac metus.",
+            "subtitle": "Service web REST et application web permettant de gérer des articles de culture générale",
+            "description": "",
             "image": "static/projects/kahibalo.png",
             "stack": [
                 {"name": "Node.js", "description": "", "image": "static/projects/stack/nodejs.png"},
@@ -191,9 +191,8 @@
                 {"name": "Docker", "description": "", "image": "static/projects/stack/docker.png"}
             ],
             "urls": [
-                {"type": "github", "name": "Application mobile", "url": "https://github.com/Romain-Guillot/GeoQuiz-ClientApp"},
-                {"type": "github", "name": "Application web d'administration", "url": "https://github.com/Romain-Guillot/GeoQuiz-AdminApp"},
-                {"type": "playstore", "name": "Play Store", "url": "https://play.google.com/store/apps/details?id=com.develob.geoquiz"}
+                {"type": "github", "name": "Github (service web)", "url": "https://github.com/Romain-Guillot/GeoQuiz-ClientApp"},
+                {"type": "github", "name": "Github (application web)", "url": "https://github.com/Romain-Guillot/GeoQuiz-AdminApp"}
             ],
             "screenshots" : [
                 {"image": "", "description": ""},
@@ -206,12 +205,12 @@
             "id": "meetchup",
             "title": "Meetchup",
             "subtitle": "Application native Android de partage d'albums photos",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque mollis nulla a euismod faucibus. Pellentesque tincidunt, arcu ut efficitur eleifend, risus sapien sagittis sem, id porttitor nulla felis ac metus.",
+            "description": "",
             "image": "static/projects/meetchup.png",
             "stack": [
                 {"name": "Android", "description": "", "image": "static/projects/stack/android.png"},
                 {"name": "Java", "description": "", "image": "static/projects/stack/java.png"},
-                {"name": "Firebase", "description": "", "image": "static/projects/stack/firebase.png"}
+                {"name": "Firebase (Cloud Firestore, Cloud Storage, Authentication)", "description": "", "image": "static/projects/stack/firebase.png"}
             ],
             "urls": [
                 {"type": "github", "name": "Github", "url": "https://github.com/Romain-Guillot/GeoQuiz-ClientApp"}
@@ -225,15 +224,16 @@
         {
             "type": "Projet académique (hiver 2019)",
             "title": "SmartRecruiting",
-            "subtitle": "",
+            "subtitle": "Service web permettant de prédire les formations de l'UGA les plus adaptées face à une offre de stage",
             "id": "smartrecruiting",
             "image": "static/projects/smartrecruiting.png",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque mollis nulla a euismod faucibus. Pellentesque tincidunt, arcu ut efficitur eleifend, risus sapien sagittis sem, id porttitor nulla felis ac metus.",
+            "description": "",
             "stack": [
-                {"name": "Python", "description": "ffdg", "image": "static/projects/stack/python.svg"},
-                {"name": "Tensorflow", "description": "", "image": "static/projects/stack/tensorflow.png"},
+                {"name": "Python", "description": "", "image": "static/projects/stack/python.svg"},
+                {"name": "Tensorflow / Keras", "description": "", "image": "static/projects/stack/tensorflow.png"},
                 {"name": "MySQL", "description": "", "image": "static/projects/stack/mysql.png"},
-                {"name": "Flask", "description": "dfgdf", "image": "static/projects/stack/flask.png"}
+                {"name": "Flask", "description": "", "image": "static/projects/stack/flask.png"},
+                {"name": "SonarQube", "description": "", "image": "static/projects/stack/sonarqube.png"}
             ],
             "urls": [
                 {"type": "github", "name": "Backend", "url": "https://gricad-gitlab.univ-grenoble-alpes.fr/Projets-INFO4/18-19/21/backend"},
