@@ -2,10 +2,16 @@ $spacing: 35px;
 $small-spacing: 15px;
 #resume-wrapper {
     margin-top: 15px;
+    @media print {
+        margin-top: 0;
+    }
     h2 {
         position: relative;
         margin: $spacing 0 8px 0;
         padding: 0;
+        @media print {
+            margin: 0 0 8px 0;
+        }
     }
     h2:after { // small border bottom
         content: "";
@@ -16,18 +22,41 @@ $small-spacing: 15px;
         width: 35px;
         left: 0;
     }
-    .main-description {
-        font-weight: $weight-light;
-        margin: $small-spacing 0;
-    }
-    .contact-info {
-        list-style-type: none;
-        padding: 0;
-        margin: 0 0 $spacing 0;
-        a {
-            text-decoration: none;
+    header {
+        .main-description {
+            font-weight: $weight-light;
+            margin: $small-spacing 0;
+        }
+        .contact-info {
+            list-style-type: none;
+            padding: 0;
+            margin: 0 0 $spacing 0;
+            a {
+                text-decoration: none;
+            }
+        }
+        @media print {
+            display: flex;
+            align-items: flex-start;
+            h1 {
+                margin: 0;
+            }
+            .main-info {
+                flex: 1;
+            }
+            .contact-info {
+                margin-bottom: 12px;
+                li {
+                    margin-right: 30px;
+                }
+            }
+            .main-description {
+                font-weight: $weight-light;
+                margin: 0;
+            }
         }
     }
+
     .education {
         > ul {
             list-style-type: none;

@@ -1,4 +1,12 @@
 #projects-wrapper {
+    h1 {
+        margin: 20px 0;
+        font-size: 1.5em;
+        font-weight: $weight-black;
+        @media print {
+            margin-top: 0;
+        }
+    }
     ul {
         list-style-type: none;
         padding: 0;
@@ -27,8 +35,8 @@
         padding: 0;
         font-size: 1em;
     }
-    .type, .title {
-        font-size: 1.1em;
+    .type, .title, .description {
+        font-size: 1em;
     }
     .type {
         color: $text-light;
@@ -36,9 +44,13 @@
     }
     .title {
         font-weight: $weight-black;
+        font-size: 1.15em;
     }
     .description, .stack {
         margin-top: 7px;
         color: $text-light;
+    }
+    .stack {
+        font-size: 0.9em;
     }
 }

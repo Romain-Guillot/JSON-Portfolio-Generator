@@ -16,35 +16,6 @@
     .no-print {
         display: none !important;
     }
-    #resume-wrapper {
-        margin-top: 0;
-        h1 {
-            margin: 0;
-        }
-        h2 {
-            margin: 0 0 8px 0;
-        }
-        header {
-            display: flex;
-            align-items: flex-start;
-        }
-        .main-info {
-            flex: 1;
-        }
-        .contact-info {
-            li {
-                // display: inline-block;
-                margin-right: 30px;
-            }
-        }
-        .main-description {
-            font-weight: $weight-light;
-            margin: 0;
-        }
-        .contact-info {
-            margin-bottom: 12px;
-        }
-    }
     #project-details-wrapper {
         header {
             display: block;

@@ -1,9 +1,10 @@
 {% extends "base.j2" %}
 
+{% block headerclass %}no-print{% endblock %}
 
 {% block content %}
-    <h1>Mes projets récents (2019 - 2020)</h1>
     <div id="projects-wrapper">
+        <h1>Mes projets récents (2019 - 2020)</h1>
         <ul>
             {% for project in projects %}
             <li>
