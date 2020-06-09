@@ -7,17 +7,17 @@
         <h1>Mes projets récents (2019 - 2020)</h1>
         <ul>
             {% for project in projects %}
-            <li>
-                <a href="{{project.id}}.html">
-                    <img src="{{project.image}}" class="rounded-image project-image">
-                    <div class="project-content">
-                        <p class="type">{{project.type}}</p>
-                        <h2 class="title">{{project.title}}</h2>
-                        <p class="description">{{project.subtitle}}</p>
-                        <p class="stack">{{ project.stack|join(", ", attribute='name') }}<p>
-                    </div>
-                </a>
-            </li>
+                <li>
+                    <a href="{{project.id}}.html">
+                        <img src="{{project.image}}" class="rounded-image project-image">
+                        <div class="project-content">
+                            <p class="type">{{project.type}}</p>
+                            <h2 class="title">{{project.title}}</h2>
+                            <p class="subtitle">{{project.subtitle}}</p>
+                            <p class="stack">{{ project.stack|join(", ", attribute='name') }}<p>
+                        </div>
+                    </a>
+                </li>
             {% endfor %}
         </ul>
     </div>

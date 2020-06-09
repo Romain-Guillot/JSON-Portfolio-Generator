@@ -1,7 +1,7 @@
 #projects-wrapper {
     h1 {
         margin: 20px 0;
-        font-size: 1.5em;
+        font-size: 1.6em;
         font-weight: $weight-black;
         @media print {
             margin-top: 0;
@@ -10,47 +10,47 @@
     ul {
         list-style-type: none;
         padding: 0;
-    }
-    li {
-        margin: 30px 0;
-    }
-    a {
-        text-decoration: none;
-        color: inherit;
-        font-weight: $weight-regular;
-        display: grid;
-        grid-template-areas: "image content";
-        grid-template-columns: 90px 1fr;
-        align-items: flex-start;
-    }
-    .project-image {
-        grid-area: image;
-        width: 65px;
-    }
-    .project-content {
-        grid-area: content;
-    }
-    .type, .title, .description, .stack {
-        margin: 0;
-        padding: 0;
-        font-size: 1em;
-    }
-    .type, .title, .description {
-        font-size: 1em;
-    }
-    .type {
-        color: $text-light;
-        font-weight: $weight-black;
-    }
-    .title {
-        font-weight: $weight-black;
-        font-size: 1.15em;
-    }
-    .description, .stack {
-        margin-top: 7px;
-        color: $text-light;
-    }
-    .stack {
-        font-size: 0.9em;
+        li {
+            margin: 25px 0;
+            a {
+                display: grid;
+                grid-template-areas: "image content";
+                grid-template-columns: 90px 1fr;
+                align-items: flex-start;
+                text-decoration: none;
+                color: inherit;
+                font-weight: $weight-regular;
+                .project-image {
+                    grid-area: image;
+                    width: 65px;
+                }
+                .project-content {
+                    grid-area: content;
+                }
+                .type, .title, .subtitle, .stack {
+                    margin: 0;
+                    padding: 0;
+                }
+                .type {
+                    font-size: 1em;
+                    color: $text-light;
+                    font-weight: $weight-black;
+                }
+                .title {
+                    font-size: 1.20em;
+                    font-weight: $weight-black;
+                    margin: 2px 0;
+                }
+                .subtitle {
+                    font-size: 1em;
+                    color: $text-light;
+                }
+                .stack {
+                    font-size: 0.9em;
+                    color: $text-light;
+                    margin-top: 10px;
+                }
+            }
+        }
     }
 }
