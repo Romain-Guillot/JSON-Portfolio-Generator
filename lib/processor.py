@@ -5,6 +5,7 @@ from distutils.dir_util import copy_tree
 import subprocess
 import logging
 import shutil
+import webbrowser
 
 from lib.github_service import GithubService
 from lib.sass_service import SassService
@@ -29,6 +30,7 @@ class Processor :
         self.STATIC_DIR = os.path.join(SRC_DIR, "static")
         self.TEMPLATE_DIR = os.path.join(SRC_DIR, "templates")
         self.process()
+        self.open()
 
 
     def process(self):
@@ -124,3 +126,5 @@ class Processor :
         """
         PDFService(self.config['chromium'], os.path.join(os.getcwd(), self.OUTPUT_DIR, "resume.html")).build()
 
+    def open(self):
+        webbrowser.open_new_tab(os.path.join(self.OUTPUT_DIR, "index.html"))

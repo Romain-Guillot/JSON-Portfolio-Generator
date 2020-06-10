@@ -249,6 +249,7 @@
             ],
             "urls": [
                 {"type": "github", "name": "Backend", "url": "https://gricad-gitlab.univ-grenoble-alpes.fr/Projets-INFO4/18-19/21/backend"},
+                {"type": "web", "name": "Documentation", "url": "https://smartrecruiting-back.readthedocs.io/en/latest/"},
                 {"type": "markdown", "name": "Rapport (markdown)", "url": "https://gricad-gitlab.univ-grenoble-alpes.fr/Projets-INFO4/18-19/21/docs/-/blob/master/report.md"}
             ],
             "screenshots" : [
