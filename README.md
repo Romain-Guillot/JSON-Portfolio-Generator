@@ -73,4 +73,5 @@ example). So do not store anything in this folder, use your asset directory.**
 
 
 ## Example
-My portfolio : [https://github.com/Romain-Guillot/Romain-Guillot.github.io](https://github.com/Romain-Guillot/Romain-Guillot.github.io)
+The `example` folder contains the sources to create my portfolio published
+on Github Page : [https://github.com/Romain-Guillot/Romain-Guillot.github.io](https://github.com/Romain-Guillot/Romain-Guillot.github.io)
