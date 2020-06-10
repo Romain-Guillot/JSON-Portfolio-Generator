@@ -56,8 +56,7 @@
             "id": "stutherapy",
             "title": "Stutherapy",
             "subtitle": "Application mobile multiplateformes pour les bègues et les orthophonistes (exercices et suivi de progression)",
-            "image": "static/projects/stutherapy.png",
-            "shortdescription": "L'application propose des exercices d'élocution et un suivi de progression aux bègues. Les orthophonistes peuvent aussi utiliser cette application pour suivre et commenté la progression de leurs patients.",
+            "image": "static/projects/stutherapy/logo.png",
             "description": "Dans le cadre de ma 4ème année d'études en informatique à Polytech Grenoble, j'ai effectué mon stage de fin d'année à Universiti Teknologi Petronas en Malaisie. Durant ce stage de 12 semaines, j'ai été amené à concevoir et à développer une application mobile.\n\nL'application mobile peut être utilisé par deux types d'utilisateur :\n\n* les personnes souffrant de bégaiement souhaitant corriger ce trouble de la parole;\n* les orthophonistes souhaitant suivre la progression de leurs patients et évaluer leurs exercices.",
             "stack": [
                 {
@@ -82,9 +81,17 @@
                 {"type": "pdf", "name": "Rapport de fin de stage (PDF)", "url": "https://github.com/Romain-Guillot/stuttherapy_report/blob/master/rapport.pdf"}
             ],
             "screenshots" : [
-                {"image": "https://raw.githubusercontent.com/Romain-Guillot/stuttherapy_report/master/content/imgs/screen15.jpg?token=ACAQYACAKSIMU4CTPOPYP5K64WISM", "description": ""},
-                {"image": "https://raw.githubusercontent.com/Romain-Guillot/stuttherapy_report/master/content/imgs/screen14.jpg?token=ACAQYAEH3CRJ2EZCMBHJFKK64WIUQ", "description": ""},
-                {"image": "https://raw.githubusercontent.com/Romain-Guillot/stuttherapy_report/master/content/imgs/screen11.jpg?token=ACAQYAA7XHZE33W2UMIGFAC64WIUS", "description": ""}
+                {"image": "static/projects/stutherapy/screen1.jpg", "description": ""},
+                {"image": "static/projects/stutherapy/screen2.jpg", "description": ""},
+                {"image": "static/projects/stutherapy/screen3.jpg", "description": ""},
+                {"image": "static/projects/stutherapy/screen4.jpg", "description": ""},
+                {"image": "static/projects/stutherapy/screen5.jpg", "description": ""},
+                {"image": "static/projects/stutherapy/screen6.jpg", "description": ""},
+                {"image": "static/projects/stutherapy/screen7.jpg", "description": ""},
+                {"image": "static/projects/stutherapy/screen8.jpg", "description": ""},
+                {"image": "static/projects/stutherapy/screen9.jpg", "description": ""},
+                {"image": "static/projects/stutherapy/screen10.jpg", "description": ""},
+                {"image": "static/projects/stutherapy/screen11.jpg", "description": ""}
             ]
         },
         {
@@ -92,8 +99,7 @@
             "id": "geoquiz",
             "title": "GeoQuiz",
             "subtitle": "Application mobile multiplateformes de quiz sur la géographie accompagné d'une application web d'administration",
-            "image": "static/projects/geoquiz.png",
-            "shortdescription": "",
+            "image": "static/projects/geoquiz/logo.png",
             "description": "Ce projet est composé de deux applications dans le but de développer une application mobile de quiz sur la géographie :\n\n* l'application cliente Android et iOS permettant de jouer aux quiz avec une difficulté croissante au fur et à mesure de la progression de l'utilisateur\n* l'application web permettant gérer la base de données des questions et les langues supportées.\n\nQuatres thèmes sont actuellement proposées avec des questions de différentes formes avec du texte, des images ou des points à placer sur une carte. La progression de l'utilisateur est sauvegardé pour lui permettre de savoir son niveau et de se comparer aux autres joueurs (le *leaderboard* est en cours de développement).",
             "stack": [
                 {
@@ -132,9 +138,15 @@
                 {"type": "playstore", "name": "Play Store", "url": "https://play.google.com/store/apps/details?id=com.develob.geoquiz"}
             ],
             "screenshots" : [
-                {"image": "", "description": ""},
-                {"image": "", "description": ""},
-                {"image": "", "description": ""}
+                {"image": "static/projects/geoquiz/screen1.jpg", "description": ""},
+                {"image": "static/projects/geoquiz/screen2.jpg", "description": ""},
+                {"image": "static/projects/geoquiz/screen3.jpg", "description": ""},
+                {"image": "static/projects/geoquiz/screen4.jpg", "description": ""},
+                {"image": "static/projects/geoquiz/screen5.jpg", "description": ""},
+                {"image": "static/projects/geoquiz/screen6.jpg", "description": ""},
+                {"image": "static/projects/geoquiz/screen7.jpg", "description": ""},
+                {"image": "static/projects/geoquiz/screen8.jpg", "description": ""},
+                {"image": "static/projects/geoquiz/screen9.png", "description": "", "type": "web"}
             ]
         },
         {
@@ -142,7 +154,7 @@
             "id": "trare",
             "title": "Trare",
             "subtitle": "Application mobile multiplateformes de mise en relation de voyageurs se trouvant à proximité",
-            "image": "static/projects/trare.png",
+            "image": "static/projects/trare/logo.png",
             "description": "",
             "stack": [
                 {
@@ -171,9 +183,9 @@
                 {"type": "playstore", "name": "Play Store", "url": "https://play.google.com/store/apps/details?id=com.trare.app"}
             ],
             "screenshots" : [
-                {"image": "", "description": ""},
-                {"image": "", "description": ""},
-                {"image": "", "description": ""}
+                {"image": "https://raw.githubusercontent.com/Romain-Guillot/Trare/master/res/img/screens1.png", "description": ""},
+                {"image": "https://raw.githubusercontent.com/Romain-Guillot/Trare/master/res/img/screens2.png", "description": ""},
+                {"image": "https://raw.githubusercontent.com/Romain-Guillot/Trare/master/res/img/screens3.png", "description": ""}
             ]
         },
         {

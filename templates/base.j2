@@ -20,7 +20,7 @@
 
         {% block head %}{% endblock %}
 
-        <title>{{name}}</title>
+        <title>{{name}}{% if page %} • {{page}}{% endif %}</title>
     </head>
     <body>
 

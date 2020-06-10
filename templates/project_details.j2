@@ -4,8 +4,8 @@
 {% block head %}
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
 {% endblock %}
-{% block headerclass %}no-print{% endblock %}
 
+{% block headerclass %}no-print{% endblock %}
 
 {% block content %}
 
@@ -41,21 +41,21 @@
         {% endfor %}
     </ul>
 
-    <h2>Screenshots</h2>
+    <h2 class="screenshots-title">Screenshots</h2>
     <div class="swiper-container">
         <div class="swiper-wrapper">
             {% for screen in project.screenshots %}
-                <div class="swiper-slide">
+                <div class="swiper-slide {{screen.type}}"}>
                     <img src="{{screen.image}}">
                 </div>
             {% endfor %}
         </div>
         <!-- If we need pagination -->
-        <div class="swiper-pagination"></div>
+        <div class="swiper-pagination swiper-pagination-black"></div>
 
         <!-- If we need navigation buttons -->
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev swiper-button-black"></div>
+        <div class="swiper-button-next swiper-button-black"></div>
     </div>
 </div>
 {% endblock %}
@@ -67,9 +67,8 @@
     <script>
         var mySwiper = new Swiper ('.swiper-container', {
             // Optional parameters
-            direction: 'horizontal',
-            loop: true,
-
+            slidesPerView: 'auto',
+            spaceBetween: 30,
             // If we need pagination
             pagination: {
                 el: '.swiper-pagination',

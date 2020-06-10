@@ -1,10 +1,10 @@
+$spacing: 40px;
 #project-details-wrapper {
-    margin: 15px 0 0 0;
+    padding: 15px 0 0 0;
     header {
         display: grid;
         grid-template-areas: "logo title";
         grid-template-columns: 100px 1fr;
-        align-items: center;
         margin-left: -100px;
         h1 {
             font-weight: $weight-black;
@@ -24,7 +24,14 @@
     }
 
     h2 {
-        margin: 30px 0 10px 0;
+        text-transform: uppercase;
+        color: $text-light;
+        font-weight: $weight-black;
+        font-size: 1.3em;
+        margin: $spacing 0 10px 0;
+    }
+    .screenshots-title {
+        page-break-before: always;
     }
 
     .subtitle {
@@ -36,11 +43,11 @@
     .description {
         // color: $text-light;
         font-weight: $weight-light;
-        margin: 40px 0;
+        margin: $spacing 0;
     }
     .links {
         padding: 0;
-        margin: 0;
+        margin: $spacing 0;
         list-style-type: none;
         a {
             display: block;
@@ -102,8 +109,49 @@
 
     .swiper-container {
         height: 600px;
+        width: 100%;
+        padding: 15px;
+    
         img {
             height: 100%;
+            box-shadow: 0 0 15px rgba(0,0,0,0.3);
+            border-radius: 4px;
         }
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            display: inline-block;
+            width: auto;
+          }
+        // @media print {
+            padding: 0;
+            position: block;
+            overflow: inherit;
+
+            .swiper-wrapper {
+                position: inherit;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                gap: 10px;
+                .swiper-slide {
+                    height: auto;
+                    margin: 0 !important;
+                }
+                .web {
+                    // grid-column: auto / span 2;
+                    grid-column: 1 / -1;
+                    width: 75%;
+                    margin: auto !important;
+                }
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+
+            .swiper-pagination, .swiper-button-next, .swiper-button-prev {
+                display: none;
+            }   
+        // }
     }
 }
