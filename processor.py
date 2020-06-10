@@ -4,7 +4,6 @@ import logging
 from lib.processor import Processor
 
 
-
 """
 Entry point to the program
 Usage: processor DIRECTORY

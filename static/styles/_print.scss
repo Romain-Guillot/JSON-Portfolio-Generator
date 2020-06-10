@@ -2,7 +2,10 @@
     display: none;
 }
 @media print {
-    @page { margin: 0; }
+    @page { 
+        margin: 0;
+        size: 210mm 297mm;
+    }
     body,html {
         font-size: 14px;
         margin-top: 0;

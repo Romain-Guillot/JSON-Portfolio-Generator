@@ -3,3 +3,4 @@ output: "build/"
 assets_dir: "assets/"
 resume_projects_limit: 6
 git_publish: false
+chromium: "/usr/bin/google-chrome"
