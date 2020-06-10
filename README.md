@@ -1,6 +1,7 @@
 # JSON Portfolio Generator
 
-**JSON Portfolio Generator** is a project to generate a portfolio that contains the following elements :
+**JSON Portfolio Generator** is a project to generate a portfolio from a JSON file.
+The generated portfolio contains the following elements :
 
 - an homepage with your photo and description
 - a resume

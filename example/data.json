@@ -263,15 +263,15 @@
             "type": "Projet personnel (été 2020)",
             "title": "JSON Portfolio Generator",
             "subtitle": "Générateur de portfolio (site web et document PDF) à partir d'un fichier JSON",
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque mollis nulla a euismod faucibus. Pellentesque tincidunt, arcu ut efficitur eleifend, risus sapien sagittis sem, id porttitor nulla felis ac metus.",
+            "description": "Projet Python permettant de générer un portfolio à partir d'un fichier de données JSON. Le portfolio généré contient les éléments suivants :\n\n- Une page de présentation / d'introduction\n- Une page contenant le CV;\n- Une page listant les projets;\n- Une page descriptive de chaque projet.\n\nLe portfolio est généré dans deux formats différents :\n\n- **Site web**, des pages HTML connectées entres elles permettant la navigation dans le portfolio via un navigateur web;\n- **Document PDF**, un document PDF est généré à partir des pages HTML avec un style adapté aux documents. Un document contenant uniquement le CV est aussi généré.\n\nEnfin, le projet permet de publier le portfolio automatiquement sur une *remote* git — typiquement pour la publication automatique et instantanée sur un repository *Github Page* pour rendre disponible la version web du portfolio disponible via le web directement après la génération de celui-ci.",
             "image": "assets/projects/json_portfolio_generator.png",
             "stack": [
-                {"name": "Python", "description": "", "image": "assets/projects/stack/python.svg"},
-                {"name": "Jinja2", "description": "", "image": "assets/projects/stack/jinja.png"},
-                {"name": "Sass", "description": "", "image": "assets/projects/stack/sass.png"}
+                {"name": "Python", "description": "Le coeur du projet a été développé avec **Python3**", "image": "assets/projects/stack/python.svg"},
+                {"name": "Jinja2", "description": "Les templates HTML ont été écrits avec **Jinja2**, un langage de template inspiré de celui de Django.", "image": "assets/projects/stack/jinja.png"},
+                {"name": "Sass", "description": "Les feuilles de style ont été écrites avec **Sass**, un préprocesseur CSS (langage de description de style compilant en CSS)", "image": "assets/projects/stack/sass.png"}
             ],
             "urls": [
-                {"type": "github", "name": "Github", "url": "https://github.com/Romain-Guillot/GeoQuiz-ClientApp"},
+                {"type": "github", "name": "Github", "url": "https://github.com/Romain-Guillot/JSON-Portfolio-Generator"},
                 {"type": "web", "name": "Mon portfolio généré avec cet outil", "url": "https://romain-guillot.github.io/"}
             ],
             "screenshots" : [
