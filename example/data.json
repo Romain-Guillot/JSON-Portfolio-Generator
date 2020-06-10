@@ -56,23 +56,23 @@
             "id": "stutherapy",
             "title": "Stutherapy",
             "subtitle": "Application mobile multiplateformes pour les bègues et les orthophonistes (exercices et suivi de progression)",
-            "image": "static/projects/stutherapy/logo.png",
+            "image": "assets/projects/stutherapy/logo.png",
             "description": "Dans le cadre de ma 4ème année d'études en informatique à Polytech Grenoble, j'ai effectué mon stage de fin d'année à Universiti Teknologi Petronas en Malaisie. Durant ce stage de 12 semaines, j'ai été amené à concevoir et à développer une application mobile.\n\nL'application mobile peut être utilisé par deux types d'utilisateur :\n\n* les personnes souffrant de bégaiement souhaitant corriger ce trouble de la parole;\n* les orthophonistes souhaitant suivre la progression de leurs patients et évaluer leurs exercices.",
             "stack": [
                 {
                     "name": "Flutter/Dart", 
                     "description": "L'application mobile a été développé avec **Flutter**, le framework open source de développement d'application mutliplateformes créé par Google.", 
-                    "image": "static/projects/stack/flutter.png"
+                    "image": "assets/projects/stack/flutter.png"
                 },
                 {
                     "name": "Firebase (Cloud Firestore, Cloud Storage, Cloud Functions et Authentication)",
                     "description": "La base données de l'application est gérée avec **Cloud Firestore**. Les fichiers audios des utilisateurs sont stockés sur **Cloud Storage**. Certain traitements comme la compression des données sont automatiquement lancés grâce à **Cloud Functions**, le service FaaS de Firebase. L'autentification et l'autorisation des utilisateurs ont été dévoppées avec **Firebase Authentication**.", 
-                    "image": "static/projects/stack/firebase.png"
+                    "image": "assets/projects/stack/firebase.png"
                 },
                 {
                     "name": "Latex", 
                     "description": "Le rapport de fin de stage a été rédigé avec **Latex**.", 
-                    "image": "static/projects/stack/latex.png"
+                    "image": "assets/projects/stack/latex.png"
                 }
             ],
             "urls": [
@@ -81,17 +81,17 @@
                 {"type": "pdf", "name": "Rapport de fin de stage (PDF)", "url": "https://github.com/Romain-Guillot/stuttherapy_report/blob/master/rapport.pdf"}
             ],
             "screenshots" : [
-                {"image": "static/projects/stutherapy/screen1.jpg", "description": ""},
-                {"image": "static/projects/stutherapy/screen2.jpg", "description": ""},
-                {"image": "static/projects/stutherapy/screen3.jpg", "description": ""},
-                {"image": "static/projects/stutherapy/screen4.jpg", "description": ""},
-                {"image": "static/projects/stutherapy/screen5.jpg", "description": ""},
-                {"image": "static/projects/stutherapy/screen6.jpg", "description": ""},
-                {"image": "static/projects/stutherapy/screen7.jpg", "description": ""},
-                {"image": "static/projects/stutherapy/screen8.jpg", "description": ""},
-                {"image": "static/projects/stutherapy/screen9.jpg", "description": ""},
-                {"image": "static/projects/stutherapy/screen10.jpg", "description": ""},
-                {"image": "static/projects/stutherapy/screen11.jpg", "description": ""}
+                {"image": "assets/projects/stutherapy/screen1.jpg", "description": ""},
+                {"image": "assets/projects/stutherapy/screen2.jpg", "description": ""},
+                {"image": "assets/projects/stutherapy/screen3.jpg", "description": ""},
+                {"image": "assets/projects/stutherapy/screen4.jpg", "description": ""},
+                {"image": "assets/projects/stutherapy/screen5.jpg", "description": ""},
+                {"image": "assets/projects/stutherapy/screen6.jpg", "description": ""},
+                {"image": "assets/projects/stutherapy/screen7.jpg", "description": ""},
+                {"image": "assets/projects/stutherapy/screen8.jpg", "description": ""},
+                {"image": "assets/projects/stutherapy/screen9.jpg", "description": ""},
+                {"image": "assets/projects/stutherapy/screen10.jpg", "description": ""},
+                {"image": "assets/projects/stutherapy/screen11.jpg", "description": ""}
             ]
         },
         {
@@ -99,37 +99,37 @@
             "id": "geoquiz",
             "title": "GeoQuiz",
             "subtitle": "Application mobile multiplateformes de quiz sur la géographie accompagné d'une application web d'administration",
-            "image": "static/projects/geoquiz/logo.png",
+            "image": "assets/projects/geoquiz/logo.png",
             "description": "Ce projet est composé de deux applications dans le but de développer une application mobile de quiz sur la géographie :\n\n* l'application cliente Android et iOS permettant de jouer aux quiz avec une difficulté croissante au fur et à mesure de la progression de l'utilisateur\n* l'application web permettant gérer la base de données des questions et les langues supportées.\n\nQuatres thèmes sont actuellement proposées avec des questions de différentes formes avec du texte, des images ou des points à placer sur une carte. La progression de l'utilisateur est sauvegardé pour lui permettre de savoir son niveau et de se comparer aux autres joueurs (le *leaderboard* est en cours de développement).",
             "stack": [
                 {
                     "name": "Flutter/Dart", 
                     "description": "L'application mobile ainsi que l'applicatio web ont été développées avec **Flutter**, le framework open source de développement d'application mutliplateformes créé par Google.", 
-                    "image": "static/projects/stack/flutter.png"
+                    "image": "assets/projects/stack/flutter.png"
                 },
                 {
                     "name": "Firebase (Crashlytics, Cloud Firestore, Cloud Storage)", 
                     "description": "La base données de question est gérée avec **Cloud Firestore**. Les différentes ressources (drapeaux, photos de monuments, etc) sont stockées sur **Cloud Storage**. Les rapports de bugs sont collectés et analysé avec **Crashlytics**.", 
-                    "image": "static/projects/stack/firebase.png"},
+                    "image": "assets/projects/stack/firebase.png"},
                 {
                     "name": "SQL", 
                     "description": "La base de données de questions est sauvergardée localement sur l'appareil de l'utilisateur en **SQL**, avec **SQLite**. Leurs progressions est également stockées avec SQLite.", 
-                    "image": "static/projects/stack/sqlite.png"
+                    "image": "assets/projects/stack/sqlite.png"
                 },
                 {
                     "name": "Travis CI", 
                     "description": "Les pipelines de CI/CD sont orchestrées avec **Travis CI**, en particulier pour les tests, la génération automatique de *screenshots* et la publication sur le Play Store.", 
-                    "image": "static/projects/stack/travisci.png"
+                    "image": "assets/projects/stack/travisci.png"
                 },
                 {
                     "name": "Docker", 
                     "description": "Un environnement de développement a été créé avec **Docker** avec toutes les technologies utilisées pour les développement des applications. L'environnement de déploiement pour l'application web a aussi été créé avec **Docker**.", 
-                    "image": "static/projects/stack/docker.png"
+                    "image": "assets/projects/stack/docker.png"
                 },
                 {
                     "name": "SonarQube", 
                     "description": "La qualité du code de des applications est analysée avec **SonarQube**.", 
-                    "image": "static/projects/stack/sonarqube.png"
+                    "image": "assets/projects/stack/sonarqube.png"
                 }
             ],
             "urls": [
@@ -138,15 +138,15 @@
                 {"type": "playstore", "name": "Play Store", "url": "https://play.google.com/store/apps/details?id=com.develob.geoquiz"}
             ],
             "screenshots" : [
-                {"image": "static/projects/geoquiz/screen1.jpg", "description": ""},
-                {"image": "static/projects/geoquiz/screen2.jpg", "description": ""},
-                {"image": "static/projects/geoquiz/screen3.jpg", "description": ""},
-                {"image": "static/projects/geoquiz/screen4.jpg", "description": ""},
-                {"image": "static/projects/geoquiz/screen5.jpg", "description": ""},
-                {"image": "static/projects/geoquiz/screen6.jpg", "description": ""},
-                {"image": "static/projects/geoquiz/screen7.jpg", "description": ""},
-                {"image": "static/projects/geoquiz/screen8.jpg", "description": ""},
-                {"image": "static/projects/geoquiz/screen9.png", "description": "", "type": "web"}
+                {"image": "assets/projects/geoquiz/screen1.jpg", "description": ""},
+                {"image": "assets/projects/geoquiz/screen2.jpg", "description": ""},
+                {"image": "assets/projects/geoquiz/screen3.jpg", "description": ""},
+                {"image": "assets/projects/geoquiz/screen4.jpg", "description": ""},
+                {"image": "assets/projects/geoquiz/screen5.jpg", "description": ""},
+                {"image": "assets/projects/geoquiz/screen6.jpg", "description": ""},
+                {"image": "assets/projects/geoquiz/screen7.jpg", "description": ""},
+                {"image": "assets/projects/geoquiz/screen8.jpg", "description": ""},
+                {"image": "assets/projects/geoquiz/screen9.png", "description": "", "type": "web"}
             ]
         },
         {
@@ -154,28 +154,28 @@
             "id": "trare",
             "title": "Trare",
             "subtitle": "Application mobile multiplateformes de mise en relation de voyageurs se trouvant à proximité",
-            "image": "static/projects/trare/logo.png",
+            "image": "assets/projects/trare/logo.png",
             "description": "",
             "stack": [
                 {
                     "name": "Flutter/Dart", 
                     "description": "", 
-                    "image": "static/projects/stack/flutter.png"
+                    "image": "assets/projects/stack/flutter.png"
                 },
                 {
                     "name": "Firebase (Crashlytics, Cloud Firestore, Cloud Storage, Authentication)", 
                     "description": "",
-                    "image": "static/projects/stack/firebase.png"
+                    "image": "assets/projects/stack/firebase.png"
                 },
                 {
                     "name": "Travis CI", 
                     "description": "", 
-                    "image": "static/projects/stack/travisci.png"
+                    "image": "assets/projects/stack/travisci.png"
                 },
                 {
                     "name": "SonarQube", 
                     "description": "", 
-                    "image": "static/projects/stack/sonarqube.png"
+                    "image": "assets/projects/stack/sonarqube.png"
                 }
             ],
             "urls": [
@@ -194,13 +194,13 @@
             "title": "Kahibalo",
             "subtitle": "Service web REST et application web permettant de gérer des articles de culture générale",
             "description": "",
-            "image": "static/projects/kahibalo.png",
+            "image": "assets/projects/kahibalo.png",
             "stack": [
-                {"name": "Node.js", "description": "", "image": "static/projects/stack/nodejs.png"},
-                {"name": "Nest.js", "description": "", "image": "static/projects/stack/nestjs.svg"},
-                {"name": "MongoDB", "description": "", "image": "static/projects/stack/mongodb.png"},
-                {"name": "JWT", "description": "", "image": "static/projects/stack/jwt.png"},
-                {"name": "Docker", "description": "", "image": "static/projects/stack/docker.png"}
+                {"name": "Node.js", "description": "", "image": "assets/projects/stack/nodejs.png"},
+                {"name": "Nest.js", "description": "", "image": "assets/projects/stack/nestjs.svg"},
+                {"name": "MongoDB", "description": "", "image": "assets/projects/stack/mongodb.png"},
+                {"name": "JWT", "description": "", "image": "assets/projects/stack/jwt.png"},
+                {"name": "Docker", "description": "", "image": "assets/projects/stack/docker.png"}
             ],
             "urls": [
                 {"type": "github", "name": "Github (service web)", "url": "https://github.com/Romain-Guillot/GeoQuiz-ClientApp"},
@@ -218,11 +218,11 @@
             "title": "Meetchup",
             "subtitle": "Application native Android de partage d'albums photos",
             "description": "",
-            "image": "static/projects/meetchup.png",
+            "image": "assets/projects/meetchup.png",
             "stack": [
-                {"name": "Android", "description": "", "image": "static/projects/stack/android.png"},
-                {"name": "Java", "description": "", "image": "static/projects/stack/java.png"},
-                {"name": "Firebase (Cloud Firestore, Cloud Storage, Authentication)", "description": "", "image": "static/projects/stack/firebase.png"}
+                {"name": "Android", "description": "", "image": "assets/projects/stack/android.png"},
+                {"name": "Java", "description": "", "image": "assets/projects/stack/java.png"},
+                {"name": "Firebase (Cloud Firestore, Cloud Storage, Authentication)", "description": "", "image": "assets/projects/stack/firebase.png"}
             ],
             "urls": [
                 {"type": "github", "name": "Github", "url": "https://github.com/Romain-Guillot/GeoQuiz-ClientApp"}
@@ -238,14 +238,14 @@
             "title": "SmartRecruiting",
             "subtitle": "Service web permettant de prédire les formations de l'UGA les plus adaptées face à une offre de stage",
             "id": "smartrecruiting",
-            "image": "static/projects/smartrecruiting.png",
+            "image": "assets/projects/smartrecruiting.png",
             "description": "",
             "stack": [
-                {"name": "Python", "description": "", "image": "static/projects/stack/python.svg"},
-                {"name": "Tensorflow / Keras", "description": "", "image": "static/projects/stack/tensorflow.png"},
-                {"name": "MySQL", "description": "", "image": "static/projects/stack/mysql.png"},
-                {"name": "Flask", "description": "", "image": "static/projects/stack/flask.png"},
-                {"name": "SonarQube", "description": "", "image": "static/projects/stack/sonarqube.png"}
+                {"name": "Python", "description": "", "image": "assets/projects/stack/python.svg"},
+                {"name": "Tensorflow / Keras", "description": "", "image": "assets/projects/stack/tensorflow.png"},
+                {"name": "MySQL", "description": "", "image": "assets/projects/stack/mysql.png"},
+                {"name": "Flask", "description": "", "image": "assets/projects/stack/flask.png"},
+                {"name": "SonarQube", "description": "", "image": "assets/projects/stack/sonarqube.png"}
             ],
             "urls": [
                 {"type": "github", "name": "Backend", "url": "https://gricad-gitlab.univ-grenoble-alpes.fr/Projets-INFO4/18-19/21/backend"},
@@ -263,11 +263,11 @@
             "title": "JSON Portfolio Generator",
             "subtitle": "Générateur de portfolio (site web et document PDF) à partir d'un fichier JSON",
             "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque mollis nulla a euismod faucibus. Pellentesque tincidunt, arcu ut efficitur eleifend, risus sapien sagittis sem, id porttitor nulla felis ac metus.",
-            "image": "static/projects/json_portfolio_generator.png",
+            "image": "assets/projects/json_portfolio_generator.png",
             "stack": [
-                {"name": "Python", "description": "", "image": "static/projects/stack/python.svg"},
-                {"name": "Jinja2", "description": "", "image": "static/projects/stack/jinja.png"},
-                {"name": "Sass", "description": "", "image": "static/projects/stack/sass.png"}
+                {"name": "Python", "description": "", "image": "assets/projects/stack/python.svg"},
+                {"name": "Jinja2", "description": "", "image": "assets/projects/stack/jinja.png"},
+                {"name": "Sass", "description": "", "image": "assets/projects/stack/sass.png"}
             ],
             "urls": [
                 {"type": "github", "name": "Github", "url": "https://github.com/Romain-Guillot/GeoQuiz-ClientApp"},

@@ -20,15 +20,15 @@ $icon-size: 16px;
 // Others
 $font-family: "Ubuntu", arial, sans-serif;
 
-// Assets
-$location-asset: url('static/res/location.svg');
-$email-asset: url('static/res/email.svg');
-$phone-asset: url('static/res/phone.svg');
-$github-asset: url('static/res/github.svg');
-$web-asset: url('static/res/web.svg');
-$playstore-asset: url('static/res/playstore.svg');
-$pdf-asset: url('static/res/pdf.svg');
-$markdown-asset: url('static/res/markdown.svg');
+// STATIC
+$location-STATIC: url('static/res/location.svg');
+$email-STATIC: url('static/res/email.svg');
+$phone-STATIC: url('static/res/phone.svg');
+$github-STATIC: url('static/res/github.svg');
+$web-STATIC: url('static/res/web.svg');
+$playstore-STATIC: url('static/res/playstore.svg');
+$pdf-STATIC: url('static/res/pdf.svg');
+$markdown-STATIC: url('static/res/markdown.svg');
 
 
 
@@ -38,7 +38,7 @@ $markdown-asset: url('static/res/markdown.svg');
 @import 'styles/header';
 @import 'styles/footer';
 
-@import 'styles/_index';
+@import 'styles/index';
 @import 'styles/resume';
 @import 'styles/projects';
 @import 'styles/project_details';

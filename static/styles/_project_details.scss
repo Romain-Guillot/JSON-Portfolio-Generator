@@ -66,19 +66,19 @@ $spacing: 40px;
             display: inline-block;
         }
         .github {
-            background: $github-asset 0 50%/18px no-repeat;
+            background: $github-STATIC 0 50%/18px no-repeat;
         }
         .playstore {
-            background: $playstore-asset 0 50%/18px no-repeat;
+            background: $playstore-STATIC 0 50%/18px no-repeat;
         }
         .web {
-            background: $web-asset 0 50%/18px no-repeat;
+            background: $web-STATIC 0 50%/18px no-repeat;
         }
         .pdf {
-            background: $pdf-asset 0 50%/18px no-repeat;
+            background: $pdf-STATIC 0 50%/18px no-repeat;
         }
         .markdown {
-            background: $markdown-asset 0 50%/18px no-repeat;
+            background: $markdown-STATIC 0 50%/18px no-repeat;
         }
     }
     .stack {
