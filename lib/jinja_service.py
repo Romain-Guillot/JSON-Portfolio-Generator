@@ -4,6 +4,9 @@ import markdown
 
 
 class JinjaService :
+    """
+    Service to render Jinja2 page
+    """
     def __init__(self, templateDir, outputDir) :
         file_loader = FileSystemLoader(templateDir)
         self.env = Environment(loader=file_loader)

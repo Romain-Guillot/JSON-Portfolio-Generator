@@ -3,6 +3,7 @@ import subprocess
 class GithubService:
     """
     Service to publish updates in a git repository
+    The repository has to be initialized and a remote specified
     """
     def __init__(self, dirPath) :
         self.dirPath = dirPath

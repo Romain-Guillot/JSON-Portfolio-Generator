@@ -1,6 +1,10 @@
 import yaml
 
-class Config :
+class ConfigYAML :
+    """
+    Load a yaml file to get a directionnay
+    Simply use the yaml python package
+    """
     def __init__(self, filename) :
         self.config = self._loadConfigFile(filename)
     

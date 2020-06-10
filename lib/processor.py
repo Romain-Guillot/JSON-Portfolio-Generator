@@ -10,7 +10,7 @@ from lib.github_service import GithubService
 from lib.sass_service import SassService
 from lib.pdf_service import PDFService
 from lib.jinja_service import JinjaService
-from lib.config import Config
+from lib.config_yaml import ConfigYAML
 
 
 class Processor :
@@ -22,7 +22,7 @@ class Processor :
     will be created
     """
     def __init__(self):
-        self.config = Config("config.yml")
+        self.config = ConfigYAML("config.yml")
         self.data = self.loadData()
         SRC_DIR = sys.path[0]  # the directory with the templates and static assets like images
         self.OUTPUT_DIR = self.config['output']
@@ -122,6 +122,5 @@ class Processor :
         """
         Generate the portfolio PDF (the portfolio "book" and the resume)
         """
-        print(os.path.join(os.getcwd(), self.OUTPUT_DIR, "resume.html"))
         PDFService(self.config['chromium'], os.path.join(os.getcwd(), self.OUTPUT_DIR, "resume.html")).build()
 
