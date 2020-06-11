@@ -183,9 +183,17 @@
                 {"type": "playstore", "name": "Play Store", "url": "https://play.google.com/store/apps/details?id=com.trare.app"}
             ],
             "screenshots" : [
-                {"image": "https://raw.githubusercontent.com/Romain-Guillot/Trare/master/res/img/screens1.png", "description": ""},
-                {"image": "https://raw.githubusercontent.com/Romain-Guillot/Trare/master/res/img/screens2.png", "description": ""},
-                {"image": "https://raw.githubusercontent.com/Romain-Guillot/Trare/master/res/img/screens3.png", "description": ""}
+                {"image": "assets/projects/trare/screen1.jpg", "description": ""},
+                {"image": "assets/projects/trare/screen2.jpg", "description": ""},
+                {"image": "assets/projects/trare/screen3.jpg", "description": ""},
+                {"image": "assets/projects/trare/screen4.jpg", "description": ""},
+                {"image": "assets/projects/trare/screen5.jpg", "description": ""},
+                {"image": "assets/projects/trare/screen7.jpg", "description": ""},
+                {"image": "assets/projects/trare/screen8.jpg", "description": ""},
+                {"image": "assets/projects/trare/screen9.jpg", "description": ""},
+                {"image": "assets/projects/trare/screen10.jpg", "description": ""},
+                {"image": "assets/projects/trare/screen11.jpg", "description": ""}
+
             ]
         },
         {
@@ -218,19 +226,25 @@
             "title": "Meetchup",
             "subtitle": "Application native Android de partage d'albums photos",
             "description": "",
-            "image": "assets/projects/meetchup.png",
+            "image": "assets/projects/meetchup/logo.png",
             "stack": [
                 {"name": "Android", "description": "", "image": "assets/projects/stack/android.png"},
                 {"name": "Java", "description": "", "image": "assets/projects/stack/java.png"},
                 {"name": "Firebase (Cloud Firestore, Cloud Storage, Authentication)", "description": "", "image": "assets/projects/stack/firebase.png"}
             ],
             "urls": [
-                {"type": "github", "name": "Github", "url": "https://github.com/Romain-Guillot/GeoQuiz-ClientApp"}
+                {"type": "github", "name": "Github", "url": "https://github.com/Romain-Guillot/Meetchup"}
             ],
             "screenshots" : [
-                {"image": "", "description": ""},
-                {"image": "", "description": ""},
-                {"image": "", "description": ""}
+                {"image": "assets/projects/meetchup/screen1.jpg", "description": ""},
+                {"image": "assets/projects/meetchup/screen2.jpg", "description": ""},
+                {"image": "assets/projects/meetchup/screen3.jpg", "description": ""},
+                {"image": "assets/projects/meetchup/screen4.jpg", "description": ""},
+                {"image": "assets/projects/meetchup/screen5.jpg", "description": ""},
+                {"image": "assets/projects/meetchup/screen6.jpg", "description": ""},
+                {"image": "assets/projects/meetchup/screen7.jpg", "description": ""},
+                {"image": "assets/projects/meetchup/screen8.jpg", "description": ""},
+                {"image": "assets/projects/meetchup/screen9.jpg", "description": ""}
             ]
         },
         {

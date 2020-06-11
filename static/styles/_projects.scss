@@ -14,8 +14,8 @@
             margin: 25px 0;
             a {
                 display: grid;
-                grid-template-areas: "image content";
-                grid-template-columns: 90px 1fr;
+                grid-template-areas: "image content view";
+                grid-template-columns: 90px 1fr auto;
                 align-items: flex-start;
                 text-decoration: none;
                 color: inherit;
@@ -26,6 +26,12 @@
                 }
                 .project-content {
                     grid-area: content;
+                }
+                .view {
+                    height: 100%;
+                    grid-area: view;
+                    display: flex;
+                    align-items: center;
                 }
                 .type, .title, .subtitle, .stack {
                     margin: 0;

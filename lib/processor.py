@@ -30,7 +30,7 @@ class Processor :
         self.STATIC_DIR = os.path.join(SRC_DIR, "static")
         self.TEMPLATE_DIR = os.path.join(SRC_DIR, "templates")
         self.process()
-        self.open()
+        # self.open()
 
 
     def process(self):

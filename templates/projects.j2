@@ -16,6 +16,11 @@
                             <p class="subtitle">{{project.subtitle}}</p>
                             <p class="stack">{{ project.stack|join(", ", attribute='name') }}<p>
                         </div>
+                        <div class="view no-print">
+                            <button type="submit" class="download">
+                                <span>Voir le projet</span>
+                            </button>
+                        </div>
                     </a>
                 </li>
             {% endfor %}
