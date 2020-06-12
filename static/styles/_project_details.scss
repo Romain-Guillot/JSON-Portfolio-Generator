@@ -1,4 +1,5 @@
 $spacing: 40px;
+$small-spacing: 20px;
 #project-details-wrapper {
     padding: 15px 0 0 0;
     header {
@@ -6,6 +7,7 @@ $spacing: 40px;
         grid-template-areas: "logo title";
         grid-template-columns: 100px 1fr;
         margin-left: -100px;
+        margin-bottom: $spacing;
         h1 {
             font-weight: $weight-black;
             font-size: 3em;
@@ -40,10 +42,12 @@ $spacing: 40px;
         margin: 0;
         padding: 0;
     }
-    .description {
-        // color: $text-light;
+    .project-type {
+        font-style: italic;
+    }
+    .description, .project-type {
         font-weight: $weight-light;
-        margin: $spacing 0;
+        margin: $small-spacing 0;
     }
     .links {
         padding: 0;

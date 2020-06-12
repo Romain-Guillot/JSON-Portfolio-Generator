@@ -20,8 +20,12 @@
         </div>
     </header>
 
+    <p class="project-type">{{project.type}}</p>
 
-    <div class="description">{{project.description | markdown}}</div>
+    <div class="description">
+
+        {{project.description | markdown}}
+    </div>
 
     <ul class="links">
         {% for url in project.urls %}
