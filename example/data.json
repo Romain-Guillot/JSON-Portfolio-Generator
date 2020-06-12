@@ -211,8 +211,8 @@
                 {"name": "Docker", "description": "Le déploiement des services sur mon serveur est géré avec **Docker**", "image": "assets/projects/stack/docker.png"}
             ],
             "urls": [
-                {"type": "github", "name": "Github (service web)", "url": "https://github.com/Romain-Guillot/GeoQuiz-ClientApp"},
-                {"type": "github", "name": "Github (application web)", "url": "https://github.com/Romain-Guillot/GeoQuiz-AdminApp"}
+                {"type": "github", "name": "Github (service web)", "url": "https://github.com/Romain-Guillot/kahibalo-data-server"},
+                {"type": "github", "name": "Github (application web)", "url": "https://github.com/Romain-Guillot/kahibalo-web-server"}
             ],
             "screenshots" : [
                 {"image": "assets/projects/kahibalo/screen1.png", "description": "", "type": "web"},
