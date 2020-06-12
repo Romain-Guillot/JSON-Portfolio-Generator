@@ -1,7 +1,7 @@
 {
     "name": "Romain Guillot",
     "subtitle": "Recherche un stage de fin d'étude d'au moins 5 mois pour compléter ma formation d'ingénieur en informatique.\n\nDisponible à partir d'août.",
-    "description": "Étudiant ingénieur en 5ème année d'informatique à Polytech Grenoble, j'effectue ma dernière année de formation à l'UQAC, au Québec, en vue de l'obtention d'un double diplôme de maitrise en informatique québecoise.\n\nJe recherche un stage dans le développement *full stack*. Ce stage doit être d'au minimum 675 heures sur un durée d'environ 5 mois. Je suis disponible à partir d'août.",
+    "description": "Étudiant ingénieur en 5ème année d'informatique à Polytech Grenoble, j'effectue ma dernière année de formation à l'UQAC, au Québec, en vue de l'obtention d'un double diplôme de maîtrise en informatique québecoise.\n\nJe recherche un stage dans le développement *full stack*. Ce stage doit être d'au minimum 675 heures sur une durée d'environ 5 mois. Je suis disponible à partir d'août.",
     "contact": {
         "phone": "(+33) 6 50 67 62 89",
         "email": "romain.guillot.contact@gmail.com",
@@ -10,7 +10,7 @@
     "meta": {
         "language": "fr",
         "site-url": "https://romain-guillot.github.io/",
-        "description-index": "Étudiant ingénieur en 5ème année d'informatique à Polytech Grenoble, j'effectue ma dernière année de formation à l'UQAC, au Québec, en vue de l'obtention d'un double diplôme de maitrise en informatique québecoise. Je recherche un stage dans le développement *full stack*. Ce stage doit être d'au minimum 675 heures sur un durée d'environ 5 mois. Je suis disponible à partir d'août.",
+        "description-index": "Étudiant ingénieur en 5ème année d'informatique à Polytech Grenoble, j'effectue ma dernière année de formation à l'UQAC, au Québec, en vue de l'obtention d'un double diplôme de maîtrise en informatique québecoise. Je recherche un stage dans le développement *full stack*. Ce stage doit être d'au minimum 675 heures sur une durée d'environ 5 mois. Je suis disponible à partir d'août.",
         "description-resume": "Découvrez mon CV d'étudiant ingénieur en 5ème année d'informatique à Polytech Grenoble.",
         "description-projects": "Découvrez mes projets effectués au cours de ces deux dernières années."
     },
@@ -18,14 +18,14 @@
         {
             "date": "depuis 2019",
             "school": "Université du Québec à Chicoutimi (UQAC), Canada",
-            "formation": "Maitrise en informatique professionnel (double dipôme)",
-            "description": "Génie logiciel, architecture, sécurité informatique, développement mobile, intelligence artificielle"
+            "formation": "Maîtrise en informatique professionnel (en double dipôme)",
+            "description": "Génie logiciel, architecture logicielle, sécurité informatique, développement mobile, intelligence artificielle"
         },
         {
             "date": "depuis 2017",
             "school": "Polytech Grenoble, Université Grenoble Alpes, France",
             "formation": "Cycle ingénieur en Informatique",
-            "description": "Programmation, génie logiciel, architecture, IHM, base de données, réseaux, machine learning, algorithmie"
+            "description": "Programmation, génie logiciel, architecture logicielle et matérielle, IHM, base de données, réseaux et protocoles, machine learning, algorithmie"
         }
     ],
     "skills": [
@@ -38,8 +38,8 @@
             "details": "Flutter, Android, Node.js, Nest.js (expériences avec Django, Tensorflow, Vue.js et Ionic)"
         },
         {
-            "category": "Génie logiciel et outils",
-            "details": "Agile, CI/CD (Travis et Fastlane), Docker, Contrôle Qualité (SonarQube), Design Patterns (GoF), UML, Git"
+            "category": "Génie logiciel / outils",
+            "details": "Méthodes agiles, CI/CD (Travis et Fastlane), Docker, Contrôle qualité (SonarQube), Design Patterns (GoF), UML, Git"
         },
         {
             "category": "Cloud et base de données",
@@ -47,15 +47,15 @@
         },
         {
             "category": "Langues",
-            "details": "Français (natif), Anglais (professionnel, technique)"
+            "details": "Français (natif), Anglais (professionnel et technique)"
         }
     ],
     "projects" : [
         {
-            "type": "Stage - UTP Malaysia (été 2019)",
+            "type": "Stage - UTP, Malaisie (été 2019)",
             "id": "stutherapy",
             "title": "Stutherapy",
-            "subtitle": "Application mobile multiplateformes pour les bègues et les orthophonistes (exercices et suivi de progression)",
+            "subtitle": "Application mobile multiplateformes destinée aux bègues et aux orthophonistes (exercices et suivi de progression)",
             "image": "assets/projects/stutherapy/logo.png",
             "description": "Dans le cadre de ma 4ème année d'études en informatique à Polytech Grenoble, j'ai effectué mon stage de fin d'année à *Universiti Teknologi Petronas* en Malaisie. Durant ce stage de 12 semaines, j'ai été amené à concevoir et à développer une application mobile, **Stutherapy**.\n\nL'application mobile peut être utilisée par deux types d'utilisateurs :\n\n* les personnes souffrant de bégaiement souhaitant corriger ce trouble de la parole;\n* les orthophonistes souhaitant suivre la progression de leurs patients et évaluer leurs exercices.",
             "stack": [
@@ -66,7 +66,7 @@
                 },
                 {
                     "name": "Firebase (Cloud Firestore, Cloud Storage, Cloud Functions et Authentication)",
-                    "description": "**Firebase** a été utilisé pour gérer les données de l'application. La base de données est gérée avec **Cloud Firestore**, une base de données NoSQL orientée documents. Les enregistrements audios des utilisateurs sont stockés sur **Cloud Storage**. Certains traitements comme la compression des données sont automatiquement lancés grâce à **Cloud Functions**, le service FaaS de Firebase. L'authentification des utilisateurs est gérée avec **Firebase Authentication**.",
+                    "description": "**Firebase** a été utilisé pour gérer les données de l'application. La base de données est gérée avec **Cloud Firestore**, une base de données NoSQL orientée documents. Les enregistrements audios des utilisateurs sont stockés sur **Cloud Storage**. Certains traitements, comme la compression des données, sont automatiquement lancés grâce à **Cloud Functions**, le service FaaS de Firebase. L'authentification des utilisateurs est gérée avec **Firebase Authentication**.",
                     "image": "assets/projects/stack/firebase.png"
                 },
                 {
@@ -100,7 +100,7 @@
             "title": "GeoQuiz",
             "subtitle": "Application mobile multiplateformes de quiz sur la géographie ainsi qu'une application web d'administration",
             "image": "assets/projects/geoquiz/logo.png",
-            "description": "Le but de **GeoQuiz** est de proposer une application mobile de quiz sur la géographie. Pour cela, deux applications ont été réalisées :\n\n* **l'application cliente** Android et iOS permettant de jouer aux quiz avec une difficulté croissante au fur et à mesure des parties;\n* **l'application web** permettant de gérer la base de données des questions et des langues supportées.\n\nQuatres thèmes sont actuellement proposés avec des questions de différentes formes : avec du texte, avec des images, des marqueurs sur une carte. La progression de l'utilisateur est sauvegardée pour lui permettre de connaitre son niveau et de se comparer aux autres joueurs (le *leaderboard* est en cours de développement).",
+            "description": "Le but de **GeoQuiz** est de proposer une application mobile de quiz sur la géographie. Pour cela, deux applications ont été réalisées :\n\n* **l'application cliente** Android et iOS permettant de jouer aux différents quiz avec une difficulté croissante au fur et à mesure des parties;\n* **l'application web** permettant de gérer la base de données des questions et des langues supportées.\n\nQuatres thèmes sont actuellement proposés avec des questions pouvant prendre différentes formes : avec du texte, avec des images ou avec des marqueurs sur une carte. La progression de l'utilisateur est sauvegardée pour lui permettre de connaitre son niveau et de se comparer aux autres joueurs (le *leaderboard* est en cours de développement).",
             "stack": [
                 {
                     "name": "Flutter/Dart", 
@@ -109,7 +109,7 @@
                 },
                 {
                     "name": "Firebase (Cloud Firestore, Cloud Storage, Crashlytics)", 
-                    "description": "**Firebase** a été utilisé pour gérer les données de l'application et pour collecter les rapports de bugs. La base données de question de questions et des données utilisateurs est gérée avec **Cloud Firestore**, une base de données NoSQL orientée documents. Les différentes ressources (photos de drapeaux ou de monuments par exemple) sont stockées sur **Cloud Storage**. Les rapports de bugs sont collectés et analysés avec **Crashlytics**.", 
+                    "description": "**Firebase** a été utilisé pour gérer les données de l'application et pour collecter les rapports de bugs. La base données de question et des données utilisateurs est gérée avec **Cloud Firestore**, une base de données NoSQL orientée documents. Les fichiers sont stockées sur **Cloud Storage** (photos de drapeaux ou de monuments par exemple). Les rapports de bugs sont collectés et analysés avec **Crashlytics**.", 
                     "image": "assets/projects/stack/firebase.png"},
                 {
                     "name": "SQL", 
@@ -123,7 +123,7 @@
                 },
                 {
                     "name": "Docker", 
-                    "description": "Un environnement de développement a été créé avec un image **Docker** contenant toutes les technologies utilisées pour le développement des deux applications. L'environnement de déploiement pour l'application web est aussi géré avec **Docker**.", 
+                    "description": "Un environnement de développement a été créé avec une image **Docker** contenant toutes les dépendances utilisées pour le développement des deux applications. L'environnement de déploiement pour l'application web est aussi géré avec **Docker**.", 
                     "image": "assets/projects/stack/docker.png"
                 },
                 {
@@ -153,9 +153,9 @@
             "type": "Projet académique (hiver 2020)",
             "id": "trare",
             "title": "Trare",
-            "subtitle": "Application mobile multiplateformes de mise en relation de voyageurs se trouvant à proximité",
+            "subtitle": "Application mobile multiplateformes permettant la mise en relation de voyageurs se trouvant à proximité",
             "image": "assets/projects/trare/logo.png",
-            "description": "**Trare** est une application mobile permettant de mettre en relation les voyageurs d'une même destination afin de leurs permettre d'organiser des activités à faire ensemble (faire une randonnée, aller boire un verre, faire une soirée jeux de société, etc.)\n\nL'application possède les fonctionnalités suivantes :\n\n- Authentification avec les réseaux sociaux (Facebook, Google);\n- Visualialisation et personnalisation du profil utilisateur;\n- Découverte des activités se déroulant autour de sa position géographique;\n- Visualisation, création, modification et suppression d'une activité;\n- Visualisation des profils des voyageurs;\n- Participation à une activité (demandes, système de messagerie, etc).",
+            "description": "**Trare** est une application mobile permettant de mettre en relation les voyageurs d'une même destination afin de leurs permettre d'organiser des activités à faire ensemble (faire une randonnée, aller boire un verre, faire une soirée jeux de société, etc.)\n\nL'application possède les fonctionnalités suivantes :\n\n- Authentification avec les réseaux sociaux (Facebook, Google);\n- Visualialisation et personnalisation du profil utilisateur;\n- Découverte des activités se déroulant autour de la position géographique de l'utilisateur;\n- Visualisation, création, modification et suppression d'une activité;\n- Visualisation des profils des voyageurs;\n- Participation à une activité (demandes de participants, acceptations de requêtes, système de messagerie, etc).",
             "stack": [
                 {
                     "name": "Flutter/Dart", 
@@ -164,7 +164,7 @@
                 },
                 {
                     "name": "Firebase (Cloud Firestore, Cloud Storage, Authentication)", 
-                    "description": "**Firebase** a été utilisé pour gérer les données de l'application. La base de données est gérée avec **Cloud Firestore**, une base de données NoSQL orientée documents. Les fichiers volumineux — comme les photos de profil des utilisateurs — sont stockés sur **Cloud Storage**. L'authentification des utilisateurs est gérée avec **Firebase Authentication**.",
+                    "description": "**Firebase** a été utilisé pour gérer les données de l'application. La base de données est gérée avec **Cloud Firestore**, une base de données NoSQL orientée documents. Les fichiers — comme les photos de profil des utilisateurs — sont stockés sur **Cloud Storage**. L'authentification des utilisateurs est gérée avec **Firebase Authentication**.",
                     "image": "assets/projects/stack/firebase.png"
                 },
                 {
@@ -206,18 +206,18 @@
             "stack": [
                 {"name": "Node.js", "description": "Les deux services sont développés avec **Node.js**", "image": "assets/projects/stack/nodejs.png"},
                 {"name": "Nest.js", "description": "Afin de rapidement développer une architecture de haute qualité, scalbale et évolutive, le framework **Nest.js** est utilisé par dessus Node.js pour développer les deux services", "image": "assets/projects/stack/nestjs.svg"},
-                {"name": "MongoDB", "description": "Les ressources de l'application sont gérées avec **MongoDB**, un système de gestion de base de données NoSQL orienté documents", "image": "assets/projects/stack/mongodb.png"},
+                {"name": "MongoDB", "description": "Les données de l'application sont gérées avec **MongoDB**, un système de gestion de base de données NoSQL orienté documents", "image": "assets/projects/stack/mongodb.png"},
                 {"name": "JWT", "description": "L'authorisation d'accès aux ressources est gérée avec le système de token **JWT**", "image": "assets/projects/stack/jwt.png"},
-                {"name": "Docker", "description": "Le déploiement des services sur le serveur est géré avec **Docker**", "image": "assets/projects/stack/docker.png"}
+                {"name": "Docker", "description": "Le déploiement des services sur mon serveur est géré avec **Docker**", "image": "assets/projects/stack/docker.png"}
             ],
             "urls": [
                 {"type": "github", "name": "Github (service web)", "url": "https://github.com/Romain-Guillot/GeoQuiz-ClientApp"},
                 {"type": "github", "name": "Github (application web)", "url": "https://github.com/Romain-Guillot/GeoQuiz-AdminApp"}
             ],
             "screenshots" : [
-                {"image": "", "description": ""},
-                {"image": "", "description": ""},
-                {"image": "", "description": ""}
+                {"image": "assets/projects/kahibalo/screen1.png", "description": "", "type": "web"},
+                {"image": "assets/projects/kahibalo/screen2.png", "description": "", "type": "web"},
+                {"image": "assets/projects/kahibalo/screen3.png", "description": "", "type": "web"}
             ]
         },
         {
@@ -235,7 +235,7 @@
                 },
                 {
                     "name": "Java", 
-                    "description": "Le langage utilisé pour développer des application Android — et d'accéder à l'API Android — est le **Java**", 
+                    "description": "Le langage utilisé pour développer des application Android en utilisant l'API fournie est le **Java**", 
                     "image": "assets/projects/stack/java.png"
                 },
                 {
@@ -289,7 +289,7 @@
                 },
                 {
                     "name": "SonarQube", 
-                    "description": "La qualité du code de l'application est analysée avec SonarQube", 
+                    "description": "La qualité du code de l'application a été analysée avec SonarQube", 
                     "image": "assets/projects/stack/sonarqube.png"
                 }
             ],
@@ -307,7 +307,7 @@
             "type": "Projet personnel (été 2020)",
             "title": "JSON Portfolio Generator",
             "subtitle": "Générateur de portfolio (site web et documents PDF) à partir d'un fichier JSON",
-            "description": "Projet Python permettant de générer un portfolio à partir d'un fichier de données JSON. Le portfolio généré contient les éléments suivants :\n\n- Une page de présentation / d'introduction;\n- Une page contenant le CV;\n- Une page listant les projets;\n- Une page descriptive de chaque projet.\n\nLe portfolio est généré dans deux formats différents :\n\n- **Site web**, des pages HTML connectées entres elles permettant la navigation dans le portfolio via un navigateur web;\n- **Document PDF**, un document PDF est généré à partir des pages HTML avec un style adapté. Un document contenant uniquement le CV est aussi généré.\n\nEnfin, le projet permet de publier le portfolio automatiquement sur une *remote* git — typiquement pour la publication automatique et instantanée sur un repository *Github Page* pour rendre disponible la version web du portfolio disponible sur le web directement après la génération de celui-ci.",
+            "description": "Projet Python permettant de générer un portfolio à partir d'un fichier de données JSON. Le portfolio généré contient les éléments suivants :\n\n- Une page de présentation;\n- Une page contenant le CV;\n- Une page listant les projets;\n- Une page descriptive de chaque projet.\n\nLe portfolio est généré dans deux formats différents :\n\n- **Site web**, des pages HTML connectées entres elles permettant la navigation dans le portfolio via un navigateur web;\n- **Document PDF**, un document PDF est généré à partir des pages HTML avec un style adapté. Un document contenant uniquement le CV est aussi généré.\n\nEnfin, le projet permet de publier le portfolio automatiquement sur une *remote* git — typiquement pour la publication automatique et instantanée sur un repository *Github Page* pour rendre disponible la version web du portfolio disponible sur le web directement après la génération de celui-ci.",
             "image": "assets/projects/json_portfolio_generator/logo.png",
             "stack": [
                 {"name": "Python", "description": "Le coeur du projet a été développé avec **Python3**", "image": "assets/projects/stack/python.svg"},

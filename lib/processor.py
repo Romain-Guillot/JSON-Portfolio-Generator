@@ -124,7 +124,17 @@ class Processor :
         """
         Generate the portfolio PDF (the portfolio "book" and the resume)
         """
-        PDFService(self.config['chromium'], os.path.join(os.getcwd(), self.OUTPUT_DIR, "resume.html")).build()
+        pdfGenerationRequired = self.config['pdf_generation']
+        if pdfGenerationRequired :
+            pdfService = PDFService(self.config['chromium'])
+            filenames = [
+                os.path.join(os.getcwd(), self.OUTPUT_DIR, "index"),
+                os.path.join(os.getcwd(), self.OUTPUT_DIR, "resume"),
+                os.path.join(os.getcwd(), self.OUTPUT_DIR, "projects"),
+            ]
+            filenames.extend(os.path.join(os.getcwd(), self.OUTPUT_DIR, project['id']) for project in self.data['projects'])
+            pdfService.build(filenames)
+
 
     def open(self):
         webbrowser.open_new_tab(os.path.join(self.OUTPUT_DIR, "index.html"))
