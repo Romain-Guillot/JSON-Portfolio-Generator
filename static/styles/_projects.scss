@@ -7,10 +7,10 @@
             margin-top: 0;
         }
     }
-    ul {
+    > ul {
         list-style-type: none;
         padding: 0;
-        li {
+        > li {
             margin: 25px 0;
             a {
                 display: grid;
@@ -55,6 +55,15 @@
                     font-size: 0.9em;
                     color: $text-light;
                     margin-top: 10px;
+                    list-style-type: none;
+                    display: flex;  
+                    flex-wrap: wrap;
+                    li {
+                        margin: 0 5px 5px 0;
+                        padding: 3px 5px;
+                        background-color: rgba(0,0,0,0.1);
+                        border-radius: 3px;;
+                    }
                 }
             }
         }

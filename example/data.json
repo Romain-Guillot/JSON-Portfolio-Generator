@@ -61,12 +61,12 @@
             "stack": [
                 {
                     "name": "Flutter/Dart", 
-                    "description": "L'application mobile a été développé avec **Flutter**, le framework open source de développement d'application mutliplateformes créé par Google.", 
+                    "description": "L'application mobile a été développée avec **Flutter**, le framework open source de développement d'application mutliplateformes créé par Google.", 
                     "image": "assets/projects/stack/flutter.png"
                 },
                 {
                     "name": "Firebase (Cloud Firestore, Cloud Storage, Cloud Functions et Authentication)",
-                    "description": "La base données de l'application est gérée avec **Cloud Firestore**. Les fichiers audios des utilisateurs sont stockés sur **Cloud Storage**. Certain traitements comme la compression des données sont automatiquement lancés grâce à **Cloud Functions**, le service FaaS de Firebase. L'autentification et l'autorisation des utilisateurs ont été dévoppées avec **Firebase Authentication**.", 
+                    "description": "**Firebase** a été utilisé pour gérer les données de l'application. La base de données est gérée avec **Cloud Firestore**, une base de données NoSQL. Les enregistrements audios des utilisateurs sont stockés sur **Cloud Storage**. Certain traitements comme la compression des données sont automatiquement lancés grâce à **Cloud Functions**, le service FaaS de Firebase. L'authentification des utilisateurs est gérée avec **Firebase Authentication**.",
                     "image": "assets/projects/stack/firebase.png"
                 },
                 {
@@ -108,12 +108,12 @@
                     "image": "assets/projects/stack/flutter.png"
                 },
                 {
-                    "name": "Firebase (Crashlytics, Cloud Firestore, Cloud Storage)", 
-                    "description": "La base données de question est gérée avec **Cloud Firestore**. Les différentes ressources (drapeaux, photos de monuments, etc) sont stockées sur **Cloud Storage**. Les rapports de bugs sont collectés et analysé avec **Crashlytics**.", 
+                    "name": "Firebase (Cloud Firestore, Cloud Storage, Crashlytics)", 
+                    "description": "**Firebase** a été utilisé pour gérer les données de l'application et pour collecter les rapports de bugs. La base données de question de questions et des données utilisateurs est gérée avec **Cloud Firestore**, une base de données NoSQL. Les différentes ressources (photos de drapeaux ou de monuments par exemple) sont stockées sur **Cloud Storage**. Les rapports de bugs sont collectés et analysés avec **Crashlytics**.", 
                     "image": "assets/projects/stack/firebase.png"},
                 {
                     "name": "SQL", 
-                    "description": "La base de données de questions est sauvergardée localement sur l'appareil de l'utilisateur en **SQL**, avec **SQLite**. Leurs progressions est également stockées avec SQLite.", 
+                    "description": "La base de données de questions est sauvergardée localement sur l'appareil de l'utilisateur avec **SQLite**. Leurs progressions est également stockées avec SQLite.", 
                     "image": "assets/projects/stack/sqlite.png"
                 },
                 {
@@ -128,7 +128,7 @@
                 },
                 {
                     "name": "SonarQube", 
-                    "description": "La qualité du code de des applications est analysée avec **SonarQube**.", 
+                    "description": "La qualité du code des applications est analysée avec **SonarQube**.", 
                     "image": "assets/projects/stack/sonarqube.png"
                 }
             ],
@@ -155,32 +155,32 @@
             "title": "Trare",
             "subtitle": "Application mobile multiplateformes de mise en relation de voyageurs se trouvant à proximité",
             "image": "assets/projects/trare/logo.png",
-            "description": "",
+            "description": "Trare est une application mobile pour mettre en relation les voyageurs d'une même destination afin de leurs permettre d'organiser des activités à faire à plusieurs : faire une randonnée, aller boire un verre, faire une soirée jeux de société, etc.\n\nL'application possède les fonctionnalités suivantes :\n\n- Authentification avec les réseaux sociaux (Facebook, Google) avec visualialisation et personnalisation du profil utilisateur;\n- Découverte des activités se déroulant autour de sa position géographique;\n- Voir, ajouter, modifier une activité. Visualisation des profils utilisateur des voyageurs;\n- Participation à une activité (demandes, chat, etc).",
             "stack": [
                 {
                     "name": "Flutter/Dart", 
-                    "description": "", 
+                    "description": "L'application mobile a été développé avec **Flutter**, le framework open source de développement d'application mutliplateformes créé par Google.", 
                     "image": "assets/projects/stack/flutter.png"
                 },
                 {
-                    "name": "Firebase (Crashlytics, Cloud Firestore, Cloud Storage, Authentication)", 
-                    "description": "",
+                    "name": "Firebase (Cloud Firestore, Cloud Storage, Authentication)", 
+                    "description": "**Firebase** a été utilisé pour gérer les données de l'application. La base de données est gérée avec **Cloud Firestore**, une base de données NoSQL. Les fichiers volumineux comme les images des utilisateurs sont stockés sur **Cloud Storage**. L'authentification des utilisateurs est gérée avec **Firebase Authentication**.",
                     "image": "assets/projects/stack/firebase.png"
                 },
                 {
                     "name": "Travis CI", 
-                    "description": "", 
+                    "description": "Travis CI est utilisé pour gérer l'intégration continue et le déploiement continue sur le Play Store de l'application", 
                     "image": "assets/projects/stack/travisci.png"
                 },
                 {
                     "name": "SonarQube", 
-                    "description": "", 
+                    "description": "La qualité du code de l'application est analysée avec SonarQube", 
                     "image": "assets/projects/stack/sonarqube.png"
                 }
             ],
             "urls": [
                 {"type": "github", "name": "Github", "url": "https://github.com/Romain-Guillot/Trare"},
-                {"type": "playstore", "name": "Play Store", "url": "https://play.google.com/store/apps/details?id=com.trare.app"}
+                {"type": "playstore", "name": "Play Store (version alpha)", "url": "https://play.google.com/apps/testing/com.trare.app"}
             ],
             "screenshots" : [
                 {"image": "assets/projects/trare/screen1.jpg", "description": ""},
@@ -202,7 +202,7 @@
             "title": "Kahibalo",
             "subtitle": "Service web REST et application web permettant de gérer des articles de culture générale",
             "description": "",
-            "image": "assets/projects/kahibalo.png",
+            "image": "assets/projects/kahibalo/logo.png",
             "stack": [
                 {"name": "Node.js", "description": "", "image": "assets/projects/stack/nodejs.png"},
                 {"name": "Nest.js", "description": "", "image": "assets/projects/stack/nestjs.svg"},
@@ -252,24 +252,42 @@
             "title": "SmartRecruiting",
             "subtitle": "Service web permettant de prédire les formations de l'UGA les plus adaptées face à une offre de stage",
             "id": "smartrecruiting",
-            "image": "assets/projects/smartrecruiting.png",
-            "description": "",
+            "image": "assets/projects/smartrecruiting/logo.png",
+            "description": "SmartRecruiting est un projet soutenenu par Disrupt Campus. Le projet consiste à associer automiquement des filières de formations de l'Université Grenoble Alpes à partir d'offres de stage. Le but étant de simplifier la connexion entre les 5 acteurs impliqués dans les recherches de stage :\n\n- Les étudiants recherchant des stages\n- Les gestionnaires de scolarités\n- Les universités\n- Les entreprises proposant des offres de stages\n\nAvec 2 de mes camarades, notre but sur ce projet a été de redévelopper la partie *backend* du site afin de proposer une architecture plus qualitative, plus évolutive et plus maintenable. Nous avions aussi pour responsabilité de réecrire le module d'apprentissage et de prédiction en utilisant le *machine learning* afin d'obtenir des modèles d'apprentissage plus performants.",
             "stack": [
-                {"name": "Python", "description": "", "image": "assets/projects/stack/python.svg"},
-                {"name": "Tensorflow / Keras", "description": "", "image": "assets/projects/stack/tensorflow.png"},
-                {"name": "MySQL", "description": "", "image": "assets/projects/stack/mysql.png"},
-                {"name": "Flask", "description": "", "image": "assets/projects/stack/flask.png"},
-                {"name": "SonarQube", "description": "", "image": "assets/projects/stack/sonarqube.png"}
+                {
+                    "name": "Python", 
+                    "description": "La partie *backend* sur projet, chargé de gérer les données et de proposer un services de prédiction, à été réalisé avec **Python 3**", 
+                    "image": "assets/projects/stack/python.svg"
+                },
+                {
+                    "name": "Tensorflow / Keras", 
+                    "description": "Le service d'apprentissage et de prédiction a été développé avec **Tensorflow**, un écosystème permettant d'utiliser le *machine learning*. **Keras**, une librairie s'interfaçant par dessus Tensorflow a été utiliser afin d'utiliser des modèles de *deep learning*, les CNN (réseau de neurones convolutifs)", 
+                    "image": "assets/projects/stack/tensorflow.png"
+                },
+                {
+                    "name": "MySQL", 
+                    "description": "Les données de l'application ont été stockés avec **MySQL**, un serveur de base de données SQL", 
+                    "image": "assets/projects/stack/mysql.png"
+                },
+                {
+                    "name": "Flask", 
+                    "description": "L'API web du projet a été réalisée avec **Flask**", 
+                    "image": "assets/projects/stack/flask.png"
+                },
+                {
+                    "name": "SonarQube", 
+                    "description": "La qualité du code de l'application est analysée avec SonarQube", 
+                    "image": "assets/projects/stack/sonarqube.png"
+                }
             ],
             "urls": [
-                {"type": "github", "name": "Backend", "url": "https://gricad-gitlab.univ-grenoble-alpes.fr/Projets-INFO4/18-19/21/backend"},
-                {"type": "web", "name": "Documentation", "url": "https://smartrecruiting-back.readthedocs.io/en/latest/"},
-                {"type": "markdown", "name": "Rapport (markdown)", "url": "https://gricad-gitlab.univ-grenoble-alpes.fr/Projets-INFO4/18-19/21/docs/-/blob/master/report.md"}
+                {"type": "github", "name": "Github (backend)", "url": "https://gricad-gitlab.univ-grenoble-alpes.fr/Projets-INFO4/18-19/21/backend"},
+                {"type": "web", "name": "Documentation (backend)", "url": "https://smartrecruiting-back.readthedocs.io/en/latest/"},
+                {"type": "markdown", "name": "Rapport", "url": "https://gricad-gitlab.univ-grenoble-alpes.fr/Projets-INFO4/18-19/21/docs/-/blob/master/report.md"}
             ],
             "screenshots" : [
-                {"image": "", "description": ""},
-                {"image": "", "description": ""},
-                {"image": "", "description": ""}
+                {"image": "assets/projects/smartrecruiting/screen.png", "description": "", "type": "web"}
             ]
         },
         {
@@ -278,7 +296,7 @@
             "title": "JSON Portfolio Generator",
             "subtitle": "Générateur de portfolio (site web et document PDF) à partir d'un fichier JSON",
             "description": "Projet Python permettant de générer un portfolio à partir d'un fichier de données JSON. Le portfolio généré contient les éléments suivants :\n\n- Une page de présentation / d'introduction\n- Une page contenant le CV;\n- Une page listant les projets;\n- Une page descriptive de chaque projet.\n\nLe portfolio est généré dans deux formats différents :\n\n- **Site web**, des pages HTML connectées entres elles permettant la navigation dans le portfolio via un navigateur web;\n- **Document PDF**, un document PDF est généré à partir des pages HTML avec un style adapté aux documents. Un document contenant uniquement le CV est aussi généré.\n\nEnfin, le projet permet de publier le portfolio automatiquement sur une *remote* git — typiquement pour la publication automatique et instantanée sur un repository *Github Page* pour rendre disponible la version web du portfolio disponible via le web directement après la génération de celui-ci.",
-            "image": "assets/projects/json_portfolio_generator.png",
+            "image": "assets/projects/json_portfolio_generator/logo.png",
             "stack": [
                 {"name": "Python", "description": "Le coeur du projet a été développé avec **Python3**", "image": "assets/projects/stack/python.svg"},
                 {"name": "Jinja2", "description": "Les templates HTML ont été écrits avec **Jinja2**, un langage de template inspiré de celui de Django.", "image": "assets/projects/stack/jinja.png"},
@@ -289,9 +307,9 @@
                 {"type": "web", "name": "Mon portfolio généré avec cet outil", "url": "https://romain-guillot.github.io/"}
             ],
             "screenshots" : [
-                {"image": "", "description": ""},
-                {"image": "", "description": ""},
-                {"image": "", "description": ""}
+                {"image": "assets/projects/json_portfolio_generator/screen1.png", "description": "", "type": "web"},
+                {"image": "assets/projects/json_portfolio_generator/screen2.png", "description": "", "type": "web"},
+                {"image": "assets/projects/json_portfolio_generator/screen3.png", "description": "", "type": "web"}
             ]
         }
     ]
