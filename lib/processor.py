@@ -93,7 +93,7 @@ class Processor :
         PDFS_DIR = "pdfs/"
         OUTPUT_PDFS_DIR = os.path.join(self.OUTPUT_DIR, PDFS_DIR)
         os.makedirs(OUTPUT_PDFS_DIR)
-        copy_tree(PDFS_DIR, OUTPUT_USER_ASSET_DIR)
+        copy_tree(PDFS_DIR, OUTPUT_PDFS_DIR)
 
 
     def publishOnGithub(self) :
