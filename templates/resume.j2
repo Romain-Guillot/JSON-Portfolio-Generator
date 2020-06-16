@@ -5,7 +5,7 @@
 {% block content %}
     <div id="resume-wrapper">
         <div class="no-print">
-            {{button("resume.pdf", "PDF")}}
+            {{button("pdfs/romainguillot_resume.pdf", "PDF")}}
         </div>
         
         <header>
@@ -15,8 +15,8 @@
             </div>
             <ul class="contact-info">
                 <li><span class="image-link phone-link">{{contact.phone}}</span></li>
-                <li><a class="image-link email-link">{{contact.email}}</a></li>
-                <li><a class="image-link github-link">{{contact.github}}</a></li>
+                <li><a href="mailto:{{contact.email}}" class="image-link email-link"><span>{{contact.email}}</span></a></li>
+                <li><a href="https://{{contact.github}}" class="image-link github-link" target="_blank"><span>{{contact.github}}</span></a></li>
             </ul>
         </header>
 
@@ -47,7 +47,7 @@
             </ul>
         </div>
 
-        <h2>Experiences et projets</h2>
+        <h2>Expériences et projets</h2>
         <div class="projects">
             <ul>
                 {% for project in projects[:config.resume_projects_limit] %}

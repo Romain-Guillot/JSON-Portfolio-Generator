@@ -1,7 +1,7 @@
 {
     "name": "Romain Guillot",
-    "subtitle": "Recherche un stage de fin d'étude d'au moins 5 mois pour compléter ma formation d'ingénieur en informatique.\n\nDisponible à partir d'août.",
-    "description": "Étudiant ingénieur en 5ème année d'informatique à Polytech Grenoble, j'effectue ma dernière année de formation à l'UQAC, au Québec, en vue de l'obtention d'un double diplôme de maîtrise en informatique québecoise.\n\nJe recherche un stage dans le développement *full stack*. Ce stage doit être d'au minimum 675 heures sur une durée d'environ 5 mois. Je suis disponible à partir d'août.",
+    "subtitle": "Recherche un stage de fin d'études d'au moins 5 mois pour compléter ma formation d'ingénieur en informatique.\n\nDisponible à partir d'août.",
+    "description": "Étudiant ingénieur en 5ème année d'informatique à Polytech Grenoble, j'effectue ma dernière année de formation à l'UQAC, au Québec, en vue de l'obtention d'un double diplôme de maîtrise en informatique québécoise.\n\nJe recherche un stage dans le développement *full stack*. Ce stage doit être d'au minimum 675 heures sur une durée d'environ 5 mois. Je suis disponible à partir d'août.",
     "contact": {
         "phone": "(+33) 6 50 67 62 89",
         "email": "romain.guillot.contact@gmail.com",
@@ -18,7 +18,7 @@
         {
             "date": "depuis 2019",
             "school": "Université du Québec à Chicoutimi (UQAC), Canada",
-            "formation": "Maîtrise en informatique professionnel (en double dipôme)",
+            "formation": "Maîtrise en informatique professionnelle (en double diplôme)",
             "description": "Génie logiciel, architecture logicielle, sécurité informatique, développement mobile, intelligence artificielle"
         },
         {
@@ -55,18 +55,18 @@
             "type": "Stage - UTP, Malaisie (été 2019)",
             "id": "stutherapy",
             "title": "Stutherapy",
-            "subtitle": "Application mobile multiplateformes destinée aux bègues et aux orthophonistes (exercices et suivi de progression)",
+            "subtitle": "Application mobile multiplateforme destinée aux bègues et aux orthophonistes (exercices et suivi de progression)",
             "image": "assets/projects/stutherapy/logo.png",
-            "description": "Dans le cadre de ma 4ème année d'études en informatique à Polytech Grenoble, j'ai effectué mon stage de fin d'année à *Universiti Teknologi Petronas* en Malaisie. Durant ce stage de 12 semaines, j'ai été amené à concevoir et à développer une application mobile, **Stutherapy**.\n\nL'application mobile peut être utilisée par deux types d'utilisateurs :\n\n* les personnes souffrant de bégaiement souhaitant corriger ce trouble de la parole;\n* les orthophonistes souhaitant suivre la progression de leurs patients et évaluer leurs exercices.",
+            "description": "Dans le cadre de ma 4ème année d'études en informatique à Polytech Grenoble, j'ai effectué mon stage de fin d'année à *Universiti Teknologi Petronas* en Malaisie. Durant ce stage de 12 semaines, j'ai été amené à concevoir et à développer une application mobile, **Stutherapy**.\n\nL'application mobile peut être utilisée par deux types d'utilisateurs :\n\n* les personnes souffrant de bégaiement souhaitant corriger ce trouble de la parole ;\n* les orthophonistes souhaitant suivre la progression de leurs patients et évaluer leurs exercices.",
             "stack": [
                 {
                     "name": "Flutter/Dart", 
-                    "description": "L'application mobile a été développée avec **Flutter**, le framework open source de développement d'application mutliplateformes créé par Google.", 
+                    "description": "L'application mobile a été développée avec **Flutter**, le framework open source de développement d'applications mutliplateformes créé par Google.", 
                     "image": "assets/projects/stack/flutter.png"
                 },
                 {
                     "name": "Firebase (Cloud Firestore, Cloud Storage, Cloud Functions et Authentication)",
-                    "description": "**Firebase** a été utilisé pour gérer les données de l'application. La base de données est gérée avec **Cloud Firestore**, une base de données NoSQL orientée documents. Les enregistrements audios des utilisateurs sont stockés sur **Cloud Storage**. Certains traitements, comme la compression des données, sont automatiquement lancés grâce à **Cloud Functions**, le service FaaS de Firebase. L'authentification des utilisateurs est gérée avec **Firebase Authentication**.",
+                    "description": "**Firebase** a été utilisé pour gérer les données de l'application. La base de données est gérée avec **Cloud Firestore**, une base de données NoSQL orientée documents. Les enregistrements audio des utilisateurs sont stockés sur **Cloud Storage**. Certains traitements, comme la compression des données, sont automatiquement lancés grâce à **Cloud Functions**, le service FaaS de Firebase. L'authentification des utilisateurs est gérée avec **Firebase Authentication**.",
                     "image": "assets/projects/stack/firebase.png"
                 },
                 {
@@ -98,27 +98,27 @@
             "type": "Projet personnel (automne 2019 - présent)",
             "id": "geoquiz",
             "title": "GeoQuiz",
-            "subtitle": "Application mobile multiplateformes de quiz sur la géographie ainsi qu'une application web d'administration",
+            "subtitle": "Application mobile multiplateforme de quiz sur la géographie accompagnée d'une application web d'administration",
             "image": "assets/projects/geoquiz/logo.png",
-            "description": "Le but de **GeoQuiz** est de proposer une application mobile de quiz sur la géographie. Pour cela, deux applications ont été réalisées :\n\n* **l'application cliente** Android et iOS permettant de jouer aux différents quiz avec une difficulté croissante au fur et à mesure des parties;\n* **l'application web** permettant de gérer la base de données des questions et des langues supportées.\n\nQuatres thèmes sont actuellement proposés avec des questions pouvant prendre différentes formes : avec du texte, avec des images ou avec des marqueurs sur une carte. La progression de l'utilisateur est sauvegardée pour lui permettre de connaitre son niveau et de se comparer aux autres joueurs (le *leaderboard* est en cours de développement).",
+            "description": "Le but de **GeoQuiz** est de proposer une application mobile de quiz sur la géographie. Pour cela, deux applications ont été réalisées :\n\n* **l'application cliente** Android et iOS permettant de jouer aux différents quiz avec une difficulté croissante au fur et à mesure des parties ;\n* **l'application web** permettant de gérer la base de données des questions et des langues supportées.\n\nQuatre thèmes sont actuellement proposés avec des questions pouvant prendre différentes formes : avec du texte, avec des images ou avec des marqueurs sur une carte. La progression de l'utilisateur est sauvegardée pour lui permettre de connaître son niveau et de se comparer aux autres joueurs (le *leaderboard* est en cours de développement).",
             "stack": [
                 {
                     "name": "Flutter/Dart", 
-                    "description": "L'application mobile et l'application web sont développées avec **Flutter**, le framework open source de développement d'application mutliplateformes créé par Google.", 
+                    "description": "L'application mobile et l'application web sont développées avec **Flutter**, le framework open source de développement d'applications mutliplateformes créé par Google.", 
                     "image": "assets/projects/stack/flutter.png"
                 },
                 {
                     "name": "Firebase (Cloud Firestore, Cloud Storage, Crashlytics)", 
-                    "description": "**Firebase** a été utilisé pour gérer les données de l'application et pour collecter les rapports de bugs. La base données de question et des données utilisateurs est gérée avec **Cloud Firestore**, une base de données NoSQL orientée documents. Les fichiers sont stockées sur **Cloud Storage** (photos de drapeaux ou de monuments par exemple). Les rapports de bugs sont collectés et analysés avec **Crashlytics**.", 
+                    "description": "**Firebase** a été utilisé pour gérer les données de l'application et pour collecter les rapports de bugs. La base de données de question et des données utilisateurs est gérée avec **Cloud Firestore**, une base de données NoSQL orientée documents. Les fichiers sont stockés sur **Cloud Storage** (photos de drapeaux ou de monuments par exemple). Les rapports de bugs sont collectés et analysés avec **Crashlytics**.", 
                     "image": "assets/projects/stack/firebase.png"},
                 {
                     "name": "SQL", 
-                    "description": "La base de données de questions est sauvergardée localement sur l'appareil de l'utilisateur avec **SQLite**. Leurs progressions personnelles sont également stockées avec SQLite.", 
+                    "description": "La base de données de questions est sauvegardée localement sur l'appareil de l'utilisateur avec **SQLite**. Leurs progressions personnelles sont également stockées avec SQLite.", 
                     "image": "assets/projects/stack/sqlite.png"
                 },
                 {
                     "name": "Travis CI", 
-                    "description": "Les pipelines de CI/CD sont orchestrées avec **Travis CI**, en particulier pour les tests, la génération automatique de *screenshots* et la publication sur le Play Store.", 
+                    "description": "Les pipelines de CI/CD sont orchestrés avec **Travis CI**, en particulier pour les tests, la génération automatique de *screenshots* et la publication sur le Play Store.", 
                     "image": "assets/projects/stack/travisci.png"
                 },
                 {
@@ -153,13 +153,13 @@
             "type": "Projet académique (hiver 2020)",
             "id": "trare",
             "title": "Trare",
-            "subtitle": "Application mobile multiplateformes permettant la mise en relation de voyageurs se trouvant à proximité",
+            "subtitle": "Application mobile multiplateforme permettant la mise en relation de voyageurs se trouvant à proximité",
             "image": "assets/projects/trare/logo.png",
-            "description": "**Trare** est une application mobile permettant de mettre en relation les voyageurs d'une même destination afin de leurs permettre d'organiser des activités à faire ensemble (faire une randonnée, aller boire un verre, faire une soirée jeux de société, etc.)\n\nL'application possède les fonctionnalités suivantes :\n\n- Authentification avec les réseaux sociaux (Facebook, Google);\n- Visualialisation et personnalisation du profil utilisateur;\n- Découverte des activités se déroulant autour de la position géographique de l'utilisateur;\n- Visualisation, création, modification et suppression d'une activité;\n- Visualisation des profils des voyageurs;\n- Participation à une activité (demandes de participants, acceptations de requêtes, système de messagerie, etc).",
+            "description": "**Trare** est une application mobile permettant de mettre en relation les voyageurs d'une même destination afin de leur permettre d'organiser des activités à faire ensemble (faire une randonnée, aller boire un verre, faire une soirée jeux de société, etc.)\n\nL'application possède les fonctionnalités suivantes :\n\n- Authentification avec les réseaux sociaux (Facebook, Google) ;\n- Visualisation et personnalisation du profil utilisateur ;\n- Découverte des activités se déroulant autour de la position géographique de l'utilisateur ;\n- Visualisation, création, modification et suppression d'une activité ;\n- Visualisation des profils des voyageurs ;\n- Participation à une activité (demande de participation, acceptation ou refus des requêtes, messagerie, etc.).",
             "stack": [
                 {
                     "name": "Flutter/Dart", 
-                    "description": "L'application mobile a été développée avec **Flutter**, le framework open source de développement d'application mutliplateformes créé par Google.", 
+                    "description": "L'application mobile a été développée avec **Flutter**, le framework open source de développement d'applications mutliplateformes créé par Google", 
                     "image": "assets/projects/stack/flutter.png"
                 },
                 {
@@ -169,7 +169,7 @@
                 },
                 {
                     "name": "Travis CI", 
-                    "description": "Les pipelines de CI/CD sont orchestrées avec **Travis CI**, en particulier pour les tests, la génération automatique de *screenshots* et la publication sur le Play Store.", 
+                    "description": "Les pipelines de CI/CD sont orchestrés avec **Travis CI**, en particulier pour les tests, la génération automatique de *screenshots* et la publication sur le Play Store.", 
                     "image": "assets/projects/stack/travisci.png"
                 },
                 {
@@ -201,7 +201,7 @@
             "id": "kahibalo",
             "title": "Kahibalo",
             "subtitle": "Service web REST et application web permettant de gérer des articles de culture générale",
-            "description": "Le but de **Kahibalo** est de fournir une application web permettant de lire et de rédiger des articles de culture générale. Pour ce faire, le projet est constitué de 2 services :\n\n- **Le service web REST** permettant d'accéder et de gérer les ressources via des représentations JSON;\n- **L'application web** s'interfaçant avec le service web afin d'accéder aux différentes fonctionnalités via un navigateur web.\n\nVoici les fonctionnalités implémentées ou en cours de développement :\n\n- Visualisation des articles disponibles avec la possibilité de les filtrer par *tags*;\n- Visualisation, création, modification et suppression des articles;\n- Authentification permettant l'autorisation de la création, la modification et la suppression des ressources;\n- Redirection vers la visualisation d'un article aléatoire.",
+            "description": "Le but de **Kahibalo** est de fournir une application web permettant de lire et de rédiger des articles de culture générale. Pour ce faire, le projet est constitué de 2 services :\n\n- **Le service web REST** permettant d'accéder et de gérer les ressources via des représentations JSON;\n- **L'application web** s'interfaçant avec le service web afin d'accéder aux différentes fonctionnalités via un navigateur web.\n\nVoici les fonctionnalités implémentées ou en cours de développement :\n\n- Visualisation des articles disponibles avec la possibilité de les filtrer par *tags* ;\n- Visualisation, création, modification et suppression des articles ;\n- Authentification permettant l'autorisation de la création, la modification et la suppression des ressources ;\n- Redirection vers la visualisation d'un article aléatoire.",
             "image": "assets/projects/kahibalo/logo.png",
             "stack": [
                 {"name": "Node.js", "description": "Les deux services sont développés avec **Node.js**", "image": "assets/projects/stack/nodejs.png"},
@@ -224,18 +224,18 @@
             "type": "Projet académique (Automne 2019)",
             "id": "meetchup",
             "title": "Meetchup",
-            "subtitle": "Application native Android de partage d'événements (albums photos, orgnanisations, etc.)",
-            "description": "Le but de **Meetchup** est de permettre aux participants d'un même événement de s'échanger des messages, des photos et d'organiser l'événement. Voici les fonctionnalités développées :\n\n\n- Authentification via Google ou via email/mot de passe;\n- Visualisation, création, modification et suppresion des comptes utilisateurs;\n- Visualisation, création, modification et suppresion des événements;\n- Fil d'acutalité d'un événement avec les dernières publications;\n- Albums photos de l'événement;\n- Gestion des participants d'un événement à base de clés d'invitations.",
+            "subtitle": "Application native Android de partage d'événements (albums photos, organisations, etc.)",
+            "description": "Le but de **Meetchup** est de permettre aux participants d'un même événement de s'échanger des messages, des photos et d'organiser l'événement. Voici les fonctionnalités développées :\n\n- Authentification via Google ou via email/mot de passe ;\n- Visualisation, création, modification et suppression des comptes utilisateurs ;\n- Visualisation, création, modification et suppression des événements ;\n- Fil d'actualité d'un événement avec les dernières publications ;\n- Albums photos de l'événement ;\n- Gestion des participants d'un événement à base de clés d'invitations.",
             "image": "assets/projects/meetchup/logo.png",
             "stack": [
                 {
                     "name": "Android", 
-                    "description": "L'application a été développé avec **Android**", 
+                    "description": "L'application a été développée avec **Android**", 
                     "image": "assets/projects/stack/android.png"
                 },
                 {
                     "name": "Java", 
-                    "description": "Le langage utilisé pour développer des application Android en utilisant l'API fournie est le **Java**", 
+                    "description": "Le développement d'applications natives Android se fait en **Java**", 
                     "image": "assets/projects/stack/java.png"
                 },
                 {
@@ -265,11 +265,11 @@
             "subtitle": "Service web permettant de prédire les formations de l'UGA les plus adaptées face à une offre de stage",
             "id": "smartrecruiting",
             "image": "assets/projects/smartrecruiting/logo.png",
-            "description": "**SmartRecruiting** est un projet soutenu par Disrupt Campus. Le projet consiste à associer automatiquement des filières de formation de l'Université Grenoble Alpes à partir d'offres de stage. Le but étant de simplifier la connexion entre les 5 acteurs impliqués dans les recherches de stage :\n\n- Les étudiants recherchant des stages;\n- Les gestionnaires de scolarité;\n- Les universités;\n- Les entreprises proposant des offres de stage.\n\nAvec 2 de mes camarades, notre but sur ce projet a été de redévelopper la partie *backend* du site afin de proposer une architecture plus qualitative, plus évolutive et plus maintenable. Nous avions aussi pour responsabilité de réecrire le module d'apprentissage et de prédiction en utilisant le *machine learning* afin d'obtenir des modèles d'apprentissage plus performants.",
+            "description": "**SmartRecruiting** est un projet soutenu par Disrupt Campus. Le projet consiste à associer automatiquement des filières de formation de l'Université Grenoble Alpes à partir d'offres de stage. Le but étant de simplifier la connexion entre les 5 acteurs impliqués dans les recherches de stage :\n\n- Les étudiants recherchant des stages ;\n- Les gestionnaires de scolarité ;\n- Les universités ;\n- Les entreprises proposant des offres de stage.\n\nAvec 2 de mes camarades, notre but sur ce projet a été de refaire la partie *backend* du site afin de proposer une architecture plus qualitative, plus évolutive et plus maintenable. Nous avions aussi pour responsabilité de réécrire le module d'apprentissage et de prédiction en utilisant le *machine learning* afin d'obtenir des modèles d'apprentissage plus performants.",
             "stack": [
                 {
                     "name": "Python", 
-                    "description": "La partie *backend* du projet, chargée de gérer les données et de proposer un service de prédiction, à été réalisée avec **Python 3**", 
+                    "description": "La partie *backend* du projet, chargée de gérer les données et de proposer un service de prédiction, a été réalisée avec **Python3**", 
                     "image": "assets/projects/stack/python.svg"
                 },
                 {
@@ -307,7 +307,7 @@
             "type": "Projet personnel (été 2020)",
             "title": "JSON Portfolio Generator",
             "subtitle": "Générateur de portfolio (site web et documents PDF) à partir d'un fichier JSON",
-            "description": "Projet Python permettant de générer un portfolio à partir d'un fichier de données JSON. Le portfolio généré contient les éléments suivants :\n\n- Une page de présentation;\n- Une page contenant le CV;\n- Une page listant les projets;\n- Une page descriptive de chaque projet.\n\nLe portfolio est généré dans deux formats différents :\n\n- **Site web**, des pages HTML connectées entres elles permettant la navigation dans le portfolio via un navigateur web;\n- **Document PDF**, un document PDF est généré à partir des pages HTML avec un style adapté. Un document contenant uniquement le CV est aussi généré.\n\nEnfin, le projet permet de publier le portfolio automatiquement sur une *remote* git — typiquement pour la publication automatique et instantanée sur un repository *Github Page* pour rendre disponible la version web du portfolio disponible sur le web directement après la génération de celui-ci.",
+            "description": "Projet Python permettant de générer un portfolio à partir d'un fichier de données JSON. Le portfolio généré contient les éléments suivants :\n\n- Une page de présentation ;\n- Une page contenant le CV ;\n- Une page listant les projets ;\n- Une page descriptive de chaque projet.\n\nLe portfolio est généré dans deux formats différents :\n\n- **Site web**, des pages HTML interconnectées permettant la navigation dans le portfolio via un navigateur web ;\n- **Document PDF**, un document PDF est généré à partir des pages HTML avec un style adapté. Un document contenant uniquement le CV est aussi généré.\n\nEnfin, le projet permet de publier le portfolio automatiquement sur une *remote* git — typiquement pour la publication automatique sur un repository *Github Page* pour rendre disponible la version web du portfolio disponible sur le web directement après la génération de celui-ci.",
             "image": "assets/projects/json_portfolio_generator/logo.png",
             "stack": [
                 {"name": "Python", "description": "Le coeur du projet a été développé avec **Python3**", "image": "assets/projects/stack/python.svg"},

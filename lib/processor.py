@@ -83,11 +83,17 @@ class Processor :
         os.makedirs(OUTPUT_STATIC_DIR)
         copy_tree(self.STATIC_DIR, OUTPUT_STATIC_DIR)
 
-        # Copyt the assets dir
+        # Copy the assets dir
         USER_ASSET_DIR = self.config['assets_dir']
         OUTPUT_USER_ASSET_DIR = os.path.join(self.OUTPUT_DIR, USER_ASSET_DIR)
         os.makedirs(OUTPUT_USER_ASSET_DIR)
         copy_tree(USER_ASSET_DIR, OUTPUT_USER_ASSET_DIR)
+
+        # Copyt the assets dir
+        PDFS_DIR = "pdfs"
+        OUTPUT_PDFS_DIR = os.path.join(self.OUTPUT_DIR, PDFS_DIR)
+        os.makedirs(OUTPUT_PDFS_DIR)
+        copy_tree(PDFS_DIR, OUTPUT_USER_ASSET_DIR)
 
 
     def publishOnGithub(self) :
